@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# 评测结果和日志（不上传）
+results/
+logs/
+*.log
+
+# IDE配置
+.vscode/
+.idea/
+.claude/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 虚拟环境
+venv/
+env/
+ENV/
