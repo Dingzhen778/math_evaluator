@@ -1,0 +1,37 @@
+{
+  "math500": {
+    "accuracy": 66.6,
+    "correct": 333,
+    "total": 500
+  },
+  "gsm8k": {
+    "accuracy": 78.85,
+    "correct": 1040,
+    "total": 1319
+  },
+  "aime2024": {
+    "accuracy": 10.0,
+    "correct": 3,
+    "total": 30
+  },
+  "aime2025": {
+    "accuracy": 6.67,
+    "correct": 2,
+    "total": 30
+  },
+  "gaokao2023en": {
+    "accuracy": 58.7,
+    "correct": 226,
+    "total": 385
+  },
+  "olympiadbench_oe": {
+    "accuracy": 30.81,
+    "correct": 208,
+    "total": 675
+  },
+  "mathodyssey": {
+    "accuracy": 25.71,
+    "correct": 100,
+    "total": 389
+  }
+}

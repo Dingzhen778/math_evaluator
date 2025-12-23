@@ -1,0 +1,38 @@
+{
+  "Qwen2.5-math-1.5B-numinamath-default-32k-1e": {
+    "aime2024": 3.33,
+    "math500": 54.64,
+    "aime2025": 0.0,
+    "gsm8k": 71.28
+  },
+  "Qwen2.5-math-1.5B-numinamath-default-32k-3e": {
+    "gsm8k": 69.99,
+    "aime2025": 0.0,
+    "math500": 48.36,
+    "aime2024": 3.33
+  },
+  "Qwen2.5-math-1.5B-numinamath-reliable-32k-2e": {
+    "math500": 54.4,
+    "gsm8k": 72.99,
+    "aime2024": 3.33,
+    "aime2025": 0.0
+  },
+  "Qwen2.5-math-1.5B-numinamath-reliable-32k-3e": {
+    "gsm8k": 72.45,
+    "aime2025": 0.0,
+    "aime2024": 3.33,
+    "math500": 55.12
+  },
+  "Qwen2.5-math-1.5B-numinamath-default-32k-2e": {
+    "aime2025": 3.33,
+    "aime2024": 3.33,
+    "gsm8k": 70.49,
+    "math500": 50.76
+  },
+  "Qwen2.5-math-1.5B-numinamath-reliable-32k-1e": {
+    "gsm8k": 74.65,
+    "aime2024": 7.34,
+    "aime2025": 0.0,
+    "math500": 58.48
+  }
+}

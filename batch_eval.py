@@ -77,7 +77,7 @@ def wait_for_server(base_url: str, max_retries: int = 60, retry_interval: int = 
     return False
 
 
-def run_evaluation(model_path: str, base_url: str, datasets: str = "all", max_workers: int = 32):
+def run_evaluation(model_path: str, base_url: str, datasets: str = "all", max_workers: int = 32, use_vllm_direct: bool = True, gpu_ids: str = "0", results_dir: str = "results"):
     """运行评测"""
     model_name = os.path.basename(model_path)
 
@@ -87,15 +87,30 @@ def run_evaluation(model_path: str, base_url: str, datasets: str = "all", max_wo
     print(f"模型: {model_name}")
     print(f"数据集: {datasets}")
     print(f"并行数: {max_workers}")
+    print(f"GPU: {gpu_ids}")
+    print(f"结果目录: {results_dir}")
+    print(f"使用方式: {'vLLM Python API (直接)' if use_vllm_direct else 'HTTP API'}")
     print(f"{'='*80}\n")
 
-    cmd = [
-        "python", "run_eval.py",
-        "--dataset", datasets,
-        "--base-url", base_url,
-        "--model", model_name,
-        "--max-workers", str(max_workers)
-    ]
+    if use_vllm_direct:
+        # 直接使用 vLLM Python API
+        cmd = [
+            "python", "run_eval.py",
+            "--dataset", datasets,
+            "--model-path", model_path,
+            "--gpu", gpu_ids,
+            "--max-workers", str(max_workers),
+            "--results-dir", results_dir
+        ]
+    else:
+        # 使用 HTTP API
+        cmd = [
+            "python", "run_eval.py",
+            "--dataset", datasets,
+            "--base-url", base_url,
+            "--model", model_name,
+            "--max-workers", str(max_workers)
+        ]
 
     try:
         subprocess.run(cmd, check=True)
@@ -131,7 +146,8 @@ def main():
     parser.add_argument(
         "--gpu",
         type=str,
-        default="0"
+        default="0",
+        help="GPU ID，可以使用多个GPU，例如 '0,1,2,3' 使用4个GPU"
     )
     parser.add_argument(
         "--datasets",
@@ -148,6 +164,12 @@ def main():
     parser.add_argument(
         "--skip-vllm",
         action="store_true"
+    )
+    parser.add_argument(
+        "--results-dir",
+        type=str,
+        default="results",
+        help="结果保存目录（默认: results）"
     )
 
     args = parser.parse_args()
@@ -181,8 +203,7 @@ def main():
         print(f"  {i}. {os.path.basename(path)}")
     print()
 
-    # 评测每个模型
-    base_url = f"http://localhost:{args.port}/v1"
+    # 评测每个模型（直接使用 vLLM Python API，不需要 HTTP 服务器）
     results = []
 
     for i, model_path in enumerate(model_paths, 1):
@@ -190,33 +211,18 @@ def main():
         print(f"# 评测进度: {i}/{len(model_paths)}")
         print(f"{'#'*80}\n")
 
-        vllm_process = None
-
         try:
-            # 启动vLLM（如果需要）
-            if not args.skip_vllm:
-                vllm_process = start_vllm_server(model_path, args.port, args.gpu)
-
-                # 等待服务就绪
-                if not wait_for_server(base_url):
-                    print(f"✗ 跳过: {os.path.basename(model_path)}")
-                    results.append((model_path, False))
-                    continue
-
-            # 运行评测
-            success = run_evaluation(model_path, base_url, args.datasets, args.max_workers)
+            # 直接使用 vLLM Python API，不需要启动 HTTP 服务器
+            # base_url 参数在这里不会被使用，但保留以兼容函数签名
+            base_url = f"http://localhost:{args.port}/v1"  # 不会被使用
+            results_dir = getattr(args, 'results_dir', 'results')
+            success = run_evaluation(model_path, base_url, args.datasets, args.max_workers, use_vllm_direct=True, gpu_ids=args.gpu, results_dir=results_dir)
             results.append((model_path, success))
 
-        finally:
-            # 停止vLLM进程
-            if vllm_process:
-                print(f"停止vLLM服务器...")
-                vllm_process.terminate()
-                try:
-                    vllm_process.wait(timeout=10)
-                except subprocess.TimeoutExpired:
-                    vllm_process.kill()
-                print()
+        except Exception as e:
+            print(f"\n✗ 评测失败: {os.path.basename(model_path)}")
+            print(f"错误: {e}\n")
+            results.append((model_path, False))
 
     # 打印汇总
     print(f"\n{'='*80}")

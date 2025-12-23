@@ -5,4 +5,9 @@ Math Evaluation Framework for Instruct Models
 
 from .evaluator import MathEvaluator
 
-__all__ = ['MathEvaluator']
+# vLLM 是可选依赖
+try:
+    from .vllm_client import VLLMClient
+    __all__ = ['MathEvaluator', 'VLLMClient']
+except ImportError:
+    __all__ = ['MathEvaluator']
