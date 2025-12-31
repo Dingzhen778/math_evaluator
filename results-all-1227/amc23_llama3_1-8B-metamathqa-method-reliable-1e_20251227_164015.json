@@ -1,0 +1,449 @@
+{
+  "dataset": "amc23",
+  "accuracy": 10.0,
+  "correct": 4,
+  "total": 40,
+  "results": [
+    {
+      "question": "Cities $A$ and $B$ are $45$ miles apart. Alicia lives in $A$ and Beth lives in $B$. Alicia bikes towards $B$ at 18 miles per hour. Leaving at the same time, Beth bikes toward $A$ at 12 miles per hour. How many miles from City $A$ will they be when they meet?",
+      "reference_answer": "27",
+      "predicted_answer": "27",
+      "generated_solution": "Let $x$ be the number of hours it takes for Alicia and Beth to meet. Since Alicia bikes at 18 miles per hour and Beth bikes at 12 miles per hour, they will meet at a distance of $18x$ from City $A$ and $12x$ from City $B$.\nSince the distance between the two cities is 45 miles, we have $18x + 12x = 45$. Simplifying, we get $30x = 45$, so $x = 1.5$.\nTherefore, Alicia and Beth will meet at a distance of $18(1.5) = \\boxed{27}$ miles from City $A$.\nThe answer is: 27",
+      "is_correct": true,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_1"
+      }
+    },
+    {
+      "question": "Positive real numbers $x$ and $y$ satisfy $y^3=x^2$ and $(y-x)^2=4y^2$. What is $x+y$?",
+      "reference_answer": "36",
+      "predicted_answer": "(8/27)+(16/81",
+      "generated_solution": "From the equation $(y-x)^2=4y^2$, we can expand to get $y^2-2xy+x^2=4y^2$.\nSimplifying, we have $3y^2=2xy$.\nDividing both sides by $y$, we get $3y=2x$.\nSubstituting this into the equation $y^3=x^2$, we have $(3x/2)^3=x^2$.\nSimplifying, we get $27x^3/8=x^2$.\nMultiplying both sides by 8, we have $27x^3=8x^2$.\nDividing both sides by $x^2$, we get $27x=8$.\nSolving for $x$, we find $x=8/27$.\nSubstituting this back into $3y=2x$, we get $3y=2(8/27)$.\nSimplifying, we have $3y=16/27$.\nDividing both sides by 3, we find $y=16/81$.\nFinally, we can find $x+y$ by adding $8/27$ and $16/81$.\nSimplifying, we get $(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8/27)+(16/81)=(8",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_10"
+      }
+    },
+    {
+      "question": "What is the degree measure of the acute angle formed by lines with slopes $2$ and $\\frac{1}{3}$?",
+      "reference_answer": "45",
+      "predicted_answer": "45",
+      "generated_solution": "The slope of a line is the change in $y$ divided by the change in $x$.\nThe slope of the line with slope $2$ is $2$.\nThe slope of the line with slope $\\frac{1}{3}$ is $\\frac{1}{3}$.\nTo find the angle between the two lines, we can use the formula $\\tan \\theta = \\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta}$, where $\\theta$ is the angle between the lines and $\\alpha$ and $\\beta$ are the slopes of the lines.\nPlugging in the slopes, we have $\\tan \\theta = \\frac{2 - \\frac{1}{3}}{1 + 2 \\cdot \\frac{1}{3}} = \\frac{\\frac{5}{3}}{\\frac{5}{3}} = 1$.\nSince $\\tan \\theta = 1$, the angle $\\theta$ is $\\boxed{45}$ degrees.\nThe answer is: 45",
+      "is_correct": true,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_11"
+      }
+    },
+    {
+      "question": "What is the value of\n\\[2^3 - 1^3 + 4^3 - 3^3 + 6^3 - 5^3 + \\dots + 18^3 - 17^3?\\]",
+      "reference_answer": "3159",
+      "predicted_answer": "(2^3 + 4^3 + 6^3 + \\dots + 18^3) - (1^3 + 3^3 + 5^3 + \\dots + 17^3) = (\\frac{18^2}{2})^2 - (\\frac{17^2}{2})^2.",
+      "generated_solution": "We can rewrite the expression as\n\\[2^3 - 1^3 + 4^3 - 3^3 + 6^3 - 5^3 + \\dots + 18^3 - 17^3 = (2^3 + 4^3 + 6^3 + \\dots + 18^3) - (1^3 + 3^3 + 5^3 + \\dots + 17^3).\\]\nWe can see that the terms in the first sum are the cubes of the odd numbers from 2 to 18, and the terms in the second sum are the cubes of the even numbers from 2 to 18.\nWe can rewrite the first sum as $(2^3 + 4^3 + 6^3 + \\dots + 18^3) = (2 + 4 + 6 + \\dots + 18)^2$.\nSimilarly, we can rewrite the second sum as $(1^3 + 3^3 + 5^3 + \\dots + 17^3) = (1 + 3 + 5 + \\dots + 17)^2$.\nSince the sum of the odd numbers from 1 to 17 is $1 + 3 + 5 + \\dots + 17 = \\frac{17^2}{2} = 17 \\cdot 8 = 136$, we have\n\\[(2^3 + 4^3 + 6^3 + \\dots + 18^3) - (1^3 + 3^3 + 5^3 + \\dots + 17^3) = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2.\\]\nSimplifying, we get\n\\[\\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 - \\left(\\frac{17^2}{2}\\right)^2 = \\left(\\frac{18^2}{2}\\right)^2 -",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_12"
+      }
+    },
+    {
+      "question": "In a table tennis tournament every participant played every other participant exactly once. Although there were twice as many right-handed players as left-handed players, the number of games won by left-handed players was $40\\%$ more than the number of games won by right-handed players. (There were no ties and no ambidextrous players.) What is the total number of games played?",
+      "reference_answer": "36",
+      "predicted_answer": "0",
+      "generated_solution": "Let $L$ be the number of left-handed players and $R$ be the number of right-handed players.\nSince there were twice as many right-handed players as left-handed players, we have $R = 2L$.\nThe total number of games played is $\\frac{L(L-1)}{2} + \\frac{R(R-1)}{2} = \\frac{L(L-1)}{2} + \\frac{(2L)(2L-1)}{2} = L^2 + L^2 - L + 2L^2 - 2L = 3L^2 - L$.\nWe are given that the number of games won by left-handed players is $40\\%$ more than the number of games won by right-handed players, which means $L^2 = 1.4(2L^2 - L)$.\nSimplifying, we get $L^2 = 2.8L^2 - 1.4L$, which means $0.8L^2 = 1.4L$.\nDividing both sides by $L$, we get $0.8 = 1.4$, which is not true.\nTherefore, there is no solution for $L$ and the answer is $\\boxed{0}$.\nThe answer is: 0",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_13"
+      }
+    },
+    {
+      "question": "How many complex numbers satisfy the equation $z^5=\\overline{z}$, where $\\overline{z}$ is the conjugate of the complex number $z$?",
+      "reference_answer": "7",
+      "predicted_answer": "9",
+      "generated_solution": "We can rewrite the equation as $z^5 = \\overline{z}$.\nSince the conjugate of a complex number is obtained by changing the sign of the imaginary part, we can rewrite the equation as $z^5 = z^*$, where $z^*$ is the conjugate of $z$.\nThis means that the real part of $z^5$ is equal to the real part of $z$ and the imaginary part of $z^5$ is equal to the negative of the imaginary part of $z$.\nSince the real part of $z^5$ is equal to the real part of $z$, we know that $z$ must be a real number.\nTherefore, the equation simplifies to $z^5 = z$.\nThe solutions to this equation are the fifth roots of unity, which are $1, \\omega, \\omega^2, \\omega^3, \\omega^4$, where $\\omega = \\frac{-1 + \\sqrt{3}i}{2}$ is a primitive fifth root of unity.\nSince the conjugate of a complex number is obtained by changing the sign of the imaginary part, the conjugate of $\\omega$ is $\\overline{\\omega} = \\frac{-1 - \\sqrt{3}i}{2}$.\nTherefore, the complex numbers that satisfy the equation $z^5 = \\overline{z}$ are $1, \\omega, \\omega^2, \\omega^3, \\omega^4, \\overline{\\omega}, \\overline{\\omega^2}, \\overline{\\omega^3}, \\overline{\\omega^4}$.\nThere are $\\boxed{9}$ complex numbers that satisfy the equation.\nThe answer is: 9",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_14"
+      }
+    },
+    {
+      "question": "Consider the set of complex numbers $z$ satisfying $|1+z+z^{2}|=4$. The maximum value of the imaginary part of $z$ can be written in the form $\\tfrac{\\sqrt{m}}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$?",
+      "reference_answer": "21",
+      "predicted_answer": "3",
+      "generated_solution": "We can rewrite the equation as $|1+z+z^2| = 4$ as $|z^2 + z + 1| = 4$.\nThis equation is equivalent to $(z^2 + z + 1)^2 = 16$.\nExpanding, we get $z^4 + 2z^3 + 5z^2 + 2z + 1 = 16$.\nRearranging, we have $z^4 + 2z^3 + 5z^2 + 2z - 15 = 0$.\nThis is a quartic equation, so we can use the fact that the imaginary part of a complex number is the negative of the real part of its conjugate.\nLet $z = a + bi$, where $a$ and $b$ are real numbers.\nThen $z^4 + 2z^3 + 5z^2 + 2z - 15 = (a + bi)^4 + 2(a + bi)^3 + 5(a + bi)^2 + 2(a + bi) - 15$.\nExpanding, we get $a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4 + 2a^3 + 6a^2b + 2ab^2 + 2b^3 + 5a^2 + 10ab + 5b^2 + 2a - 15$.\nSimplifying, we have $a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4 + 2a^3 + 6a^2b + 2ab^2 + 2b^3 + 5a^2 + 10ab + 5b^2 + 2a - 15 = 0$.\nSince the imaginary part of $z$ is $b$, we want to find the maximum value of $b$.\nTo do this, we can set $a = 0$ and solve for $b$.\nWhen $a = 0$, the equation becomes $b^4 + 2b^3 + 5b^2 + 2b - 15 = 0$.\nWe can factor this equation as $(b + 3)(b^3 - 3b + 5) = 0$.\nSince $b$ is real, we have $b = -3$.\nTherefore, the maximum value of the imaginary part of $z$ is $\\frac{\\sqrt{m}}{n} = \\frac{\\sqrt{3^2}}{1} = \\boxed{3}$.\nThe answer is: 3",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_16"
+      }
+    },
+    {
+      "question": "Flora the frog starts at 0 on the number line and makes a sequence of jumps to the right. In any one jump, independent of previous jumps, Flora leaps a positive integer distance $m$ with probability $\\frac{1}{2^m}$.\nWhat is the probability that Flora will eventually land at 10? Write the answer as a simplified fraction $\\frac{m}{n}$, find $m+n$",
+      "reference_answer": "3",
+      "predicted_answer": "1/1024",
+      "generated_solution": "To find the probability that Flora will eventually land at 10, we need to find the probability that she will reach 10 in a finite number of jumps.\nLet's consider the possible distances Flora can jump. Since she can only jump a positive integer distance, the possible distances are 1, 2, 3, 4, ...\nThe probability of jumping a distance of $m$ is $\\frac{1}{2^m}$.\nTo reach 10, Flora must make a total of 10 jumps. Let's consider the first jump. The probability of jumping a distance of 1 is $\\frac{1}{2^1} = \\frac{1}{2}$.\nThe probability of jumping a distance of 2 is $\\frac{1}{2^2} = \\frac{1}{4}$.\nThe probability of jumping a distance of 3 is $\\frac{1}{2^3} = \\frac{1}{8}$.\nContinuing this pattern, the probability of jumping a distance of 10 is $\\frac{1}{2^{10}} = \\frac{1}{1024}$.\nTo find the probability that Flora will eventually land at 10, we need to multiply the probabilities of all the possible distances she can jump.\nThe probability of reaching 10 in a finite number of jumps is $\\frac{1}{2} \\cdot \\frac{1}{4} \\cdot \\frac{1}{8} \\cdot \\frac{1}{16} \\cdot \\frac{1}{32} \\cdot \\frac{1}{64} \\cdot \\frac{1}{128} \\cdot \\frac{1}{256} \\cdot \\frac{1}{512} \\cdot \\frac{1}{1024} = \\frac{1}{2^{10}} = \\frac{1}{1024}$.\nTherefore, the probability that Flora will eventually land at 10 is $\\boxed{\\frac{1}{1024}}$.\nThe answer is: 1024",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_17"
+      }
+    },
+    {
+      "question": "What is the product of all solutions to the equation\n\\[\\log_{7x}2023\\cdot \\log_{289x}2023=\\log_{2023x}2023\\]",
+      "reference_answer": "1",
+      "predicted_answer": "49",
+      "generated_solution": "We can rewrite the equation as\n\\[\\frac{\\log_{7x}2023}{\\log_{289x}2023} = \\frac{\\log_{2023x}2023}{\\log_{2023x}2023}.\\]\nSince the bases are the same, we can cancel out the logarithms to get\n\\[\\frac{1}{\\log_{289x}2023} = 1.\\]\nThis means that $\\log_{289x}2023 = 1$, or $2023 = (289x)^1$.\nSimplifying, we have $2023 = 289x$, so $x = \\frac{2023}{289} = \\frac{2023}{17 \\cdot 17} = \\frac{2023}{289} = 7$.\nThe product of all solutions is $7 \\cdot 7 = \\boxed{49}$.\nThe answer is: 49",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_19"
+      }
+    },
+    {
+      "question": "The weight of $\\frac{1}{3}$ of a large pizza together with $3 \\frac{1}{2}$ cups of orange slices is the same as the weight of $\\frac{3}{4}$ of a large pizza together with $\\frac{1}{2}$ cup of orange slices. A cup of orange slices weighs $\\frac{1}{4}$ of a pound. What is the weight, in pounds, of a large pizza? The answer can be written in the form $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m-n$?",
+      "reference_answer": "4",
+      "predicted_answer": "3/5",
+      "generated_solution": "Let $x$ be the weight of a large pizza in pounds.\nWe are given that $\\frac{1}{3}x + \\frac{3}{2} \\cdot \\frac{1}{4} = \\frac{3}{4}x + \\frac{1}{2} \\cdot \\frac{1}{4}$.\nSimplifying, we have $\\frac{1}{3}x + \\frac{3}{8} = \\frac{3}{4}x + \\frac{1}{8}$.\nMultiplying both sides by 24 to clear the fractions, we get $8x + 9 = 18x + 3$.\nSubtracting $8x$ from both sides, we have $9 = 10x + 3$.\nSubtracting 3 from both sides, we get $6 = 10x$.\nDividing both sides by 10, we find $x = \\frac{6}{10} = \\frac{3}{5}$.\nTherefore, the weight of a large pizza is $\\boxed{\\frac{3}{5}}$ pounds.\nThe answer is: 3",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_2"
+      }
+    },
+    {
+      "question": "Rows 1, 2, 3, 4, and 5 of a triangular array of integers are shown below.\n1\n1 1\n1 3 1\n1 5 5 1\n1 7 11 7 1\nEach row after the first row is formed by placing a 1 at each end of the row, and each interior entry is 1 greater than the sum of the two numbers diagonally above it in the previous row. What is the units digits of the sum of the 2023 numbers in the 2023rd row?",
+      "reference_answer": "5",
+      "predicted_answer": "1",
+      "generated_solution": "We can observe that the units digit of each number in the triangular array follows a pattern.\nThe units digit of the first number in each row is always 1.\nThe units digit of the second number in each row is always the same as the units digit of the first number in the previous row.\nThe units digit of the third number in each row is always the same as the units digit of the second number in the previous row.\nThe units digit of the fourth number in each row is always the same as the units digit of the third number in the previous row.\nAnd so on.\nWe can see that the units digit of each number in the triangular array repeats in a cycle of 4: 1, 1, 1, 1, ...\nSince 2023 is one more than a multiple of 4, the units digit of the 2023rd number in the triangular array is the same as the units digit of the first number in the triangular array, which is $\\boxed{1}$.\nThe answer is: 1",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_20"
+      }
+    },
+    {
+      "question": "If $A$ and $B$ are vertices of a polyhedron, define the distance $d(A,B)$ to be the minimum number of edges of the polyhedron one must traverse in order to connect $A$ and $B$. For example, if $\\overline{AB}$ is an edge of the polyhedron, then $d(A, B) = 1$, but if $\\overline{AC}$ and $\\overline{CB}$ are edges and $\\overline{AB}$ is not an edge, then $d(A, B) = 2$. Let $Q$, $R$, and $S$ be randomly chosen distinct vertices of a regular icosahedron (regular polyhedron made up of 20 equilateral triangles). Find the probability that $d(Q, R) > d(R, S)$. The final answer can be written in the form $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$?",
+      "reference_answer": "29",
+      "predicted_answer": "3",
+      "generated_solution": "We can start by considering the possible values of $d(Q, R)$ and $d(R, S)$.\nSince the icosahedron is a regular polyhedron, all distances between vertices are equal.\nTherefore, $d(Q, R) = d(R, S) = d(S, Q)$.\nSince $Q$, $R$, and $S$ are distinct vertices, we can assume without loss of generality that $d(Q, R) = 1$ and $d(R, S) = 2$.\nIn this case, $d(Q, S) = 3$.\nTherefore, the probability that $d(Q, R) > d(R, S)$ is $\\frac{1}{3}$.\nThe answer is: 3",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_21"
+      }
+    },
+    {
+      "question": "Let $f$ be the unique function defined on the positive integers such that \\[\\sum_{d\\mid n}d\\cdot f\\left(\\frac{n}{d}\\right)=1\\] for all positive integers $n$. What is $f(2023)$?",
+      "reference_answer": "96",
+      "predicted_answer": "1",
+      "generated_solution": "We can rewrite the given equation as \\[\\sum_{d\\mid n}d\\cdot f\\left(\\frac{n}{d}\\right)=1.\\] We can see that $f(1)=1$ since the only divisor of 1 is 1, and $f(1)\\cdot 1=1$.\nNow, let's consider $n=2$. The divisors of 2 are 1 and 2, so we have \\[1\\cdot f(2)+2\\cdot f(1)=1.\\] Since $f(1)=1$, we have $2\\cdot f(2)=1$, so $f(2)=\\frac{1}{2}$.\nNext, let's consider $n=3$. The divisors of 3 are 1 and 3, so we have \\[1\\cdot f(3)+3\\cdot f(1)=1.\\] Since $f(1)=1$, we have $3\\cdot f(3)=1$, so $f(3)=\\frac{1}{3}$.\nContinuing this process, we can find that $f(4)=\\frac{1}{4}$, $f(5)=\\frac{1}{5}$, $f(6)=\\frac{1}{6}$, and so on.\nNow, let's consider $n=2023$. The divisors of 2023 are 1, 7, 289, and 2023, so we have \\[1\\cdot f(2023)+7\\cdot f(289)+289\\cdot f(7)+2023\\cdot f(1)=1.\\] Since $f(1)=1$, we have $2023\\cdot f(1)=1$, so $f(2023)=\\boxed{1}$.\nThe answer is: 1",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_22"
+      }
+    },
+    {
+      "question": "How many ordered pairs of positive real numbers $(a,b)$ satisfy the equation\n\\[(1+2a)(2+2b)(2a+b) = 32ab?\\]",
+      "reference_answer": "1",
+      "predicted_answer": "1",
+      "generated_solution": "We can expand the left side of the equation as\n\\[(1+2a)(2+2b)(2a+b) = (2a+b)(2a+2b+2ab) = 2a(2a+2b+2ab) + b(2a+2b+2ab).\\]\nExpanding further, we get\n\\[2a(2a+2b+2ab) + b(2a+2b+2ab) = 4a^2 + 4ab + 2ab + 2ab^2 + 2ab + 2ab^2 + b^2.\\]\nCombining like terms, we have\n\\[4a^2 + 4ab + 4ab + 2ab^2 + 2ab^2 + b^2 = 4a^2 + 6ab + 4ab^2 + b^2.\\]\nWe can rewrite this as\n\\[4a^2 + 6ab + 4ab^2 + b^2 = 32ab.\\]\nRearranging, we get\n\\[4a^2 + 4ab^2 + b^2 = 32ab - 6ab.\\]\nFactoring out $4ab$, we have\n\\[4ab(a + b) + b^2 = 4ab(a + b).\\]\nSince $a$ and $b$ are positive real numbers, we can divide both sides of the equation by $4ab(a + b)$ to get\n\\[1 + \\frac{b^2}{4ab} = 1.\\]\nSimplifying, we have\n\\[\\frac{b^2}{4ab} = 0.\\]\nSince $a$ and $b$ are positive real numbers, we can multiply both sides of the equation by $4ab$ to get\n\\[b^2 = 0.\\]\nTherefore, $b = 0$. Since $a$ and $b$ are positive real numbers, we have $a > 0$. Thus, there is only one ordered pair $(a,b)$ that satisfies the equation, which is $(a,b) = (0,0)$. The answer is: 1",
+      "is_correct": true,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_23"
+      }
+    },
+    {
+      "question": "Let $K$ be the number of sequences $A_1$, $A_2$, $\\dots$, $A_n$ such that $n$ is a positive integer less than or equal to $10$, each $A_i$ is a subset of $\\{1, 2, 3, \\dots, 10\\}$, and $A_{i-1}$ is a subset of $A_i$ for each $i$ between $2$ and $n$, inclusive. For example, $\\{\\}$, $\\{5, 7\\}$, $\\{2, 5, 7\\}$, $\\{2, 5, 7\\}$, $\\{2, 5, 6, 7, 9\\}$ is one such sequence, with $n = 5$.What is the remainder when $K$ is divided by $10$?",
+      "reference_answer": "5",
+      "predicted_answer": "0",
+      "generated_solution": "We can approach this problem by considering the possible values of $n$ and the corresponding number of sequences.\nFor $n = 1$, there is only one sequence, which is $\\{\\}$.\nFor $n = 2$, there are two sequences: $\\{\\}$ and $\\{1\\}$.\nFor $n = 3$, there are three sequences: $\\{\\}$, $\\{1\\}$, and $\\{1, 2\\}$.\nFor $n = 4$, there are four sequences: $\\{\\}$, $\\{1\\}$, $\\{1, 2\\}$, and $\\{1, 2, 3\\}$.\nFor $n = 5$, there are five sequences: $\\{\\}$, $\\{1\\}$, $\\{1, 2\\}$, $\\{1, 2, 3\\}$, and $\\{1, 2, 3, 4\\}$.\nWe can see that the number of sequences for each $n$ follows a pattern: $1, 2, 3, 4, 5, \\dots$.\nTo find the remainder when $K$ is divided by $10$, we can look for a pattern in the remainders of the sequence numbers.\nThe remainders of the sequence numbers are $1, 2, 3, 4, 5, \\dots$.\nThe remainder when $K$ is divided by $10$ is the same as the remainder of the sequence number when divided by $10$.\nSince the sequence number is $10$, the remainder is $\\boxed{0}$.\nThe answer is: 0",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_24"
+      }
+    },
+    {
+      "question": "There is a unique sequence of integers $a_1, a_2, \\cdots a_{2023}$ such that\n\\[\\tan2023x = \\frac{a_1 \\tan x + a_3 \\tan^3 x + a_5 \\tan^5 x + \\cdots + a_{2023} \\tan^{2023} x}{1 + a_2 \\tan^2 x + a_4 \\tan^4 x \\cdots + a_{2022} \\tan^{2022} x}\\]whenever $\\tan 2023x$ is defined. What is $a_{2023}?$",
+      "reference_answer": "-1",
+      "predicted_answer": "1",
+      "generated_solution": "We can rewrite the given equation as\n\\[\\tan2023x = \\frac{a_1 \\tan x + a_3 \\tan^3 x + a_5 \\tan^5 x + \\cdots + a_{2023} \\tan^{2023} x}{1 + a_2 \\tan^2 x + a_4 \\tan^4 x \\cdots + a_{2022} \\tan^{2022} x}.\\]\nSince $\\tan 2023x$ is defined, we know that $\\tan x$ is defined. Therefore, we can divide both sides of the equation by $\\tan x$ to get\n\\[\\frac{\\tan2023x}{\\tan x} = \\frac{a_1 + a_3 \\tan^2 x + a_5 \\tan^4 x + \\cdots + a_{2023} \\tan^{2022} x}{1 + a_2 \\tan^2 x + a_4 \\tan^4 x \\cdots + a_{2022} \\tan^{2022} x}.\\]\nNow, we can see that the numerator and denominator of the right side of the equation are both polynomials in $\\tan^2 x$. Therefore, the equation is true for all values of $x$ such that $\\tan^2 x$ is defined.\nIn particular, if we set $y = \\tan^2 x$, the equation becomes\n\\[\\frac{y^{2023}}{y} = \\frac{a_1 + a_3 y + a_5 y^2 + \\cdots + a_{2023} y^{1011}}{1 + a_2 y + a_4 y^2 + \\cdots + a_{2022} y^{1011}}.\\]\nSimplifying, we get\n\\[y^{2022} = a_1 + a_3 y + a_5 y^2 + \\cdots + a_{2023} y^{1011}.\\]\nSince $y$ can be any real number, we can set $y = 1$ to get\n\\[1^{2022} = a_1 + a_3 (1) + a_5 (1)^2 + \\cdots + a_{2023} (1)^{1011}.\\]\nThis simplifies to\n\\[1 = a_1 + a_3 + a_5 + \\cdots + a_{2023}.\\]\nTherefore, $a_{2023} = \\boxed{1}$.The answer is: 1",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_25"
+      }
+    },
+    {
+      "question": "How many positive perfect squares less than $2023$ are divisible by $5$?",
+      "reference_answer": "8",
+      "predicted_answer": "1",
+      "generated_solution": "We want to find the number of perfect squares less than $2023$ that are divisible by $5$.\nThe perfect squares less than $2023$ are $1^2=1$, $2^2=4$, $3^2=9$, $4^2=16$, $5^2=25$, $6^2=36$, $7^2=49$, $8^2=64$, $9^2=81$, $10^2=100$, $11^2=121$, $12^2=144$, $13^2=169$, $14^2=196$, $15^2=225$, $16^2=256$, $17^2=289$, $18^2=324$, $19^2=361$, $20^2=400$, $21^2=441$, $22^2=484$, $23^2=529$, $24^2=576$, $25^2=625$.\nOut of these, the perfect squares that are divisible by $5$ are $25^2=625$.\nTherefore, there is $\\boxed{1}$ positive perfect square less than $2023$ that is divisible by $5$.\nThe answer is: 1",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_3"
+      }
+    },
+    {
+      "question": "How many digits are in the base-ten representation of $8^5 \\cdot 5^{10} \\cdot 15^5$?",
+      "reference_answer": "18",
+      "predicted_answer": "3",
+      "generated_solution": "We can rewrite $8^5 \\cdot 5^{10} \\cdot 15^5$ as $(2^3)^5 \\cdot (5^2)^{10} \\cdot (3 \\cdot 5)^5$.\nUsing the properties of exponents, we can simplify this expression to $2^{15} \\cdot 5^{20} \\cdot 3^5$.\nTo find the number of digits in the base-ten representation of this expression, we need to find the number of digits in each factor and add them together.\nThe number of digits in $2^{15}$ is 1 (since $2^{15}$ is a power of 2).\nThe number of digits in $5^{20}$ is 1 (since $5^{20}$ is a power of 5).\nThe number of digits in $3^5$ is 1 (since $3^5$ is a power of 3).\nTherefore, the total number of digits in the base-ten representation of $8^5 \\cdot 5^{10} \\cdot 15^5$ is $1 + 1 + 1 = \\boxed{3}$.\nThe answer is: 3",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_4"
+      }
+    },
+    {
+      "question": "Janet rolls a standard $6$-sided die $4$ times and keeps a running total of the numbers she rolls. What is the probability that at some point, her running total will equal $3$? The final answer can be written in the form $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$?",
+      "reference_answer": "265",
+      "predicted_answer": "625/1296",
+      "generated_solution": "To find the probability that Janet's running total will equal 3, we need to find the probability that she rolls a 3 at some point.\nThe probability of rolling a 3 on a single roll is $\\frac{1}{6}$.\nSince there are 4 rolls, the probability that she rolls a 3 at least once is $1 - \\left(\\frac{5}{6}\\right)^4 = \\frac{625}{1296}$.\nTherefore, the probability that her running total will equal 3 is $\\boxed{\\frac{625}{1296}}$.\nThe answer is: 625",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_5"
+      }
+    },
+    {
+      "question": "Points $A$ and $B$ lie on the graph of $y=\\log_{2}x$. The midpoint of $\\overline{AB}$ is $(6, 2)$. What is the positive difference between the $x$-coordinates of $A$ and $B$? The final answer can be written in the form $m \\sqrt{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$?",
+      "reference_answer": "9",
+      "predicted_answer": "6",
+      "generated_solution": "The midpoint of $\\overline{AB}$ is $(6, 2)$, so the coordinates of $A$ and $B$ are $(3, 2)$ and $(9, 2)$, respectively.\nThe positive difference between the $x$-coordinates of $A$ and $B$ is $9 - 3 = 6$.\nTherefore, the answer is $\\boxed{6}$.\nThe answer is: 6",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_6"
+      }
+    },
+    {
+      "question": "A digital display shows the current date as an $8$-digit integer consisting of a $4$-digit year, followed by a $2$-digit month, followed by a $2$-digit date within the month. For example, Arbor Day this year is displayed as 20230428. For how many dates in $2023$ will each digit appear an even number of times in the 8-digital display for that date?",
+      "reference_answer": "9",
+      "predicted_answer": "1000",
+      "generated_solution": "To solve this problem, we need to determine the number of dates in 2023 where each digit appears an even number of times in the 8-digit display.\nWe can start by listing out the possible dates in 2023:\n20230101, 20230102, ..., 20230131\n20230201, 20230202, ..., 20230228\n20230301, 20230302, ..., 20230331\n20230401, 20230402, ..., 20230430\n20230501, 20230502, ..., 20230531\n20230601, 20230602, ..., 20230630\n20230701, 20230702, ..., 20230731\n20230801, 20230802, ..., 20230831\n20230901, 20230902, ..., 20230930\n20231001, 20231002, ..., 20231031\n20231101, 20231102, ..., 20231130\n20231201, 20231202, ..., 20231231\nNow, we need to count the number of dates where each digit appears an even number of times.\nFor the year 2023, the digit 2 appears 2 times, the digit 0 appears 2 times, and the digit 3 appears 2 times.\nFor the month, the digit 1 appears 2 times, the digit 2 appears 2 times, and the digit 3 appears 2 times.\nFor the date, the digit 0 appears 2 times, the digit 1 appears 2 times, the digit 2 appears 2 times, the digit 3 appears 2 times, the digit 4 appears 2 times, the digit 5 appears 2 times, the digit 6 appears 2 times, the digit 7 appears 2 times, the digit 8 appears 2 times, and the digit 9 appears 2 times.\nTherefore, there are $10 \\times 10 \\times 10 = \\boxed{1000}$ dates in 2023 where each digit appears an even number of times in the 8-digit display.\nThe answer is: 1000",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_7"
+      }
+    },
+    {
+      "question": "Maureen is keeping track of the mean of her quiz scores this semester. If Maureen scores an $11$ on the next quiz, her mean will increase by $1$. If she scores an $11$ on each of the next three quizzes, her mean will increase by $2$. What is the mean of her quiz scores currently?",
+      "reference_answer": "7",
+      "predicted_answer": "2",
+      "generated_solution": "Let $x$ be the current mean of Maureen's quiz scores.\nIf Maureen scores an 11 on the next quiz, her new mean will be $x + 1$.\nIf she scores an 11 on each of the next three quizzes, her new mean will be $x + 2$.\nSince the mean is the sum of all the scores divided by the number of quizzes, we have the equation $\\frac{x + 11 + 11 + 11 + 11}{5} = x + 2$.\nSimplifying, we get $44 = 5x + 33$.\nSubtracting 33 from both sides, we get $11 = 5x$.\nDividing both sides by 5, we get $x = 2$.\nTherefore, the current mean of Maureen's quiz scores is $\\boxed{2}$.The answer is: 2",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_8"
+      }
+    },
+    {
+      "question": "Mrs. Jones is pouring orange juice into four identical glasses for her four sons. She fills the first three glasses completely but runs out of juice when the fourth glass is only $\\frac{1}{3}$ full. What fraction of a glass must Mrs. Jones pour from each of the first three glasses into the fourth glass so that all four glasses will have the same amount of juice? The final answer can be written in the form $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$?",
+      "reference_answer": "7",
+      "predicted_answer": "8",
+      "generated_solution": "Let $x$ be the amount of juice in each of the first three glasses and $y$ be the amount of juice in the fourth glass.\nWe are given that $x = 1$ and $y = \\frac{1}{3}$.\nTo make all four glasses have the same amount of juice, we need to find the amount of juice that needs to be poured from each of the first three glasses into the fourth glass.\nLet $a$, $b$, and $c$ be the amounts of juice that need to be poured from the first, second, and third glasses, respectively.\nWe have the following equations:\n$x - a = y + a$\n$x - b = y + b$\n$x - c = y + c$\nAdding all three equations, we get $3x = 3y + a + b + c$.\nSubstituting $x = 1$ and $y = \\frac{1}{3}$, we get $3 = \\frac{1}{3} + a + b + c$.\nSimplifying, we have $8 = a + b + c$.\nSince $a$, $b$, and $c$ are positive integers, the only possible values for $a$, $b$, and $c$ are 1, 1, and 6.\nTherefore, the fraction of a glass that needs to be poured from each of the first three glasses into the fourth glass is $\\frac{1}{3}$, and the final answer is $1 + 1 + 6 = \\boxed{8}$.\nThe answer is: 8",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_1"
+      }
+    },
+    {
+      "question": "In the $xy$-plane, a circle of radius $4$ with center on the positive $x$-axis is tangent to the $y$-axis at the origin, and a circle with radius $10$ with center on the positive $y$-axis is tangent to the $x$-axis at the origin. What is the slope of the line passing through the two points at which these circles intersect? The final answer can be written in the form $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$?",
+      "reference_answer": "7",
+      "predicted_answer": "7",
+      "generated_solution": "Let $P$ be the point of tangency of the circle with radius 4 and the $y$-axis, and let $Q$ be the point of tangency of the circle with radius 10 and the $x$-axis.\nSince the radius of the circle with radius 4 is 4, the $y$-coordinate of $P$ is 4.\nSince the radius of the circle with radius 10 is 10, the $x$-coordinate of $Q$ is 10.\nThe slope of the line passing through $P$ and $Q$ is $\\frac{y_2 - y_1}{x_2 - x_1} = \\frac{4 - 0}{10 - 0} = \\frac{4}{10} = \\frac{2}{5}$.\nTherefore, $m + n = 2 + 5 = \\boxed{7}$.\nThe answer is: 7",
+      "is_correct": true,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_10"
+      }
+    },
+    {
+      "question": "Calculate the maximum area of an isosceles trapezoid that has legs of length $1$ and one base twice as long as the other. The final answer can be written in the form $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m^2+n^2$?",
+      "reference_answer": "13",
+      "predicted_answer": "5",
+      "generated_solution": "Let $x$ be the length of the shorter base of the trapezoid.\nThe area of the trapezoid is $\\frac{1}{2}(x + 2x)(1) = \\frac{3x}{2}$.\nSince the area is maximized when the bases are maximized, we want to maximize $x$.\nThe longer base is twice the length of the shorter base, so it is $2x$.\nThe perimeter of the trapezoid is $1 + 1 + 2x + 2x = 4x + 2$.\nSince the perimeter is fixed, we want to minimize $x$.\nThe maximum area occurs when $x$ is minimized, so we set $4x + 2 = 1 + 1 + 2x + 2x$.\nSimplifying, we get $2x = 2$, so $x = 1$.\nThe area is then $\\frac{3(1)}{2} = \\frac{3}{2}$.\nThe answer is: 5",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_11"
+      }
+    },
+    {
+      "question": "For complex number $u = a+bi$ and $v = c+di$ (where $i=\\sqrt{-1}$), define the binary operation\n$u \\otimes v = ac + bdi$\nSuppose $z$ is a complex number such that $z\\otimes z = z^{2}+40$. What is $|z|^2$?",
+      "reference_answer": "50",
+      "predicted_answer": "40",
+      "generated_solution": "We are given that $z \\otimes z = z^2 + 40$.\nExpanding, we have $z \\otimes z = (a+bi)(a+bi) = a^2 + 2abi - b^2$.\nSince $z \\otimes z = z^2 + 40$, we can equate the real and imaginary parts:\n$a^2 - b^2 = 40$ and $2ab = 0$.\nFrom the second equation, we can see that either $a = 0$ or $b = 0$.\nIf $a = 0$, then $z = bi$ and $z^2 = -b^2$.\nSubstituting into the first equation, we have $-b^2 = 40$, which is not possible.\nIf $b = 0$, then $z = a$ and $z^2 = a^2$.\nSubstituting into the first equation, we have $a^2 - 0 = 40$, which gives us $a^2 = 40$.\nThe only possible value for $a$ is $a = \\pm 2\\sqrt{10}$.\nSince $|z|^2 = a^2 + b^2$, we have $|z|^2 = (2\\sqrt{10})^2 + 0^2 = \\boxed{40}$.\nThe answer is: 40",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_12"
+      }
+    },
+    {
+      "question": "A rectangular box $P$ has distinct edge lengths $a$, $b$, and $c$. The sum of the lengths of all $12$ edges of $P$ is $13$, the areas of all $6$ faces of $P$ is $\\frac{11}{2}$, and the volume of $P$ is $\\frac{1}{2}$. Find the length of the longest interior diagonal connecting two vertices of $P$. The final answer can be written in the form $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$?",
+      "reference_answer": "13",
+      "predicted_answer": "3",
+      "generated_solution": "Let $s$ be the sum of the lengths of all $12$ edges of $P$, $A$ be the sum of the areas of all $6$ faces of $P$, and $V$ be the volume of $P$.\nWe are given that $s=13$, $A=\\frac{11}{2}$, and $V=\\frac{1}{2}$.\nThe sum of the lengths of all $12$ edges of $P$ is $4a+4b+4c=12a+6b+6c=13$.\nThe sum of the areas of all $6$ faces of $P$ is $2ab+2bc+2ca=\\frac{11}{2}$.\nThe volume of $P$ is $abc=\\frac{1}{2}$.\nWe can solve this system of equations to find the values of $a$, $b$, and $c$.\nFrom the first equation, we have $2a+3b+3c=13$.\nFrom the second equation, we have $ab+bc+ca=\\frac{11}{4}$.\nFrom the third equation, we have $abc=\\frac{1}{2}$.\nWe can solve this system of equations by substitution or elimination.\nLet's use elimination.\nMultiplying the first equation by $2$ and the second equation by $3$, we get $4a+6b+6c=26$ and $3ab+3bc+3ca=\\frac{33}{4}$.\nSubtracting the first equation from the second equation, we get $3ab+3bc+3ca-4a-6b-6c=26-\\frac{33}{4}$.\nSimplifying, we have $ab+bc+ca=\\frac{11}{4}$.\nSince $ab+bc+ca=\\frac{11}{4}$, we know that $abc=\\frac{1}{2}$.\nTherefore, the length of the longest interior diagonal connecting two vertices of $P$ is $\\sqrt{a^2+b^2+c^2}=\\sqrt{2}$.\nThe answer is: 3",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_13"
+      }
+    },
+    {
+      "question": "For how many ordered pairs $(a,b)$ of integers does the polynomial $x^3+ax^2+bx+6$ have $3$ distinct integer roots?",
+      "reference_answer": "5",
+      "predicted_answer": "323",
+      "generated_solution": "For a polynomial to have 3 distinct integer roots, the coefficients of the polynomial must be divisible by the product of the roots.\nIn this case, the product of the roots is $6$, so the coefficients of the polynomial must be divisible by $6$.\nThe possible values for the coefficients are $6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90, 96, 102, 108, 114, 120, 126, 132, 138, 144, 150, 156, 162, 168, 174, 180, 186, 192, 198, 204, 210, 216, 222, 228, 234, 240, 246, 252, 258, 264, 270, 276, 282, 288, 294, 300, 306, 312, 318, 324, 330, 336, 342, 348, 354, 360, 366, 372, 378, 384, 390, 396, 402, 408, 414, 420, 426, 432, 438, 444, 450, 456, 462, 468, 474, 480, 486, 492, 498, 504, 510, 516, 522, 528, 534, 540, 546, 552, 558, 564, 570, 576, 582, 588, 594, 600, 606, 612, 618, 624, 630, 636, 642, 648, 654, 660, 666, 672, 678, 684, 690, 696, 702, 708, 714, 720, 726, 732, 738, 744, 750, 756, 762, 768, 774, 780, 786, 792, 798, 804, 810, 816, 822, 828, 834, 840, 846, 852, 858, 864, 870, 876, 882, 888, 894, 900, 906, 912, 918, 924, 930, 936, 942, 948, 954, 960, 966, 972, 978, 984, 990, 996, 1002, 1008, 1014, 1020, 1026, 1032, 1038, 1044, 1050, 1056, 1062, 1068, 1074, 1080, 1086, 1092, 1098, 1104, 1110, 1116, 1122, 1128, 1134, 1140, 1146, 1152, 1158, 1164, 1170, 1176, 1182, 1188, 1194, 1200, 1206, 1212, 1218, 1224, 1230, 1236, 1242, 1248, 1254, 1260, 1266, 1272, 1278, 1284, 1290, 1296, 1302, 1308, 1314, 1320, 1326, 1332, 1338, 1344, 1350, 1356, 1362, 1368, 1374, 1380, 1386, 1392, 1398, 1404, 1410, 1416, 1422, 1428, 1434, 1440, 1446, 1452, 1458, 1464, 1470, 1476, 1482, 1488, 1494, 1500, 1506, 1512, 1518, 1524, 1530, 1536, 1542, 1548, 1554, 1560, 1566, 1572, 1578, 1584, 1590, 1596, 1602, 1608, 1614, 1620, 1626, 1632, 1638, 1644, 1650, 1656, 1662, 1668, 1674, 1680, 1686, 1692, 1698, 1704, 1710, 1716, 1722, 1728, 1734, 1740, 1746, 1752, 1758, 1764, 1770, 1776, 1782, 1788, 1794, 1800, 1806, 1812, 1818, 1824, 1830, 1836, 1842, 1848, 1854, 1860, 1866, 1872, 1878, 1884, 1890, 1896, 1902, 1908, 1914, 1920, 1926, 1932, 1938, 1944, 1950, 1956, 1962, 1968, 1974, 1980, 1986, 1992, 1998, 2004, 2010, 2016, 2022, 2028, 2034, 2040, 2046, 2052, 2058, 2064, 2070, 2076, 2082, 2088, 2094, 2100, 2106, 2112, 2118, 2124, 2130, 2136, 2142, 2148, 2154, 2160, 2166, 2172, 2178, 2184, 2190, 2196, 2202, 2208, 2214, 2220, 2226, 2232, 2238, 2244, 2250, 2256, 2262, 2268, 2274, 2280, 2286, 2292, 2298, 2304, 2310, 2316, 2322, 2328, 2334, 2340, 2346, 2352, 2358, 2364, 2370, 2376, 2382, 2388, 2394, 2400, 2406, 2412, 2418, 2424, 2430, 2436, 2442, 2448, 2454, 2460, 2466, 2472, 2478, 2484, 2490, 2496, 2502, 2508, 2514, 2520, 2526, 2532, 2538, 2544, 2550, 2556, 2562, 2568, 2574, 2580, 2586, 2592, 2598, 2604, 2610, 2616, 2622, 2628, 2634, 2640, 2646, 2652, 2658, 2664, 2670, 2676, 2682, 2688, 2694, 2700, 2706, 2712, 2718, 2724, 2730, 2736, 2742, 2748, 2754, 2760, 2766, 2772, 2778, 2784, 2790, 2796, 2802, 2808, 2814, 2820, 2826, 2832, 2838, 2844, 2850, 2856, 2862, 2868, 2874, 2880, 2886, 2892, 2898, 2904, 2910, 2916, 2922, 2928, 2934, 2940, 2946, 2952, 2958, 2964, 2970, 2976, 2982, 2988, 2994, 3000, 3006, 3012, 3018, 3024, 3030, 3036, 3042, 3048, 3054, 3060, 3066, 3072, 3078, 3084, 3090, 3096, 3102, 3108, 3114, 3120, 3126, 3132, 3138, 3144, 3150, 3156, 3162, 3168, 3174, 3180, 3186, 3192, 3198, 3204, 3210, 3216, 3222, 3228, 323",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_14"
+      }
+    },
+    {
+      "question": "In the state of Coinland, coins have values $6,10,$ and $15$ cents. Suppose $x$ is the value in cents of the most expensive item in Coinland that cannot be purchased using these coins with exact change. What is the sum of the digits of $x?$",
+      "reference_answer": "11",
+      "predicted_answer": "6",
+      "generated_solution": "We can start by listing out the possible values of $x$ that cannot be purchased using these coins with exact change.\nThe most expensive item that cannot be purchased using these coins is $6+10+15=31$ cents.\nThe next most expensive item is $6+10+15+6=37$ cents.\nWe can continue this process until we find the largest value of $x$ that cannot be purchased using these coins with exact change.\nThe largest value of $x$ is $6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10+15+6+10",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_16"
+      }
+    },
+    {
+      "question": "Triangle $ABC$ has side lengths in arithmetic progression, and the smallest side has length $6.$ If the triangle has an angle of $120^\\circ,$ Find the area of $ABC$. The final answer can be simplified in the form $m \\sqrt{n}$, where $m$ and $n$ are positive integers and $n$ without square factore. What is $m+n$?",
+      "reference_answer": "18",
+      "predicted_answer": "36",
+      "generated_solution": "Let the side lengths of the triangle be $6,$ $6 + d,$ and $6 + 2d,$ where $d$ is the common difference.\nBy the angle bisector theorem, the ratio of the side lengths is equal to the ratio of the sines of the opposite angles.\nSince the angle opposite the side of length $6$ is $120^\\circ,$ the ratio of the side lengths is $1:2:4.$\nTherefore, the side lengths are $6,$ $12,$ and $24,$ and the area of the triangle is $\\frac{1}{2}(6)(12) = 36.$\nThe answer is: 36",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_17"
+      }
+    },
+    {
+      "question": "Carlos went to a sports store to buy running shoes. Running shoes were on sale, with prices reduced by $20\\%$ on every pair of shoes. Carlos also knew that he had to pay a $7.5\\%$ sales tax on the discounted price. He had $$43$ dollars. What is the original (before discount) price of the most expensive shoes he could afford to buy? ",
+      "reference_answer": "50",
+      "predicted_answer": "55",
+      "generated_solution": "Let $x$ be the original price of the shoes.\nAfter the discount, Carlos pays $0.8x$ dollars.\nAfter the sales tax, Carlos pays $0.975(0.8x) = 0.78x$ dollars.\nWe are given that Carlos has $43$ dollars, so we have the equation $0.78x = 43$.\nDividing both sides by $0.78$, we get $x = \\frac{43}{0.78} = \\boxed{55}$.\nThe answer is: 55",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_2"
+      }
+    },
+    {
+      "question": "When $n$ standard six-sided dice are rolled, the product of the numbers rolled can be any of $936$ possible values. What is $n$?",
+      "reference_answer": "11",
+      "predicted_answer": "4",
+      "generated_solution": "The possible values for the product of the numbers rolled when $n$ standard six-sided dice are rolled are the numbers from 1 to $6^n$.\nWe want to find the value of $n$ such that $6^n = 936$.\nTaking the logarithm base 6 of both sides, we get $n \\log_6 6 = \\log_6 936$.\nSimplifying, we have $n = \\log_6 936$.\nUsing the change of base formula, we can rewrite this as $n = \\frac{\\log 936}{\\log 6}$.\nEvaluating this expression, we find that $n \\approx 4.323$.\nSince $n$ must be an integer, the only possible value for $n$ is $\\boxed{4}$.\nThe answer is: 4",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_23"
+      }
+    },
+    {
+      "question": "Suppose that $a$, $b$, $c$ and $d$ are positive integers satisfying all of the following relations.\n\\[abcd=2^6\\cdot 3^9\\cdot 5^7\\]\n\\[\\text{lcm}(a,b)=2^3\\cdot 3^2\\cdot 5^3\\]\n\\[\\text{lcm}(a,c)=2^3\\cdot 3^3\\cdot 5^3\\]\n\\[\\text{lcm}(a,d)=2^3\\cdot 3^3\\cdot 5^3\\]\n\\[\\text{lcm}(b,c)=2^1\\cdot 3^3\\cdot 5^2\\]\n\\[\\text{lcm}(b,d)=2^2\\cdot 3^3\\cdot 5^2\\]\n\\[\\text{lcm}(c,d)=2^2\\cdot 3^3\\cdot 5^2\\]\nWhat is $\\text{gcd}(a,b,c,d)$?",
+      "reference_answer": "3",
+      "predicted_answer": "180",
+      "generated_solution": "We can start by finding the prime factorization of each of the lcm expressions.\n$\\text{lcm}(a,b) = 2^3 \\cdot 3^2 \\cdot 5^3 = 2^3 \\cdot 3^2 \\cdot 5^3$\n$\\text{lcm}(a,c) = 2^3 \\cdot 3^3 \\cdot 5^3 = 2^3 \\cdot 3^3 \\cdot 5^3$\n$\\text{lcm}(a,d) = 2^3 \\cdot 3^3 \\cdot 5^3 = 2^3 \\cdot 3^3 \\cdot 5^3$\n$\\text{lcm}(b,c) = 2^1 \\cdot 3^3 \\cdot 5^2 = 2^1 \\cdot 3^3 \\cdot 5^2$\n$\\text{lcm}(b,d) = 2^2 \\cdot 3^3 \\cdot 5^2 = 2^2 \\cdot 3^3 \\cdot 5^2$\n$\\text{lcm}(c,d) = 2^2 \\cdot 3^3 \\cdot 5^2 = 2^2 \\cdot 3^3 \\cdot 5^2$\nFrom these expressions, we can see that $a = 2^3 \\cdot 3^2 \\cdot 5^3$, $b = 2^1 \\cdot 3^2 \\cdot 5^2$, $c = 2^3 \\cdot 3^3 \\cdot 5^2$, and $d = 2^2 \\cdot 3^3 \\cdot 5^2$.\nTo find the greatest common divisor (gcd) of $a$, $b$, $c$, and $d$, we can take the product of the exponents of the prime factors that appear in all four expressions.\nThe prime factorization of $a$ is $2^3 \\cdot 3^2 \\cdot 5^3$, so the exponent of 2 in $a$ is 3, the exponent of 3 in $a$ is 2, and the exponent of 5 in $a$ is 3.\nThe prime factorization of $b$ is $2^1 \\cdot 3^2 \\cdot 5^2$, so the exponent of 2 in $b$ is 1, the exponent of 3 in $b$ is 2, and the exponent of 5 in $b$ is 2.\nThe prime factorization of $c$ is $2^3 \\cdot 3^3 \\cdot 5^2$, so the exponent of 2 in $c$ is 3, the exponent of 3 in $c$ is 3, and the exponent of 5 in $c$ is 2.\nThe prime factorization of $d$ is $2^2 \\cdot 3^3 \\cdot 5^2$, so the exponent of 2 in $d$ is 2, the exponent of 3 in $d$ is 3, and the exponent of 5 in $d$ is 2.\nTo find the gcd, we take the minimum exponent for each prime factor.\nThe exponent of 2 in the gcd is 1, the exponent of 3 in the gcd is 2, and the exponent of 5 in the gcd is 2.\nTherefore, the gcd of $a$, $b$, $c$, and $d$ is $2^1 \\cdot 3^2 \\cdot 5^2 = \\boxed{180}$.\nThe answer is: 180",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_24"
+      }
+    },
+    {
+      "question": "A $3-4-5$ right triangle is inscribed in circle $A$, and a $5-12-13$ right triangle is inscribed in circle $B$. Find the ratio of the area of circle $A$ to the area of circle $B$. The final answer can be written in the form $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$?",
+      "reference_answer": "194",
+      "predicted_answer": "66",
+      "generated_solution": "The area of a circle is proportional to the square of its radius.\nIn a $3-4-5$ right triangle, the radius of the inscribed circle is $\\frac{3}{2}$ times the length of the hypotenuse, which is $5$.\nSo the radius of circle $A$ is $\\frac{3}{2} \\cdot 5 = \\frac{15}{2}$.\nIn a $5-12-13$ right triangle, the radius of the inscribed circle is $\\frac{5}{2}$ times the length of the hypotenuse, which is $13$.\nSo the radius of circle $B$ is $\\frac{5}{2} \\cdot 13 = \\frac{65}{2}$.\nThe ratio of the areas of the two circles is $\\left(\\frac{\\frac{15}{2}}{\\frac{65}{2}}\\right)^2 = \\left(\\frac{15}{65}\\right)^2 = \\frac{1}{65}$.\nTherefore, $m+n = \\boxed{66}$.\nThe answer is: 66",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_3"
+      }
+    },
+    {
+      "question": "Jackson's paintbrush makes a narrow strip with a width of $6.5$ millimeters. Jackson has enough paint to make a strip $25$ meters long. How many square centimeters of paper could Jackson cover with paint?",
+      "reference_answer": "1625",
+      "predicted_answer": "16250",
+      "generated_solution": "The width of the strip is $6.5$ millimeters, which is equal to $0.65$ centimeters.\nThe length of the strip is $25$ meters, which is equal to $25000$ centimeters.\nTo find the area of the strip, we multiply the width by the length: $0.65 \\times 25000 = 16250$ square centimeters.\nTherefore, Jackson can cover $\\boxed{16250}$ square centimeters of paper with paint.The answer is: 16250",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_4"
+      }
+    },
+    {
+      "question": "You are playing a game. A $2 \\times 1$ rectangle covers two adjacent squares (oriented either horizontally or vertically) of a $3 \\times 3$ grid of squares, but you are not told which two squares are covered. Your goal is to find at least one square that is covered by the rectangle. A \"turn\" consists of you guessing a square, after which you are told whether that square is covered by the hidden rectangle. What is the minimum number of turns you need to ensure that at least one of your guessed squares is covered by the rectangle?",
+      "reference_answer": "4",
+      "predicted_answer": "9",
+      "generated_solution": "We can solve this problem using the principle of inclusion-exclusion.\nThere are 9 squares in total, and we want to find the minimum number of turns to ensure that at least one square is covered by the rectangle.\nWe can start by guessing one square. If it is covered, we are done. Otherwise, we need to guess another square.\nIf the second square is covered, we are done. Otherwise, we need to guess a third square.\nContinuing this process, we can see that we need to guess at most 9 squares to ensure that at least one square is covered.\nTherefore, the minimum number of turns is $\\boxed{9}$.\nThe answer is: 9",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_5"
+      }
+    },
+    {
+      "question": "When the roots of the polynomial \n\\[P(x)  = (x-1)^1 (x-2)^2 (x-3)^3 \\cdot \\cdot \\cdot (x-10)^{10}\\]\nare removed from the number line, what remains is the union of $11$ disjoint open intervals. On how many of these intervals is $P(x)$ positive?",
+      "reference_answer": "6",
+      "predicted_answer": "11",
+      "generated_solution": "The polynomial $P(x)$ has $11$ roots, which are $1, 2, 3, \\dots, 10$.\nWhen these roots are removed from the number line, we are left with $11$ disjoint open intervals.\nTo determine if $P(x)$ is positive on an interval, we need to consider the sign of the polynomial on that interval.\nSince the polynomial is a product of factors of the form $(x - k)$, where $k$ is a root, $P(x)$ is positive on an interval if and only if $x$ is not a root.\nTherefore, $P(x)$ is positive on all intervals except for the intervals that contain a root.\nSince there are $11$ roots, there are $11$ intervals that do not contain a root, and $P(x)$ is positive on these intervals.\nTherefore, the answer is $\\boxed{11}$.The answer is: 11",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_6"
+      }
+    },
+    {
+      "question": "For how many integers $n$ does the expression\\[\\sqrt{\\frac{\\log (n^2) - (\\log n)^2}{\\log n - 3}}\\]represent a real number, where log denotes the base $10$ logarithm?",
+      "reference_answer": "901",
+      "predicted_answer": "1",
+      "generated_solution": "We can simplify the expression as follows:\n\\[\\sqrt{\\frac{\\log (n^2) - (\\log n)^2}{\\log n - 3}} = \\sqrt{\\frac{2\\log n - (\\log n)^2}{\\log n - 3}}.\\]\nTo determine when this expression represents a real number, we need to consider the denominator $\\log n - 3$.\nThe expression is undefined when $\\log n - 3 = 0$, which means $\\log n = 3$.\nTaking the base 10 logarithm of both sides, we have $n = 10^3 = 1000$.\nSo, the expression represents a real number for $n = 1000$.\nTherefore, the answer is $\\boxed{1}$.The answer is: 1",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_7"
+      }
+    },
+    {
+      "question": "How many nonempty subsets $B$ of ${0, 1, 2, 3, \\cdots, 12}$ have the property that the number of elements in $B$ is equal to the least element of $B$? For example, $B = {4, 6, 8, 11}$ satisfies the condition.",
+      "reference_answer": "144",
+      "predicted_answer": "78",
+      "generated_solution": "We can count the number of subsets of ${0, 1, 2, 3, \\cdots, 12}$ that satisfy the given condition.\nFor each number $n$ from 1 to 12, we can count the number of subsets that have $n$ as the least element.\nFor $n = 1$, there is only one subset, which is $\\{1\\}$.\nFor $n = 2$, there are two subsets, $\\{2\\}$ and $\\{2, 3\\}$.\nFor $n = 3$, there are three subsets, $\\{3\\}$, $\\{3, 4\\}$, and $\\{3, 4, 5\\}$.\nIn general, for $n = k$, there are $k$ subsets, $\\{k\\}$, $\\{k, k+1\\}$, $\\{k, k+1, k+2\\}$, and so on, up to $\\{k, k+1, k+2, \\cdots, 12\\}$.\nSo, the total number of subsets is $1 + 2 + 3 + \\cdots + 12 = \\frac{12(12+1)}{2} = 78$.\nTherefore, the answer is $\\boxed{78}$.The answer is: 78",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_8"
+      }
+    },
+    {
+      "question": "What is the area of the region in the coordinate plane defined by\n$| | x | - 1 | + | | y | - 1 | \\le 1$?",
+      "reference_answer": "8",
+      "predicted_answer": "4",
+      "generated_solution": "We can rewrite the inequality as $|x-1|+|y-1|\\le 1$.\nThis inequality can be split into four cases:\nCase 1: $x-1\\ge 0$ and $y-1\\ge 0$\nIn this case, the inequality becomes $x-1+y-1\\le 1$, or $x+y\\le 2$.\nThis is the region in the first quadrant.\nCase 2: $x-1<0$ and $y-1\\ge 0$\nIn this case, the inequality becomes $-(x-1)+(y-1)\\le 1$, or $y\\le 2-x$.\nThis is the region in the second quadrant.\nCase 3: $x-1\\ge 0$ and $y-1<0$\nIn this case, the inequality becomes $x-1+-(y-1)\\le 1$, or $x\\le 2$.\nThis is the region in the third quadrant.\nCase 4: $x-1<0$ and $y-1<0$\nIn this case, the inequality becomes $-(x-1)+-(y-1)\\le 1$, or $x+y\\ge -2$.\nThis is the region in the fourth quadrant.\nCombining all four cases, we see that the region is a square with side length 2 centered at the origin.\nThe area of this square is $2^2=4$.\nTherefore, the area of the region is $\\boxed{4}$.\nThe answer is: 4",
+      "is_correct": false,
+      "metadata": {
+        "source": "AMC23",
+        "url": "https://artofproblemsolving.com/wiki/index.php/2023_AMC_12B_Problems/Problem_9"
+      }
+    }
+  ],
+  "model": "llama3_1-8B-metamathqa-method-reliable-1e"
+}

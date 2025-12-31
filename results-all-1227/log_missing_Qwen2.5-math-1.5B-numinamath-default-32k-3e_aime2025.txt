@@ -1,0 +1,91 @@
+================================================================================
+正在加载模型（将用于所有数据集）...
+================================================================================
+正在加载模型: /volume/data/lzh/Pai-Megatron-Patch-main/qwen-exp-ckpts/Qwen2.5-math-1.5B-numinamath-default-32k-3e
+使用 GPU: 0 (1 个GPU)
+Tensor 并行大小: 1
+检测到 chat template，将使用 ChatML 格式
+INFO 12-28 01:06:59 [utils.py:253] non-default args: {'trust_remote_code': True, 'max_model_len': 4096, 'gpu_memory_utilization': 0.95, 'max_num_batched_tokens': 65536, 'max_num_seqs': 2048, 'disable_log_stats': True, 'enable_chunked_prefill': True, 'model': '/volume/data/lzh/Pai-Megatron-Patch-main/qwen-exp-ckpts/Qwen2.5-math-1.5B-numinamath-default-32k-3e'}
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+INFO 12-28 01:06:59 [model.py:514] Resolved architecture: Qwen2ForCausalLM
+INFO 12-28 01:06:59 [model.py:1661] Using max model len 4096
+INFO 12-28 01:06:59 [scheduler.py:230] Chunked prefill is enabled with max_num_batched_tokens=65536.
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:06:59 [core.py:93] Initializing a V1 LLM engine (v0.13.0) with config: model='/volume/data/lzh/Pai-Megatron-Patch-main/qwen-exp-ckpts/Qwen2.5-math-1.5B-numinamath-default-32k-3e', speculative_config=None, tokenizer='/volume/data/lzh/Pai-Megatron-Patch-main/qwen-exp-ckpts/Qwen2.5-math-1.5B-numinamath-default-32k-3e', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False), seed=0, served_model_name=/volume/data/lzh/Pai-Megatron-Patch-main/qwen-exp-ckpts/Qwen2.5-math-1.5B-numinamath-default-32k-3e, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'level': None, 'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'splitting_ops': ['vllm::unified_attention', 'vllm::unified_attention_with_output', 'vllm::unified_mla_attention', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::gdn_attention_core', 'vllm::kda_attention', 'vllm::sparse_attn_indexer'], 'compile_mm_encoder': False, 'compile_sizes': [], 'compile_ranges_split_points': [65536], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'eliminate_noops': True, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False}, 'local_cache_dir': None}
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:01 [parallel_state.py:1203] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.16.70.168:42019 backend=nccl
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:01 [parallel_state.py:1411] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:01 [gpu_model_runner.py:3562] Starting to load model /volume/data/lzh/Pai-Megatron-Patch-main/qwen-exp-ckpts/Qwen2.5-math-1.5B-numinamath-default-32k-3e...
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:02 [cuda.py:351] Using FLASH_ATTN attention backend out of potential backends: ('FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION')
+[0;36m(EngineCore_DP0 pid=752506)[0;0m Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+[0;36m(EngineCore_DP0 pid=752506)[0;0m Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.15s/it]
+[0;36m(EngineCore_DP0 pid=752506)[0;0m Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:01<00:00,  1.15s/it]
+[0;36m(EngineCore_DP0 pid=752506)[0;0m 
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:03 [default_loader.py:308] Loading weights took 1.22 seconds
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:03 [gpu_model_runner.py:3659] Model loading took 2.8798 GiB memory and 1.446274 seconds
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:07 [backends.py:643] Using cache directory: /root/.cache/vllm/torch_compile_cache/f3eeadaae6/rank_0_0/backbone for vLLM's torch.compile
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:07 [backends.py:703] Dynamo bytecode transform time: 4.06 s
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:10 [backends.py:226] Directly load the compiled graph(s) for compile range (1, 65536) from the cache, took 0.981 s
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:10 [monitor.py:34] torch.compile takes 5.04 s in total
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:11 [gpu_worker.py:375] Available KV cache memory: 118.56 GiB
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:11 [kv_cache_utils.py:1291] GPU KV cache size: 4,440,000 tokens
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:11 [kv_cache_utils.py:1296] Maximum concurrency for 4,096 tokens per request: 1083.98x
+[0;36m(EngineCore_DP0 pid=752506)[0;0m 2025-12-28 01:07:11,432 - INFO - autotuner.py:256 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+[0;36m(EngineCore_DP0 pid=752506)[0;0m 2025-12-28 01:07:11,442 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process ends
+[0;36m(EngineCore_DP0 pid=752506)[0;0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   2%|▏         | 1/51 [00:00<00:07,  6.87it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  10%|▉         | 5/51 [00:00<00:02, 21.91it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  18%|█▊        | 9/51 [00:00<00:01, 26.92it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  24%|██▎       | 12/51 [00:00<00:01, 27.91it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  31%|███▏      | 16/51 [00:00<00:01, 29.60it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  39%|███▉      | 20/51 [00:00<00:01, 30.53it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  47%|████▋     | 24/51 [00:00<00:00, 30.56it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  55%|█████▍    | 28/51 [00:00<00:00, 31.15it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  63%|██████▎   | 32/51 [00:01<00:00, 31.22it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  71%|███████   | 36/51 [00:01<00:00, 28.79it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  76%|███████▋  | 39/51 [00:01<00:00, 28.85it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  84%|████████▍ | 43/51 [00:01<00:00, 29.45it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  92%|█████████▏| 47/51 [00:01<00:00, 30.01it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 51/51 [00:01<00:00, 31.91it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 51/51 [00:01<00:00, 29.31it/s]
+[0;36m(EngineCore_DP0 pid=752506)[0;0m Capturing CUDA graphs (decode, FULL):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):  10%|▉         | 5/51 [00:00<00:00, 49.85it/s]Capturing CUDA graphs (decode, FULL):  22%|██▏       | 11/51 [00:00<00:00, 52.32it/s]Capturing CUDA graphs (decode, FULL):  33%|███▎      | 17/51 [00:00<00:00, 52.24it/s]Capturing CUDA graphs (decode, FULL):  45%|████▌     | 23/51 [00:00<00:00, 52.03it/s]Capturing CUDA graphs (decode, FULL):  57%|█████▋    | 29/51 [00:00<00:00, 52.21it/s]Capturing CUDA graphs (decode, FULL):  69%|██████▊   | 35/51 [00:00<00:00, 52.38it/s]Capturing CUDA graphs (decode, FULL):  80%|████████  | 41/51 [00:00<00:00, 52.87it/s]Capturing CUDA graphs (decode, FULL):  92%|█████████▏| 47/51 [00:00<00:00, 53.33it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 51/51 [00:00<00:00, 52.90it/s]
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:14 [gpu_model_runner.py:4587] Graph capturing finished in 3 secs, took -4.48 GiB
+[0;36m(EngineCore_DP0 pid=752506)[0;0m INFO 12-28 01:07:14 [core.py:259] init engine (profile, create kv cache, warmup model) took 10.88 seconds
+INFO 12-28 01:07:15 [llm.py:360] Supported tasks: ['generate']
+模型加载完成！
+================================================================================
+模型加载完成！
+================================================================================
+
+================================================================================
+评测配置
+================================================================================
+数据集: aime2025
+数据集: aime2025
+使用方式: vLLM Python API (复用已加载的模型)
+GPU: 0
+Few-shot: True
+答案格式: boxed
+最大样本数: 全部
+并行线程数: 32
+================================================================================
+
+开始评测...
+Loading aime2025 dataset...
+Loaded 30 samples
+Evaluating aime2025...
+Evaluating aime2025:   0%|          | 0/1 [00:00<?, ?it/s]
+Adding requests:   0%|          | 0/30 [00:00<?, ?it/s][AAdding requests: 100%|██████████| 30/30 [00:00<00:00, 951.72it/s]
+
+Processed prompts:   0%|          | 0/30 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s][A
+Processed prompts:   3%|▎         | 1/30 [00:00<00:28,  1.01it/s, est. speed input: 320.50 toks/s, output: 307.39 toks/s][A
+Processed prompts:  13%|█▎        | 4/30 [00:01<00:05,  4.34it/s, est. speed input: 1138.32 toks/s, output: 1137.44 toks/s][A
+Processed prompts:  20%|██        | 6/30 [00:01<00:03,  6.04it/s, est. speed input: 1629.69 toks/s, output: 1602.26 toks/s][A
+Processed prompts:  27%|██▋       | 8/30 [00:01<00:02,  7.78it/s, est. speed input: 2027.74 toks/s, output: 2049.07 toks/s][A
+Processed prompts:  33%|███▎      | 10/30 [00:01<00:02,  9.63it/s, est. speed input: 2297.74 toks/s, output: 2523.99 toks/s][A
+Processed prompts:  50%|█████     | 15/30 [00:01<00:00, 16.45it/s, est. speed input: 3235.37 toks/s, output: 3839.07 toks/s][A
+Processed prompts:  60%|██████    | 18/30 [00:01<00:00, 18.44it/s, est. speed input: 3582.97 toks/s, output: 4524.59 toks/s][A
+Processed prompts:  77%|███████▋  | 23/30 [00:02<00:00, 20.47it/s, est. speed input: 4186.16 toks/s, output: 5573.15 toks/s][A
+Processed prompts:  87%|████████▋ | 26/30 [00:02<00:00,  9.45it/s, est. speed input: 3431.39 toks/s, output: 4935.31 toks/s][A
+Processed prompts:  93%|█████████▎| 28/30 [00:03<00:00,  6.80it/s, est. speed input: 3069.42 toks/s, output: 4708.71 toks/s][A
+Processed prompts: 100%|██████████| 30/30 [00:05<00:00,  2.86it/s, est. speed input: 2042.81 toks/s, output: 3675.99 toks/s][A
+Processed prompts: 100%|██████████| 30/30 [00:05<00:00,  2.86it/s, est. speed input: 2042.81 toks/s, output: 3675.99 toks/s][AProcessed prompts: 100%|██████████| 30/30 [00:05<00:00,  5.46it/s, est. speed input: 2042.81 toks/s, output: 3675.99 toks/s]
+Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=100.00%, processed=1/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=50.00%, processed=2/30] Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=33.33%, processed=3/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=25.00%, processed=4/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=20.00%, processed=5/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=33.33%, processed=6/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=28.57%, processed=7/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=25.00%, processed=8/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=22.22%, processed=9/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=20.00%, processed=10/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=18.18%, processed=11/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=16.67%, processed=12/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=15.38%, processed=13/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=14.29%, processed=14/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=13.33%, processed=15/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=12.50%, processed=16/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=11.76%, processed=17/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=11.11%, processed=18/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=10.53%, processed=19/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=10.00%, processed=20/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=9.52%, processed=21/30] Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=9.09%, processed=22/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=8.70%, processed=23/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=8.33%, processed=24/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=8.00%, processed=25/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=7.69%, processed=26/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=7.41%, processed=27/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=7.14%, processed=28/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=6.90%, processed=29/30]Evaluating aime2025:   0%|          | 0/1 [00:05<?, ?it/s, accuracy=6.67%, processed=30/30]Evaluating aime2025: 100%|██████████| 1/1 [00:05<00:00,  5.94s/it, accuracy=6.67%, processed=30/30]Evaluating aime2025: 100%|██████████| 1/1 [00:05<00:00,  5.94s/it, accuracy=6.67%, processed=30/30]
+Saving results to /volume/data/rhjiang/math_evaluator/results-all-1227/aime2025_Qwen2.5-math-1.5B-numinamath-default-32k-3e_20251228_010715.json...
+
+Evaluation completed!
+Model: Qwen2.5-math-1.5B-numinamath-default-32k-3e
+Accuracy: 6.67%
+Correct: 2/30
+
+================================================================================
+评测完成！
+================================================================================
+数据集: aime2025
+准确率: 6.67%
+正确数: 2/30
+结果已保存到: /volume/data/rhjiang/math_evaluator/results-all-1227/aime2025_Qwen2.5-math-1.5B-numinamath-default-32k-3e_20251228_010715.json
+================================================================================

@@ -13,9 +13,6 @@ from evaluators import MathEvaluator
 from evaluators.api_client import APIClient
 from evaluators.vllm_client import VLLMClient
 
-
-
-
 DEFAULT_BASE_URL = "https://console.scitix.ai/siflow/cetus/hisys/ylsun/eval-qwen2-5-72b-instruct/v1"
 DEFAULT_MODEL = "eval-qwen2-5-72b-instruct"
 DEFAULT_API_KEY = "EMPTY"
@@ -45,6 +42,7 @@ def run_evaluation(
     vllm_client=None,  # 可选的已加载的 vLLM 客户端
     model_generate_fn=None,  # 可选的已创建的生成函数
     results_dir: str = "results",  # 结果保存目录
+    answer_format: str = "auto",  # 答案格式
 ):
     """
     运行评测
@@ -107,6 +105,7 @@ def run_evaluation(
             return api_client.generate(system_prompt, user_prompt)
     
     print(f"Few-shot: {use_few_shot}")
+    print(f"答案格式: {answer_format}")
     print(f"最大样本数: {max_samples or '全部'}")
     print(f"并行线程数: {max_workers}")
     print("=" * 80)
@@ -116,7 +115,8 @@ def run_evaluation(
         model_generate_fn=model_generate_fn,
         max_workers=max_workers,
         use_few_shot=use_few_shot,
-        vllm_client=vllm_client  # 传递 vllm_client 对象以启用批量处理
+        vllm_client=vllm_client,  # 传递 vllm_client 对象以启用批量处理
+        answer_format=answer_format  # 传递答案格式
     )
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -218,6 +218,13 @@ def main():
         default=None,
         help='Tensor 并行大小（默认: 自动根据GPU数量设置）'
     )
+    parser.add_argument(
+        '--answer-format',
+        type=str,
+        default='auto',
+        choices=['auto', 'boxed', 'hash'],
+        help='答案格式: auto(默认,使用boxed), boxed(\\boxed{}格式,适用于Qwen-Math), hash(####格式,适用于部分LLaMA)'
+    )
 
     args = parser.parse_args()
 
@@ -269,8 +276,8 @@ def main():
         print("")
         
     if args.dataset == 'all':
-        # 评测所有数据集，复用已加载的模型
-        for dataset_name in ['math500', 'gsm8k', 'aime2024', 'aime2025']:
+        # 评测所有8个数据集，复用已加载的模型
+        for dataset_name in ['math500', 'gsm8k', 'aime2024', 'aime2025', 'gaokao2023en', 'mathodyssey', 'amc23', 'olympiadbench_oe']:
             run_evaluation(
                 dataset_name=dataset_name,
                 base_url=base_url,
@@ -283,7 +290,8 @@ def main():
                 gpu_ids=args.gpu,
                 vllm_client=vllm_client_obj,  # 传递已加载的模型
                 model_generate_fn=model_generate_fn,  # 传递生成函数
-                results_dir=results_dir  # 传递结果目录
+                results_dir=results_dir,  # 传递结果目录
+                answer_format=args.answer_format  # 传递答案格式
             )
             print("\n")
     else:
@@ -299,7 +307,8 @@ def main():
             gpu_ids=args.gpu,
             vllm_client=vllm_client_obj,  # 传递已加载的模型
             model_generate_fn=model_generate_fn,  # 传递生成函数
-            results_dir=results_dir  # 传递结果目录
+            results_dir=results_dir,  # 传递结果目录
+            answer_format=args.answer_format  # 传递答案格式
         )
 
 

@@ -97,6 +97,7 @@ class MathEvaluator:
         max_workers: int = 32,
         use_few_shot: bool = True,
         vllm_client: Optional[Any] = None,
+        answer_format: str = "auto",
     ):
         """
         初始化评测器
@@ -108,6 +109,10 @@ class MathEvaluator:
             max_workers: 并行评测的线程数
             use_few_shot: 是否使用few-shot示例
             vllm_client: vLLM客户端对象（如果提供，将使用批量处理）
+            answer_format: 答案格式 ("auto", "boxed", "hash")
+                          - "auto": 自动检测，所有数据集默认使用 boxed 格式
+                          - "boxed": 使用 \\boxed{} 格式 (适用于 Qwen-Math 等模型)
+                          - "hash": 使用 #### 格式 (适用于部分 LLaMA 模型)
         """
         if dataset_name not in self.DATASET_CONFIGS:
             raise ValueError(f"Unknown dataset: {dataset_name}. Available: {list(self.DATASET_CONFIGS.keys())}")
@@ -117,13 +122,23 @@ class MathEvaluator:
         self.vllm_client = vllm_client
         self.max_workers = max_workers
         self.use_few_shot = use_few_shot
+        self.answer_format = answer_format
 
         # 初始化组件
         config = self.DATASET_CONFIGS[dataset_name]
         self.loader: BaseDatasetLoader = config['loader']()
         self.extractor: BaseAnswerExtractor = config['extractor']()
         self.validator: BaseAnswerValidator = config['validator']()
-        self.prompt_builder: BasePromptBuilder = config['prompt_builder']()
+
+        # 根据 answer_format 初始化 prompt_builder
+        prompt_builder_class = config['prompt_builder']
+        if prompt_builder_class == GSM8KPromptBuilder:
+            # GSM8K 支持两种格式
+            fmt = "boxed" if answer_format in ("auto", "boxed") else "hash"
+            self.prompt_builder: BasePromptBuilder = prompt_builder_class(answer_format=fmt)
+        else:
+            # 其他数据集默认使用 boxed 格式
+            self.prompt_builder: BasePromptBuilder = prompt_builder_class()
 
         # 线程安全的计数器
         self._lock = threading.Lock()
@@ -318,38 +333,37 @@ class MathEvaluator:
     ) -> Dict[str, Any]:
         """批量处理评测（更高效）"""
         results = []
-        
+
         # 构建所有 prompts
         system_prompt = self.prompt_builder.build_system_prompt()
         few_shot_examples = None
         if self.use_few_shot and hasattr(self.prompt_builder, 'get_few_shot_examples'):
             few_shot_examples = self.prompt_builder.get_few_shot_examples()
-        
-        prompts = []
+
+        user_prompts = []
         for sample in samples:
             user_prompt = self.prompt_builder.build_user_prompt(
                 question=sample.question,
                 few_shot_examples=few_shot_examples
             )
-            if system_prompt:
-                prompt = f"{system_prompt}\n\n{user_prompt}"
-            else:
-                prompt = user_prompt
-            prompts.append(prompt)
-        
+            user_prompts.append(user_prompt)
+
         # 批量处理
         num_batches = (len(samples) + batch_size - 1) // batch_size
         iterator = range(0, len(samples), batch_size)
         if show_progress:
             iterator = tqdm(iterator, desc=f"Evaluating {self.dataset_name}", total=num_batches)
-        
+
         for i in iterator:
             batch_samples = samples[i:i+batch_size]
-            batch_prompts = prompts[i:i+batch_size]
-            
-            # 批量生成
+            batch_user_prompts = user_prompts[i:i+batch_size]
+
+            # 批量生成（传递 system_prompt 和 user_prompts 分开）
             try:
-                generated_solutions = vllm_client.generate_batch(batch_prompts)
+                generated_solutions = vllm_client.generate_batch(
+                    batch_user_prompts,
+                    system_prompt=system_prompt
+                )
                 
                 # 处理每个结果
                 for sample, generated_solution in zip(batch_samples, generated_solutions):

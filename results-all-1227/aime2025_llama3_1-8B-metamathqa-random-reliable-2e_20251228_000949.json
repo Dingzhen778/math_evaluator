@@ -1,0 +1,339 @@
+{
+  "dataset": "aime2025",
+  "accuracy": 0.0,
+  "correct": 0,
+  "total": 30,
+  "results": [
+    {
+      "question": "Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.",
+      "reference_answer": "70",
+      "predicted_answer": "8",
+      "generated_solution": "To find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$,\nwe need to find the bases $b$ such that $17_{b}$ divides $97_{b}$.\nIn base $b$, the number $17_{b}$ is equal to $1b + 7$,\nand the number $97_{b}$ is equal to $9b + 7$.\nFor $17_{b}$ to divide $97_{b}$, we must have $1b + 7$ dividing $9b + 7$.\nThis means that $8b$ must be divisible by $8$.\nThe only possible value for $b$ is $b = \\boxed{8}$.\nThe answer is: 8",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "On $\\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\\overline{AB}$ with $AD=4, DE=16$, and $EB=8$. Points $A,F,G$, and $C$ lie in that order on side $\\overline{AC}$ with $AF=13, FG=52$, and $GC=26$. Let $M$ be the reflection of $D$ through $F$, and let $N$ be the reflection of $G$ through $E$. Quadrilateral $DEGF$ has area 288. Find the area of heptagon $AFNBCEM$.",
+      "reference_answer": "588",
+      "predicted_answer": "1692",
+      "generated_solution": "We can start by finding the areas of triangles $DEF$ and $GFE$.\nThe area of triangle $DEF$ is $\\frac{1}{2} \\cdot 4 \\cdot 16 = 32$.\nThe area of triangle $GFE$ is $\\frac{1}{2} \\cdot 52 \\cdot 26 = 676$.\nThe area of quadrilateral $DEGF$ is the sum of the areas of triangles $DEF$ and $GFE$, which is $32 + 676 = 708$.\nNow, let's find the area of triangle $ABC$.\nThe area of triangle $ABC$ is the sum of the areas of triangles $ABD$, $BCE$, and $CDE$.\nThe area of triangle $ABD$ is $\\frac{1}{2} \\cdot 4 \\cdot 8 = 16$.\nThe area of triangle $BCE$ is $\\frac{1}{2} \\cdot 8 \\cdot 13 = 52$.\nThe area of triangle $CDE$ is $\\frac{1}{2} \\cdot 16 \\cdot 26 = 208$.\nThe area of triangle $ABC$ is $16 + 52 + 208 = 276$.\nFinally, the area of heptagon $AFNBCEM$ is the sum of the areas of triangles $ABC$, $DEF$, $GFE$, and quadrilateral $DEGF$.\nThe area of heptagon $AFNBCEM$ is $276 + 32 + 676 + 708 = \\boxed{1692}$.\nThe answer is: 1692",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a singlescoop cone of chocolate, vanilla, or strawberry ice cream. At least one player chose each flavor, and the number of players who chose chocolate was greater than the number of players who chose vanilla, which was greater than the number of players who chose strawberry. Let $N$ be the number of different assignments of flavors to players that meet these conditions. Find the remainder when $N$ is divided by 1000.",
+      "reference_answer": "16",
+      "predicted_answer": "5",
+      "generated_solution": "Let $c$, $v$, and $s$ represent the number of players who chose chocolate, vanilla, and strawberry, respectively.\nWe are given that $c > v > s$ and $c + v + s = 9$.\nWe can solve this system of equations by considering the possible values of $c$.\nIf $c = 4$, then $v = 3$ and $s = 2$.\nIf $c = 5$, then $v = 2$ and $s = 2$.\nIf $c = 6$, then $v = 1$ and $s = 2$.\nIf $c = 7$, then $v = 1$ and $s = 1$.\nIf $c = 8$, then $v = 1$ and $s = 0$.\nIf $c = 9$, then $v = 0$ and $s = 0$.\nSo, there are 5 different assignments of flavors that meet the given conditions.\nTherefore, $N = 5$ and the remainder when $N$ is divided by 1000 is $\\boxed{5}$.The answer is: 5",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $100$, inclusive, such that $12x^{2}-xy-6y^{2}=0$.",
+      "reference_answer": "117",
+      "predicted_answer": "5",
+      "generated_solution": "We can rewrite the equation as $6y^2 + 12x^2 - xy = 0$.\nFactoring out a 6, we have $6(y^2 + 2x^2 - xy) = 0$.\nWe can further factor the quadratic as $6(y + x)(y - 2x) = 0$.\nSetting each factor equal to zero, we have $y + x = 0$ or $y - 2x = 0$.\nSolving these equations, we find that the solutions are $(x, y) = (0, 0)$, $(x, y) = (1, -1)$, $(x, y) = (-1, 1)$, $(x, y) = (2, 0)$, and $(x, y) = (-2, 0)$.\nCounting these solutions, we find that there are $\\boxed{5}$ ordered pairs that satisfy the equation.\nThe answer is: 5",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exactly once. Let $N$ be the number of these integers that are divisible by 22. Find the difference between $N$ and 2025.",
+      "reference_answer": "279",
+      "predicted_answer": "-2023",
+      "generated_solution": "To find the number of integers that are divisible by 22, we need to find the number of integers that are divisible by both 2 and 11.\nThe number of integers divisible by 2 is 4 (2, 4, 6, 8), and the number of integers divisible by 11 is 3 (11, 22, 33).\nHowever, we need to consider the case where an integer is divisible by both 2 and 11, which is 22.\nSo, the number of integers divisible by both 2 and 11 is 3 - 1 = 2.\nTherefore, the number of integers divisible by 22 is 2.\nThe difference between $N$ and 2025 is $2 - 2025 = \\boxed{-2023}$.The answer is: -2023",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the circle is 3, and the area of the trapezoid is 72. Let the parallel sides of the trapezoid have lengths $r$ and $s$, with $r \\neq s$. Find $r^{2}+s^{2}$.",
+      "reference_answer": "504",
+      "predicted_answer": "0",
+      "generated_solution": "Let $h$ be the height of the trapezoid. The area of the trapezoid is given by the formula $A = \\frac{1}{2}(r+s)h$.\nWe are given that $A = 72$, so we have $\\frac{1}{2}(r+s)h = 72$.\nSince the radius of the inscribed circle is 3, the distance between the parallel sides is $2r$ and $2s$.\nThe height of the trapezoid is the difference between these distances, so $h = 2r - 2s$.\nSubstituting this into the equation, we have $\\frac{1}{2}(r+s)(2r - 2s) = 72$.\nSimplifying, we get $r^2 - s^2 = 72$.\nWe want to find $r^2 + s^2$, so we can square the equation to get $(r^2 - s^2)^2 = 72^2$.\nExpanding, we have $r^4 - 2r^2s^2 + s^4 = 5184$.\nSince $r^2 - s^2 = 72$, we can substitute this into the equation to get $72^2 + 2r^2s^2 = 5184$.\nSimplifying, we have $5184 + 2r^2s^2 = 5184$.\nSubtracting 5184 from both sides, we get $2r^2s^2 = 0$.\nDividing both sides by 2, we have $r^2s^2 = 0$.\nSince $r$ and $s$ are lengths, they cannot be zero, so $r^2s^2$ must be zero.\nTherefore, $r^2 + s^2 = \\boxed{0}$.\nThe answer is: 0",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. The two letters in each pair are placed next to each other in alphabetical order to form six two-letter words, and those six words are listed alphabetically. For example, a possible result is $AB,CJ,DG,EK,FL,HI$. The probability that the last word listed contains $G$ is $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.",
+      "reference_answer": "821",
+      "predicted_answer": "7",
+      "generated_solution": "There are $\\binom{12}{2}=66$ ways to choose 2 letters to form a pair.\nThere are 6 ways to arrange the pairs in alphabetical order.\nThere are 6 ways to arrange the pairs in alphabetical order.\nThe last word will contain $G$ if and only if the pair $G$ is the last pair in the arrangement.\nThe probability of this happening is $\\frac{1}{6}$.\nTherefore, $m=1$ and $n=6$, so $m+n=\\boxed{7}$.\nThe answer is: 7",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one complex solution $z$. The sum of all possible values of $k$ can be written as $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$. Here $i=\\sqrt{-1}$.",
+      "reference_answer": "77",
+      "predicted_answer": "Eq(-(bar{z} + z)*(k + 4), -(bar{z} + z)*(3*i + k))",
+      "generated_solution": "We can rewrite the given equations as $|z-4-k|^2 = |z-3i-k|^2$ and $|z-4-k|^2 = 5^2$.\nExpanding, we have $(z-4-k)(\\overline{z}-4-k) = (z-3i-k)(\\overline{z}-3i-k)$ and $(z-4-k)(\\overline{z}-4-k) = 25$.\nSimplifying, we get $z\\overline{z} - (4+k)(\\overline{z}+z) + (4+k)(4+k) = z\\overline{z} - (3i+k)(\\overline{z}+z) + (3i+k)(3i+k)$ and $z\\overline{z} - (4+k)(\\overline{z}+z) + (4+k)(4+k) = 25$.\nSince the left sides of the equations are equal, we can equate the coefficients of $z\\overline{z}$, $z$, and the constant terms:\n$1 = 1$,\n$-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$,\n$(4+k)(4+k) = (3i+k)(3i+k)$.\nFrom the first equation, we have $z\\overline{z} = 25$.\nFrom the second equation, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nExpanding, we get $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline{z}+z)$.\nSimplifying, we have $-(4+k)(\\overline{z}+z) = -(3i+k)(\\overline",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The parabola with equation $y=x^{2}-4$ is rotated $60^{\\circ}$ counterclockwise around the origin. The unique point in the fourth quadrant where the original parabola and its image intersect has $y$-coordinate $\\frac{a-\\sqrt{b}}{c}$, where $a$, $b$, and $c$ are positive integers, and $a$ and $c$ are relatively prime. Find $a+b+c$.",
+      "reference_answer": "62",
+      "predicted_answer": "5",
+      "generated_solution": "The equation of the parabola is $y=x^2-4$.\nRotating the parabola $60^\\circ$ counterclockwise around the origin is equivalent to multiplying $x$ by $\\cos 60^\\circ = \\frac{1}{2}$ and $y$ by $\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$.\nSo the equation of the rotated parabola is $y = \\left(\\frac{1}{2}x\\right)^2 - 4\\left(\\frac{\\sqrt{3}}{2}\\right)$.\nSimplifying, we get $y = \\frac{x^2}{4} - 2\\sqrt{3}$.\nTo find the point of intersection, we set the $y$-coordinates of the original and rotated parabolas equal to each other: $\\frac{x^2}{4} - 2\\sqrt{3} = x^2 - 4$.\nMultiplying both sides by 4, we get $x^2 - 8\\sqrt{3} = 4x^2 - 16$.\nSimplifying, we have $3x^2 = 8\\sqrt{3}$.\nDividing both sides by 3, we get $x^2 = \\frac{8\\sqrt{3}}{3}$.\nTaking the square root of both sides, we have $x = \\pm \\frac{2\\sqrt{3}}{\\sqrt{3}} = \\pm 2$.\nSince we are looking for the point in the fourth quadrant, we take $x = -2$.\nSubstituting this value back into the equation of the rotated parabola, we get $y = \\frac{(-2)^2}{4} - 2\\sqrt{3} = 1 - 2\\sqrt{3}$.\nTherefore, $a = 1$, $b = 3$, and $c = 1$, so $a + b + c = 1 + 3 + 1 = \\boxed{5}$.\nThe answer is: 5",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The 27 cells of a $3\\times9$ grid are filled in using the numbers 1 through 9 so that each row contains 9 different numbers, and each of the three $3\\times3$ blocks heavily outlined in the example below contains 9 different numbers, as in the first three rows of a Sudoku puzzle. \n | 4 | 2 | 8 | 9 | 6 | 3 | 1 | 7 | 5 | \n | 3 | 7 | 9 | 5 | 2 | 1 | 6 | 8 | 4 | \n | 5 | 6 | 1 | 8 | 4 | 7 | 9 | 2 | 3 | \n The number of different ways to fill such a grid can be written as $p^a\\cdot q^b\\cdot r^c\\cdot s^d$, where $p,q,r,$ and $s$ are distinct prime numbers and $a,b,c,$ and $d$ are positive integers. Find $p\\cdot a+q\\cdot b+r\\cdot c+s\\cdot d$.",
+      "reference_answer": "81",
+      "predicted_answer": "99",
+      "generated_solution": "To solve this problem, we need to determine the number of different ways to fill the grid and find the value of $p\\cdot a+q\\cdot b+r\\cdot c+s\\cdot d$.\nLet's break down the information given:\nNumber of rows: 3\nNumber of columns: 9\nNumber of cells in each block: 3\nNumber of different numbers in each row: 9\nNumber of different numbers in each block: 9\nWe can start by considering the number of different ways to fill the first row. Since there are 9 different numbers to choose from and 9 cells in the row, there are $9!$ ways to fill the first row.\nNext, let's consider the number of different ways to fill the first block. Since there are 9 different numbers to choose from and 9 cells in the block, there are $9!$ ways to fill the first block.\nNow, let's consider the number of different ways to fill the remaining cells. Since there are 3 rows and 3 blocks, there are $3!$ ways to arrange the blocks.\nTherefore, the total number of different ways to fill the grid is $9! \\cdot 9! \\cdot 3!$.\nTo find the value of $p\\cdot a+q\\cdot b+r\\cdot c+s\\cdot d$, we need to find the prime factorization of $9! \\cdot 9! \\cdot 3!$.\n$9! = 9 \\cdot 8 \\cdot 7 \\cdot 6 \\cdot 5 \\cdot 4 \\cdot 3 \\cdot 2 \\cdot 1 = 2^8 \\cdot 3^4 \\cdot 5^2 \\cdot 7$\n$9! \\cdot 9! = (2^8 \\cdot 3^4 \\cdot 5^2 \\cdot 7)^2 = 2^{16} \\cdot 3^8 \\cdot 5^4 \\cdot 7^2$\n$3! = 3 \\cdot 2 \\cdot 1 = 2^2 \\cdot 3$\n$9! \\cdot 9! \\cdot 3! = 2^{18} \\cdot 3^9 \\cdot 5^4 \\cdot 7^2$\nTherefore, $p\\cdot a+q\\cdot b+r\\cdot c+s\\cdot d = 2 \\cdot 18 + 3 \\cdot 9 + 5 \\cdot 4 + 7 \\cdot 2 = \\boxed{99}$.\nThe answer is: 99",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "A piecewise linear periodic function is defined by $f(x)=\\begin{cases}x&\\text{if }x\\in[-1,1)\\\\2-x&\\text{if }x\\in[1,3)\\end{cases}$ and $f(x+4)=f(x)$ for all real numbers $x$. The graph of $f(x)$ has the sawtooth pattern. The parabola $x=34y^2$ intersects the graph of $f(x)$ at finitely many points. The sum of the $y$-coordinates of these intersection points can be expressed in the form $\\frac{a+b\\sqrt{c}}{d}$, where $a,b,c,$ and $d$ are positive integers, $a,b,$ and $d$ have greatest common divisor equal to 1, and $c$ is not divisible by the square of any prime. Find $a+b+c+d$.",
+      "reference_answer": "259",
+      "predicted_answer": "0",
+      "generated_solution": "To find the intersection points of the parabola $x=34y^2$ and the graph of $f(x)$, we set $f(x)=34y^2$ and solve for $x$.\nFor $x\\in[-1,1)$, we have $x=f(x)=34y^2$, so $y=\\pm\\frac{1}{\\sqrt{34}}$.\nFor $x\\in[1,3)$, we have $2-x=f(x)=34y^2$, so $y=\\pm\\frac{\\sqrt{2}}{\\sqrt{34}}$.\nThe $y$-coordinates of the intersection points are $\\frac{1}{\\sqrt{34}}$ and $\\frac{-1}{\\sqrt{34}}$.\nThe sum of these $y$-coordinates is $\\frac{1}{\\sqrt{34}}+\\frac{-1}{\\sqrt{34}}=\\frac{0}{\\sqrt{34}}=\\boxed{0}$.\nThe answer is: 0",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinates satisfy the inequalities $x-yz<y-zx<z-xy$ forms three disjoint convex regions. Exactly one of those regions has finite area. The area of this finite region can be expressed in the form $a\\sqrt{b}$, where $a$ and $b$ are positive integers and $b$ is not divisible by the square of any prime. Find $a+b$.",
+      "reference_answer": "510",
+      "predicted_answer": "{1, 0 + 1}",
+      "generated_solution": "We can rewrite the inequalities as $x^2 + y^2 + z^2 - (x+y+z)(y+z+x) > 0$.\nExpanding, we get $x^2 + y^2 + z^2 - (2xy + 2xz + 2yz) > 0$.\nSimplifying, we have $x^2 + y^2 + z^2 - 2xy - 2xz - 2yz > 0$.\nRearranging, we get $(x-y)^2 + (y-z)^2 + (z-x)^2 > 0$.\nThis inequality is always true, so the set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ and satisfy the inequalities $x-yz<y-zx<z-xy$ is the entire plane.\nSince the plane is a two-dimensional surface, the area of this region is infinite.\nTherefore, the answer is $\\boxed{1+0} = \\boxed{1}$.The answer is: 1",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center of the disk. He draws 25 more line segments through the disk, drawing each segment by selecting two points at random on the perimeter of the disk in different quadrants and connecting those two points. Find the expected number of regions into which these 27 line segments divide the disk.",
+      "reference_answer": "204",
+      "predicted_answer": "50",
+      "generated_solution": "We can start by drawing a diagram of the disk and the 27 line segments.\nEach line segment divides the disk into two regions.\nSince there are 27 line segments, the total number of regions is $27 \\cdot 2 = 54$.\nHowever, we need to subtract the 4 quadrants that were already divided by the diameters.\nSo the final number of regions is $54 - 4 = \\boxed{50}$.\nThe answer is: 50",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\\angle B=\\angle E=60^\\circ$. For each point $X$ in the plane, define $f(X)=AX+BX+CX+DX+EX$. The least possible value of $f(X)$ can be expressed as $m+n\\sqrt{p}$, where $m$ and $n$ are positive integers and $p$ is not divisible by the square of any prime. Find $m+n+p$.",
+      "reference_answer": "60",
+      "predicted_answer": "35",
+      "generated_solution": "We can start by finding the coordinates of the vertices of the pentagon. Since $\\angle B = \\angle E = 60^\\circ$, we can draw a circle with center $A$ and radius $AB = 14$ to find the coordinates of $B$ and $E$. The coordinates of $B$ and $E$ are $(14,0)$ and $(0,14)$, respectively.\n\nNext, we can find the coordinates of $C$ and $D$ by drawing a circle with center $B$ and radius $BC = 7$ and a circle with center $E$ and radius $DE = 13$. The coordinates of $C$ and $D$ are $(7,0)$ and $(13,0)$, respectively.\n\nNow, we can find the coordinates of $X$ by finding the intersection of the lines $AX$, $BX$, $CX$, $DX$, and $EX$. The line $AX$ is the line passing through $A$ and $B$, which has a slope of $0$. The line $BX$ is the line passing through $B$ and $C$, which has a slope of $1$. The line $CX$ is the line passing through $C$ and $D$, which has a slope of $0$. The line $DX$ is the line passing through $D$ and $E$, which has a slope of $1$. The line $EX$ is the line passing through $E$ and $A$, which has a slope of $0$.\n\nTo find the coordinates of $X$, we can solve the system of equations formed by the lines $AX$, $BX$, $CX$, $DX$, and $EX$. The solution is $X = (7,7)$.\n\nNow, we can find the value of $f(X)$ by substituting the coordinates of $X$ into the expression for $f(X)$: $f(X) = AX + BX + CX + DX + EX = 7 + 7 + 7 + 7 + 7 = 35$.\n\nTherefore, the least possible value of $f(X)$ is $35$, and the answer is $\\boxed{35}$.The answer is: 35",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\\leq3^6$ and $a^3+b^3+c^3$ is a multiple of $3^7$. Find the remainder when $N$ is divided by $1000$.",
+      "reference_answer": "735",
+      "predicted_answer": "27",
+      "generated_solution": "We want to find the number of ordered triples $(a,b,c)$ such that $a,b,c\\leq3^6$ and $a^3+b^3+c^3$ is a multiple of $3^7$.\nNote that $a^3+b^3+c^3$ is a multiple of $3^7$ if and only if $a^3+b^3+c^3$ is divisible by $3^7$.\nWe can rewrite $a^3+b^3+c^3$ as $(a+b+c)(a^2+b^2+c^2-ab-ac-bc)+3abc$.\nSince $a,b,c\\leq3^6$, we have $a^2+b^2+c^2-ab-ac-bc\\leq3^6$.\nTherefore, $a^3+b^3+c^3$ is divisible by $3^7$ if and only if $3abc$ is divisible by $3^7$.\nSince $a,b,c\\leq3^6$, we have $abc\\leq(3^6)^3=3^{18}$.\nTherefore, $3abc$ is divisible by $3^7$ if and only if $abc$ is divisible by $3^7$.\nSo, we want to find the number of ordered triples $(a,b,c)$ such that $a,b,c\\leq3^6$ and $abc$ is divisible by $3^7$.\nWe can count the number of ordered triples $(a,b,c)$ such that $a,b,c\\leq3^6$ and $abc$ is divisible by $3^7$ by considering the possible values of $a,b,c$ modulo $3^7$.\nSince $a,b,c\\leq3^6$, we have $a,b,c\\leq3^6$.\nWe can write $a,b,c$ as $a=3^6a_1$, $b=3^6b_1$, and $c=3^6c_1$, where $a_1,b_1,c_1$ are integers between 0 and 2.\nSo, we want to find the number of ordered triples $(a_1,b_1,c_1)$ such that $a_1,b_1,c_1\\leq2$ and $a_1b_1c_1$ is divisible by $3^7$.\nSince $a_1,b_1,c_1\\leq2$, we have $a_1b_1c_1\\leq2^3=8$.\nThe possible values of $a_1b_1c_1$ are 0, 1, 2, 4, 6, and 8.\nOut of these, only 0, 1, and 2 are divisible by $3^7$.\nTherefore, the number of ordered triples $(a,b,c)$ such that $a,b,c\\leq3^6$ and $abc$ is divisible by $3^7$ is $3^3=27$.\nThe remainder when $N$ is divided by 1000 is $\\boxed{27}$.\nThe answer is: 27",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Six points $ A, B, C, D, E, $ and $ F $ lie in a straight line in that order. Suppose that $ G $ is a point not on the line and that $ AC = 26 $, $ BD = 22 $, $ CE = 31 $, $ DF = 33 $, $ AF = 73 $, $ CG = 40 $, and $ DG = 30 $. Find the area of $ \\triangle BGE $.",
+      "reference_answer": "468",
+      "predicted_answer": "-148",
+      "generated_solution": "We can find the area of $\\triangle BGE$ by finding the area of $\\triangle BDF$ and subtracting the area of $\\triangle CDE$.\nThe area of $\\triangle BDF$ is $\\frac{1}{2} \\cdot 22 \\cdot 33 = 363$.\nThe area of $\\triangle CDE$ is $\\frac{1}{2} \\cdot 31 \\cdot 33 = 511$.\nTherefore, the area of $\\triangle BGE$ is $363 - 511 = \\boxed{-148}$.\nThe answer is: -148",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Find the sum of all positive integers $ n $ such that $ n + 2 $ divides the product $ 3(n + 3)(n^2 + 9) $.",
+      "reference_answer": "49",
+      "predicted_answer": "30",
+      "generated_solution": "We can expand the expression as $3n(n^2 + 9) + 2(n^2 + 9) = 3n^3 + 27n + 2n^2 + 18 = n^3 + 2n^2 + 27n + 18$.\nWe want to find the values of $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides $n^3 + 2n^2 + 27n + 18$, it must also divide the remainder when $n^3 + 2n^2 + 27n + 18$ is divided by $n + 2$.\nUsing synthetic division, we find that the remainder is $-2$.\nTherefore, $n + 2$ divides $-2$.\nThe positive integers $n$ that satisfy this condition are $n = 0, 2, 4, 6, 8, \\dots$.\nThe sum of these integers is $0 + 2 + 4 + 6 + 8 + \\dots = \\frac{0(1) + 2(2) + 4(3) + 6(4) + 8(5) + \\dots}{1} = \\frac{2(1 + 2 + 3 + 4 + 5 + \\dots)}{1} = \\frac{2(15)}{1} = \\boxed{30}$.\nThe answer is: 30",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Four unit squares form a $2 \\times 2$ grid. Each of the 12 unit line segments forming the sides of the squares is colored either red or blue in such a way that each unit square has 2 red sides and 2 blue sides. Find the number of such colorings.",
+      "reference_answer": "82",
+      "predicted_answer": "16",
+      "generated_solution": "We can count the number of colorings by considering the number of ways to color each unit square.\nFor each unit square, there are 2 choices for the color of the top side and 2 choices for the color of the left side.\nSince there are 4 unit squares, the total number of colorings is $2^4 = \\boxed{16}$.\nThe answer is: 16",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The product $ \\prod_{k=4}^{63} \\frac{\\log_k(5^{k^2-1})}{\\log_{k+1}(5^{k^2-4})} = \\frac{\\log_4(5^{15})}{\\log_5(5^{12})} \\cdot \\frac{\\log_5(5^{24})}{\\log_6(5^{21})} \\cdot \\frac{\\log_6(5^{35})}{\\log_7(5^{32})} \\cdots \\frac{\\log_{63}(5^{3968})}{\\log_{64}(5^{3965})} $ is equal to $ \\frac{m}{n} $, where $ m $ and $ n $ are relatively prime positive integers. Find $ m + n $.",
+      "reference_answer": "106",
+      "predicted_answer": "Eq((299*log(5, 30))/((296*log(5, 31))), 299/296) & Eq(log(5**299, 30)/log(5**296, 31), (299*log(5, 30))/((296*log(5, 31)))) & Eq(log(5**299, 30)/log(5**296, 31), log(5**299, 30)/log(5**296, 31))",
+      "generated_solution": "We can simplify each fraction in the product as follows:\n$\\frac{\\log_4(5^{15})}{\\log_5(5^{12})} = \\frac{\\log_4(5^{15})}{\\log_5(5^{12})} = \\frac{15\\log_4(5)}{12\\log_5(5)} = \\frac{5}{4}$\n$\\frac{\\log_5(5^{24})}{\\log_6(5^{21})} = \\frac{\\log_5(5^{24})}{\\log_6(5^{21})} = \\frac{24\\log_5(5)}{21\\log_6(5)} = \\frac{8}{7}$\n$\\frac{\\log_6(5^{35})}{\\log_7(5^{32})} = \\frac{\\log_6(5^{35})}{\\log_7(5^{32})} = \\frac{35\\log_6(5)}{32\\log_7(5)} = \\frac{35}{28} = \\frac{5}{4}$\n$\\frac{\\log_7(5^{46})}{\\log_8(5^{43})} = \\frac{\\log_7(5^{46})}{\\log_8(5^{43})} = \\frac{46\\log_7(5)}{43\\log_8(5)} = \\frac{46}{43}$\n$\\frac{\\log_8(5^{57})}{\\log_9(5^{54})} = \\frac{\\log_8(5^{57})}{\\log_9(5^{54})} = \\frac{57\\log_8(5)}{54\\log_9(5)} = \\frac{19}{18}$\n$\\frac{\\log_9(5^{68})}{\\log_{10}(5^{65})} = \\frac{\\log_9(5^{68})}{\\log_{10}(5^{65})} = \\frac{68\\log_9(5)}{65\\log_{10}(5)} = \\frac{68}{65}$\n$\\frac{\\log_{10}(5^{79})}{\\log_{11}(5^{76})} = \\frac{\\log_{10}(5^{79})}{\\log_{11}(5^{76})} = \\frac{79\\log_{10}(5)}{76\\log_{11}(5)} = \\frac{79}{76}$\n$\\frac{\\log_{11}(5^{90})}{\\log_{12}(5^{87})} = \\frac{\\log_{11}(5^{90})}{\\log_{12}(5^{87})} = \\frac{90\\log_{11}(5)}{87\\log_{12}(5)} = \\frac{10}{9}$\n$\\frac{\\log_{12}(5^{101})}{\\log_{13}(5^{98})} = \\frac{\\log_{12}(5^{101})}{\\log_{13}(5^{98})} = \\frac{101\\log_{12}(5)}{98\\log_{13}(5)} = \\frac{101}{98}$\n$\\frac{\\log_{13}(5^{112})}{\\log_{14}(5^{109})} = \\frac{\\log_{13}(5^{112})}{\\log_{14}(5^{109})} = \\frac{112\\log_{13}(5)}{109\\log_{14}(5)} = \\frac{112}{109}$\n$\\frac{\\log_{14}(5^{123})}{\\log_{15}(5^{120})} = \\frac{\\log_{14}(5^{123})}{\\log_{15}(5^{120})} = \\frac{123\\log_{14}(5)}{120\\log_{15}(5)} = \\frac{41}{40}$\n$\\frac{\\log_{15}(5^{134})}{\\log_{16}(5^{131})} = \\frac{\\log_{15}(5^{134})}{\\log_{16}(5^{131})} = \\frac{134\\log_{15}(5)}{131\\log_{16}(5)} = \\frac{134}{131}$\n$\\frac{\\log_{16}(5^{145})}{\\log_{17}(5^{142})} = \\frac{\\log_{16}(5^{145})}{\\log_{17}(5^{142})} = \\frac{145\\log_{16}(5)}{142\\log_{17}(5)} = \\frac{145}{142}$\n$\\frac{\\log_{17}(5^{156})}{\\log_{18}(5^{153})} = \\frac{\\log_{17}(5^{156})}{\\log_{18}(5^{153})} = \\frac{156\\log_{17}(5)}{153\\log_{18}(5)} = \\frac{52}{51}$\n$\\frac{\\log_{18}(5^{167})}{\\log_{19}(5^{164})} = \\frac{\\log_{18}(5^{167})}{\\log_{19}(5^{164})} = \\frac{167\\log_{18}(5)}{164\\log_{19}(5)} = \\frac{167}{164}$\n$\\frac{\\log_{19}(5^{178})}{\\log_{20}(5^{175})} = \\frac{\\log_{19}(5^{178})}{\\log_{20}(5^{175})} = \\frac{178\\log_{19}(5)}{175\\log_{20}(5)} = \\frac{178}{175}$\n$\\frac{\\log_{20}(5^{189})}{\\log_{21}(5^{186})} = \\frac{\\log_{20}(5^{189})}{\\log_{21}(5^{186})} = \\frac{189\\log_{20}(5)}{186\\log_{21}(5)} = \\frac{63}{62}$\n$\\frac{\\log_{21}(5^{200})}{\\log_{22}(5^{197})} = \\frac{\\log_{21}(5^{200})}{\\log_{22}(5^{197})} = \\frac{200\\log_{21}(5)}{197\\log_{22}(5)} = \\frac{200}{197}$\n$\\frac{\\log_{22}(5^{211})}{\\log_{23}(5^{208})} = \\frac{\\log_{22}(5^{211})}{\\log_{23}(5^{208})} = \\frac{211\\log_{22}(5)}{208\\log_{23}(5)} = \\frac{211}{208}$\n$\\frac{\\log_{23}(5^{222})}{\\log_{24}(5^{219})} = \\frac{\\log_{23}(5^{222})}{\\log_{24}(5^{219})} = \\frac{222\\log_{23}(5)}{219\\log_{24}(5)} = \\frac{222}{219}$\n$\\frac{\\log_{24}(5^{233})}{\\log_{25}(5^{230})} = \\frac{\\log_{24}(5^{233})}{\\log_{25}(5^{230})} = \\frac{233\\log_{24}(5)}{230\\log_{25}(5)} = \\frac{233}{230}$\n$\\frac{\\log_{25}(5^{244})}{\\log_{26}(5^{241})} = \\frac{\\log_{25}(5^{244})}{\\log_{26}(5^{241})} = \\frac{244\\log_{25}(5)}{241\\log_{26}(5)} = \\frac{244}{241}$\n$\\frac{\\log_{26}(5^{255})}{\\log_{27}(5^{252})} = \\frac{\\log_{26}(5^{255})}{\\log_{27}(5^{252})} = \\frac{255\\log_{26}(5)}{252\\log_{27}(5)} = \\frac{85}{84}$\n$\\frac{\\log_{27}(5^{266})}{\\log_{28}(5^{263})} = \\frac{\\log_{27}(5^{266})}{\\log_{28}(5^{263})} = \\frac{266\\log_{27}(5)}{263\\log_{28}(5)} = \\frac{266}{263}$\n$\\frac{\\log_{28}(5^{277})}{\\log_{29}(5^{274})} = \\frac{\\log_{28}(5^{277})}{\\log_{29}(5^{274})} = \\frac{277\\log_{28}(5)}{274\\log_{29}(5)} = \\frac{277}{274}$\n$\\frac{\\log_{29}(5^{288})}{\\log_{30}(5^{285})} = \\frac{\\log_{29}(5^{288})}{\\log_{30}(5^{285})} = \\frac{288\\log_{29}(5)}{285\\log_{30}(5)} = \\frac{96}{95}$\n$\\frac{\\log_{30}(5^{299})}{\\log_{31}(5^{296})} = \\frac{\\log_{30}(5^{299})}{\\log_{31}(5^{296})} = \\frac{299\\log_{30}(5)}{296\\log_{31}(5)} = \\frac{299}{296}$\n$\\frac{\\log",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Suppose $ \\triangle ABC $ has angles $ \\angle BAC = 84^\\circ $, $ \\angle ABC = 60^\\circ $, and $ \\angle ACB = 36^\\circ $. Let $ D, E, $ and $ F $ be the midpoints of sides $ \\overline{BC} $, $ \\overline{AC} $, and $ \\overline{AB} $, respectively. The circumcircle of $ \\triangle DEF $ intersects $ \\overline{BD} $, $ \\overline{AE} $, and $ \\overline{AF} $ at points $ G, H, $ and $ J $, respectively. The points $ G, D, E, H, J, $ and $ F $ divide the circumcircle of $ \\triangle DEF $ into six minor arcs, as shown. Find $ \\widehat{DE} + 2 \\cdot \\widehat{HJ} + 3 \\cdot \\widehat{FG} $, where the arcs are measured in degrees.",
+      "reference_answer": "336^\\circ",
+      "predicted_answer": "Eq(a*angle*b*c, 60)",
+      "generated_solution": "Since $ \\angle BAC = 84^\\circ $, $ \\angle ABC = 60^\\circ $, and $ \\angle ACB = 36^\\circ $, we have $ \\angle BAC + \\angle ABC + \\angle ACB = 180^\\circ $, so $ \\angle BAC = 180^\\circ - 60^\\circ - 36^\\circ = 84^\\circ $.\nSince $ D, E, $ and $ F $ are midpoints, we have $ \\angle DEF = 180^\\circ - 2 \\cdot 36^\\circ = 108^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BDE = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BDF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CDE = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAE = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $, we have $ \\angle BAF = 180^\\circ - 60^\\circ = 120^\\circ $.\nSince $ \\angle ACB = 36^\\circ $, we have $ \\angle CAF = 180^\\circ - 36^\\circ = 144^\\circ $.\nSince $ \\angle BAC = 84^\\circ $, we have $ \\angle BAG = 180^\\circ - 84^\\circ = 96^\\circ $.\nSince $ \\angle ABC = 60^\\circ $",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Circle $\\omega_1$ with radius 6 centered at point $A$ is internally tangent at point $B$ to circle $\\omega_2$ with radius 15. Points $C$ and $D$ lie on $\\omega_2$ such that $\\overline{BC}$ is a diameter of $\\omega_2$ and $\\overline{BC} \\perp \\overline{AD}$. The rectangle $EFGH$ is inscribed in $\\omega_1$ such that $\\overline{EF} \\perp \\overline{BC}$, $C$ is closer to $\\overline{GH}$ than to $\\overline{EF}$, and $D$ is closer to $\\overline{FG}$ than to $\\overline{EH}$, as shown. Triangles $\\triangle DGF$ and $\\triangle CHG$ have equal areas. The area of rectangle $EFGH$ is $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.",
+      "reference_answer": "293",
+      "predicted_answer": "r_1",
+      "generated_solution": "Since $\\overline{BC}$ is a diameter of $\\omega_2$, we know that $BC = 2r_2 = 30$, where $r_2$ is the radius of $\\omega_2$.\nSince $\\overline{BC} \\perp \\overline{AD}$, we know that $AD$ is a radius of $\\omega_2$.\nSince $\\overline{EF} \\perp \\overline{BC}$, we know that $EF$ is a diameter of $\\omega_1$.\nSince $C$ is closer to $\\overline{GH}$ than to $\\overline{EF}$, we know that $C$ lies on $\\overline{GH}$.\nSince $D$ is closer to $\\overline{FG}$ than to $\\overline{EH}$, we know that $D$ lies on $\\overline{FG}$.\nSince triangles $\\triangle DGF$ and $\\triangle CHG$ have equal areas, we know that $DG = CH$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega_1$.\nSince $EF$ is perpendicular to $BC$, we know that $EF \\perp BC$.\nSince $EF$ is a diameter of $\\omega_1$, we know that $EF = 2r_1$, where $r_1$ is the radius of $\\omega",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ A $ be the set of positive integer divisors of 2025. Let $ B $ be a randomly selected subset of $ A $. The probability that $ B $ is a nonempty set with the property that the least common multiple of its elements is 2025 is $ \\frac{m}{n} $, where $ m $ and $ n $ are relatively prime positive integers. Find $ m + n $.",
+      "reference_answer": "237",
+      "predicted_answer": "4097",
+      "generated_solution": "The prime factorization of 2025 is $3^3 \\cdot 5^3$.\nTo find the set $A$, we need to find all the divisors of 2025.\nThe divisors of 2025 are 1, 3, 5, 9, 15, 25, 45, 75, 125, 225, 375, and 2025.\nTo find the set $B$, we need to choose a subset of $A$ such that the least common multiple of its elements is 2025.\nThe only way to achieve this is to choose all the divisors of 2025.\nThere are 12 divisors in total, so the probability of choosing a nonempty set $B$ is $\\frac{1}{2^{12}} = \\frac{1}{4096}$.\nTherefore, $m = 1$ and $n = 4096$, so $m + n = \\boxed{4097}$.\nThe answer is: 4097",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "From an unlimited supply of 1-cent coins, 10-cent coins, and 25-cent coins, Silas wants to find a collection of coins that has a total value of $ N $ cents, where $ N $ is a positive integer. He uses the so-called **greedy algorithm**, successively choosing the coin of greatest value that does not cause the value of his collection to exceed $ N $. For example, to get 42 cents, Silas will choose a 25-cent coin, then a 10-cent coin, then 7 1-cent coins. However, this collection of 9 coins uses more coins than necessary to get a total of 42 cents; indeed, choosing 4 10-cent coins and 2 1-cent coins achieves the same total value with only 6 coins.\n\nIn general, the greedy algorithm succeeds for a given $ N $ if no other collection of 1-cent, 10-cent, and 25-cent coins gives a total value of $ N $ cents using strictly fewer coins than the collection given by the greedy algorithm. Find the number of values of $ N $ between 1 and 1000 inclusive for which the greedy algorithm succeeds.",
+      "reference_answer": "610",
+      "predicted_answer": "120",
+      "generated_solution": "To solve this problem, we need to determine the number of values of $N$ between 1 and 1000 inclusive for which the greedy algorithm succeeds.\n\nThe greedy algorithm works by choosing the coin of greatest value that does not cause the value of the collection to exceed $N$.\n\nLet's consider the possible values of $N$ that the greedy algorithm fails for:\n\n1. If $N$ is a multiple of 25, the greedy algorithm will choose 25-cent coins until it reaches $N$, resulting in a collection of $N/25$ coins. However, we can achieve the same total value with fewer coins by choosing 10-cent coins instead of 25-cent coins. For example, if $N = 25$, the greedy algorithm would choose 1 25-cent coin, but we can achieve the same total value with 2 10-cent coins.\n\n2. If $N$ is a multiple of 10 but not a multiple of 25, the greedy algorithm will choose 10-cent coins until it reaches $N$, resulting in a collection of $N/10$ coins. However, we can achieve the same total value with fewer coins by choosing 1-cent coins instead of 10-cent coins. For example, if $N = 30$, the greedy algorithm would choose 3 10-cent coins, but we can achieve the same total value with 1 10-cent coin and 2 1-cent coins.\n\n3. If $N$ is a multiple of 1 but not a multiple of 10 or 25, the greedy algorithm will choose 1-cent coins until it reaches $N$, resulting in a collection of $N$ coins. However, we can achieve the same total value with fewer coins by choosing 10-cent coins instead of 1-cent coins. For example, if $N = 7$, the greedy algorithm would choose 7 1-cent coins, but we can achieve the same total value with 1 10-cent coin and 2 1-cent coins.\n\nTherefore, the values of $N$ for which the greedy algorithm fails are the multiples of 25, the multiples of 10 that are not multiples of 25, and the multiples of 1 that are not multiples of 10 or 25.\n\nTo find the number of values of $N$ between 1 and 1000 inclusive for which the greedy algorithm fails, we need to count the number of multiples of 25, the number of multiples of 10 that are not multiples of 25, and the number of multiples of 1 that are not multiples of 10 or 25.\n\nThe number of multiples of 25 between 1 and 1000 inclusive is $\\left\\lfloor \\frac{1000}{25} \\right\\rfloor = 40$.\n\nThe number of multiples of 10 between 1 and 1000 inclusive is $\\left\\lfloor \\frac{1000}{10} \\right\\rfloor = 100$.\n\nThe number of multiples of 1 between 1 and 1000 inclusive is $\\left\\lfloor \\frac{1000}{1} \\right\\rfloor = 1000$.\n\nHowever, we need to subtract the number of multiples of 10 that are also multiples of 25, which is $\\left\\lfloor \\frac{1000}{50} \\right\\rfloor = 20$.\n\nTherefore, the number of values of $N$ between 1 and 1000 inclusive for which the greedy algorithm fails is $40 + 100 - 20 = 120$.\n\nThe answer is: 120",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "There are $ n $ values of $ x $ in the interval $ 0 < x < 2\\pi $ where $ f(x) = \\sin(7\\pi \\cdot \\sin(5x)) = 0 $. For $ t $ of these $ n $ values of $ x $, the graph of $ y = f(x) $ is tangent to the $ x $-axis. Find $ n + t $.",
+      "reference_answer": "149",
+      "predicted_answer": "14",
+      "generated_solution": "To find the values of $x$ where $f(x) = 0$, we need to find the values of $x$ where $\\sin(7\\pi \\cdot \\sin(5x)) = 0$.\nSince $\\sin(7\\pi \\cdot \\sin(5x)) = 0$ if and only if $\\sin(5x) = 0$, we need to find the values of $x$ where $\\sin(5x) = 0$.\nThe solutions to $\\sin(5x) = 0$ are $x = \\frac{\\pi}{5}, \\frac{2\\pi}{5}, \\frac{3\\pi}{5}, \\frac{4\\pi}{5}$.\nHowever, we need to consider the interval $0 < x < 2\\pi$, so we only count the values of $x$ in this interval.\nTherefore, there are $n = 4$ values of $x$ where $f(x) = 0$.\nTo find the values of $x$ where $f(x)$ is tangent to the $x$-axis, we need to find the values of $x$ where $\\sin(7\\pi \\cdot \\sin(5x)) = 1$.\nSince $\\sin(7\\pi \\cdot \\sin(5x)) = 1$ if and only if $\\sin(5x) = \\frac{1}{7}$, we need to find the values of $x$ where $\\sin(5x) = \\frac{1}{7}$.\nThe solutions to $\\sin(5x) = \\frac{1}{7}$ are $x = \\frac{\\pi}{35}, \\frac{2\\pi}{35}, \\frac{3\\pi}{35}, \\frac{4\\pi}{35}, \\frac{5\\pi}{35}, \\frac{6\\pi}{35}, \\frac{7\\pi}{35}, \\frac{8\\pi}{35}, \\frac{9\\pi}{35}, \\frac{10\\pi}{35}$.\nHowever, we need to consider the interval $0 < x < 2\\pi$, so we only count the values of $x$ in this interval.\nTherefore, there are $t = 10$ values of $x$ where $f(x)$ is tangent to the $x$-axis.\nThe answer is: 14",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Sixteen chairs are arranged in a row. Eight people each select a chair in which to sit so that no person sits next to two other people. Let $ N $ be the number of subsets of 16 chairs that could be selected. Find the remainder when $ N $ is divided by 1000.",
+      "reference_answer": "907",
+      "predicted_answer": "256",
+      "generated_solution": "To solve this problem, we need to determine the number of subsets of 16 chairs that could be selected such that no person sits next to two other people.\nWe can approach this problem by considering the number of ways to arrange the 8 people on the 16 chairs.\nSince no person can sit next to two other people, each person must sit in a chair that is not adjacent to the chairs of the other people.\nWe can think of this as arranging the 8 people in a line, with each person sitting in a chair that is not adjacent to the chairs of the other people.\nThere are 16 choices for the first person, 15 choices for the second person (since they cannot sit next to the first person), 14 choices for the third person, and so on.\nTherefore, the total number of arrangements is $16 \\times 15 \\times 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9$.\nTo find the remainder when this number is divided by 1000, we can calculate the remainder of each factor and then multiply them together.\nThe remainder of 16 divided by 1000 is 16.\nThe remainder of 15 divided by 1000 is 15.\nThe remainder of 14 divided by 1000 is 14.\nThe remainder of 13 divided by 1000 is 13.\nThe remainder of 12 divided by 1000 is 12.\nThe remainder of 11 divided by 1000 is 11.\nThe remainder of 10 divided by 1000 is 10.\nThe remainder of 9 divided by 1000 is 9.\nMultiplying these remainders together, we get $16 \\times 15 \\times 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 2 \\times 3 \\times 2 \\times 3 \\times 2 \\times 3 \\times 2 \\times 3 = 2^8 \\times 3^8$.\nThe remainder when $2^8 \\times 3^8$ is divided by 1000 is the same as the remainder when $2^8$ is divided by 1000, since $3^8$ is divisible by 1000.\nThe remainder when $2^8$ is divided by 1000 is 256.\nTherefore, the remainder when $N$ is divided by 1000 is $\\boxed{256}$.\nThe answer is: 256",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ S $ be the set of vertices of a regular 24-gon. Find the number of ways to draw 12 segments of equal lengths so that each vertex in $ S $ is an endpoint of exactly one of the 12 segments.",
+      "reference_answer": "113",
+      "predicted_answer": "1771",
+      "generated_solution": "We can think of each segment as a line connecting two vertices of the 24-gon.\nSince each vertex is an endpoint of exactly one segment, we need to count the number of ways to choose 12 pairs of vertices out of the 24 vertices.\nThis can be done using combinations, so the number of ways is $\\binom{24}{12} = \\boxed{1771}$.\nThe answer is: 1771",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ A_1A_2 \\ldots A_{11} $ be an 11-sided non-convex simple polygon with the following properties:\n* The area of $ A_iA_1A_{i+1} $ is 1 for each $ 2 \\leq i \\leq 10 $,\n* $ \\cos(\\angle A_iA_1A_{i+1}) = \\frac{12}{13} $ for each $ 2 \\leq i \\leq 10 $,\n* The perimeter of $ A_1A_2 \\ldots A_{11} $ is 20.\nIf $ A_1A_2 + A_1A_{11} $ can be expressed as $ \\frac{m\\sqrt{n} - p}{q} $ for positive integers $ m, n, p, q $ with $ n $ squarefree and no prime divides all of $ m, p, q$, find $ m + n + p + q $.",
+      "reference_answer": "19",
+      "predicted_answer": "52",
+      "generated_solution": "Let $s$ be the side length of the regular 11-gon. Then the area of $A_iA_1A_{i+1}$ is $\\frac{1}{2} \\cdot s^2 \\cdot \\sin(\\angle A_iA_1A_{i+1}) = \\frac{1}{2} \\cdot s^2 \\cdot \\frac{5}{13} = \\frac{5s^2}{26}$.\nSince the area of $A_iA_1A_{i+1}$ is 1 for each $2 \\leq i \\leq 10$, we have $\\frac{5s^2}{26} = 1$.\nSolving for $s$, we find $s = \\frac{26}{5}$.\nThe perimeter of $A_1A_2 \\ldots A_{11}$ is $11s = 11 \\cdot \\frac{26}{5} = \\frac{286}{5}$.\nSince the perimeter is 20, we have $\\frac{286}{5} = 20$.\nSolving for $s$, we find $s = \\frac{20}{11}$.\nThe sum of the lengths of $A_1A_2$ and $A_1A_{11}$ is $2s = 2 \\cdot \\frac{20}{11} = \\frac{40}{11}$.\nTherefore, $m = 40$, $n = 11$, $p = 0$, and $q = 1$.\nThe answer is: 52",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let the sequence of rationals $ x_1, x_2, \\ldots $ be defined such that $ x_1 = \\frac{25}{11} $ and\n$ x_{k+1} = \\frac{1}{3} \\left( x_k + \\frac{1}{x_k} - 1 \\right). $\n$ x_{2025} $ can be expressed as $ \\frac{m}{n} $ for relatively prime positive integers $ m $ and $ n $. Find the remainder when $ m + n $ is divided by 1000.",
+      "reference_answer": "248",
+      "predicted_answer": "74",
+      "generated_solution": "We can start by finding the first few terms of the sequence:\n$x_1 = \\frac{25}{11}$\n$x_2 = \\frac{1}{3} \\left( \\frac{25}{11} + \\frac{11}{25} - 1 \\right) = \\frac{25}{33}$\n$x_3 = \\frac{1}{3} \\left( \\frac{25}{33} + \\frac{33}{25} - 1 \\right) = \\frac{25}{37}$\n$x_4 = \\frac{1}{3} \\left( \\frac{25}{37} + \\frac{37}{25} - 1 \\right) = \\frac{25}{41}$\n$x_5 = \\frac{1}{3} \\left( \\frac{25}{41} + \\frac{41}{25} - 1 \\right) = \\frac{25}{49}$\n$x_6 = \\frac{1}{3} \\left( \\frac{25}{49} + \\frac{49}{25} - 1 \\right) = \\frac{25}{61}$\n$x_7 = \\frac{1}{3} \\left( \\frac{25}{61} + \\frac{61}{25} - 1 \\right) = \\frac{25}{73}$\n$x_8 = \\frac{1}{3} \\left( \\frac{25}{73} + \\frac{73}{25} - 1 \\right) = \\frac{25}{89}$\n$x_9 = \\frac{1}{3} \\left( \\frac{25}{89} + \\frac{89}{25} - 1 \\right) = \\frac{25}{113}$\n$x_{10} = \\frac{1}{3} \\left( \\frac{25}{113} + \\frac{113}{25} - 1 \\right) = \\frac{25}{139}$\nWe can see that the sequence repeats every 10 terms. Since $2025$ is a multiple of 10, we can find the value of $x_{2025}$ by finding the remainder when $2025$ is divided by 10, which is 5. Therefore, $x_{2025} = x_5 = \\frac{25}{49}$. The numerator and denominator are relatively prime, so $m = 25$ and $n = 49$. The remainder when $m + n$ is divided by 1000 is $25 + 49 = \\boxed{74}$.The answer is: 74",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ \\triangle ABC $ be a right triangle with $ \\angle A = 90^\\circ $ and $ BC = 38 $. There exist points $ K $ and $ L $ inside the triangle such that $ AK = AL = BK = CL = KL = 14. $ The area of the quadrilateral $ BKLC $ can be expressed as $ n \\sqrt{3} $ for some positive integer $ n $. Find $ n $.",
+      "reference_answer": "104",
+      "predicted_answer": "196",
+      "generated_solution": "Since $AK = AL = 14$, we can draw a circle centered at $A$ with radius 14 that passes through $K$ and $L$.\nSimilarly, since $BK = CL = 14$, we can draw a circle centered at $B$ with radius 14 that passes through $K$ and $L$.\nThe two circles intersect at $K$ and $L$, so $BKLC$ is a cyclic quadrilateral.\nSince $BC = 38$, we can draw a circle centered at $C$ with radius 19 that passes through $B$ and $K$.\nThe circle centered at $C$ intersects the circle centered at $B$ at $B$ and $K$, so $BK$ is a diameter of the circle centered at $C$.\nTherefore, $BKLC$ is a kite, and its area is twice the area of triangle $BCK$.\nThe area of triangle $BCK$ is $\\frac{1}{2} \\cdot 14 \\cdot 14 = 98$.\nTherefore, the area of quadrilateral $BKLC$ is $2 \\cdot 98 = \\boxed{196}$.\nThe answer is: 196",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "There are exactly three positive real numbers $ k $ such that the function\n$ f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x} $\ndefined over the positive real numbers achieves its minimum value at exactly two positive real numbers $ x $. Find the sum of these three values of $ k $.",
+      "reference_answer": "240",
+      "predicted_answer": "x",
+      "generated_solution": "To find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which $f(x)$ is equal to its minimum value.\nWe can rewrite $f(x)$ as\n\\[f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x}.\\]\nTo find the minimum value of $f(x)$, we need to find the values of $x$ at which",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    }
+  ],
+  "model": "llama3_1-8B-metamathqa-random-reliable-2e"
+}

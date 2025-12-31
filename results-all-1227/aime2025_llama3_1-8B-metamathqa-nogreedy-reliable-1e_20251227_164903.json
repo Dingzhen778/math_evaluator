@@ -1,0 +1,339 @@
+{
+  "dataset": "aime2025",
+  "accuracy": 3.33,
+  "correct": 1,
+  "total": 30,
+  "results": [
+    {
+      "question": "Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.",
+      "reference_answer": "70",
+      "predicted_answer": "3",
+      "generated_solution": "We want to find the bases $b$ such that $17_b$ is a divisor of $97_b$.\nIn base $b$, the number $17_b$ represents $1b + 7$ and the number $97_b$ represents $9b + 7$.\nWe want to find the bases $b$ such that $1b + 7$ is a divisor of $9b + 7$.\nThis is equivalent to finding the bases $b$ such that $8b$ is a divisor of $8b + 7$.\nSince $8b$ is always a divisor of $8b + 7$, the only possible bases are $b = 1$ and $b = 2$.\nTherefore, the sum of all integer bases $b > 9$ is $1 + 2 = \\boxed{3}$.\nThe answer is: 3",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "On $\\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\\overline{AB}$ with $AD=4, DE=16$, and $EB=8$. Points $A,F,G$, and $C$ lie in that order on side $\\overline{AC}$ with $AF=13, FG=52$, and $GC=26$. Let $M$ be the reflection of $D$ through $F$, and let $N$ be the reflection of $G$ through $E$. Quadrilateral $DEGF$ has area 288. Find the area of heptagon $AFNBCEM$.",
+      "reference_answer": "588",
+      "predicted_answer": "1005",
+      "generated_solution": "We can find the area of quadrilateral $DEGF$ by using the formula for the area of a trapezoid.\nThe bases of the trapezoid are $DE$ and $FG$, and the height is the distance between $DE$ and $FG$.\nSince $DE=16$ and $FG=52$, the height is $52-16=36$.\nTherefore, the area of quadrilateral $DEGF$ is $\\frac{1}{2}(16+52)(36)=\\frac{1}{2}(68)(36)=\\boxed{1224}$.\nTo find the area of heptagon $AFNBCEM$, we can use the fact that the area of a polygon is equal to the sum of the areas of its triangles.\nWe can divide the heptagon into triangles $ADE$, $DEF$, $EFG$, $FGC$, $GCB$, $BCA$, and $CAF$.\nThe area of triangle $ADE$ is $\\frac{1}{2}(AD)(DE)=\\frac{1}{2}(4)(16)=32$.\nThe area of triangle $DEF$ is $\\frac{1}{2}(DE)(EF)=\\frac{1}{2}(16)(8)=64$.\nThe area of triangle $EFG$ is $\\frac{1}{2}(EF)(FG)=\\frac{1}{2}(8)(52)=208$.\nThe area of triangle $FGC$ is $\\frac{1}{2}(FG)(GC)=\\frac{1}{2}(52)(26)=676$.\nThe area of triangle $GCB$ is $\\frac{1}{2}(GC)(CB)=\\frac{1}{2}(26)(8)=104$.\nThe area of triangle $BCA$ is $\\frac{1}{2}(BC)(CA)=\\frac{1}{2}(8)(13)=52$.\nThe area of triangle $CAF$ is $\\frac{1}{2}(CA)(AF)=\\frac{1}{2}(13)(13)=169$.\nAdding up all the areas of the triangles, we get $32+64+208+676+104+52+169=\\boxed{1005}$.\nThe answer is: 1005",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a singlescoop cone of chocolate, vanilla, or strawberry ice cream. At least one player chose each flavor, and the number of players who chose chocolate was greater than the number of players who chose vanilla, which was greater than the number of players who chose strawberry. Let $N$ be the number of different assignments of flavors to players that meet these conditions. Find the remainder when $N$ is divided by 1000.",
+      "reference_answer": "16",
+      "predicted_answer": "368",
+      "generated_solution": "We can solve this problem using complementary counting.\nLet $c$, $v$, and $s$ represent the number of players who chose chocolate, vanilla, and strawberry, respectively.\nWe know that $c > v > s$.\nThe total number of possible assignments is $9!$.\nTo count the number of assignments that do not meet the given conditions, we can count the number of assignments where $c \\leq v$ or $v \\leq s$.\nThere are 3 cases to consider:\nCase 1: $c \\leq v$\nIn this case, we can choose the flavors for the players in the following way:\n1. Choose the number of players who chose chocolate, which can be any number from 1 to 9.\n2. Choose the number of players who chose vanilla, which can be any number from 1 to 8.\n3. Choose the number of players who chose strawberry, which can be any number from 1 to 7.\nThe total number of assignments in this case is $9 \\cdot 8 \\cdot 7 = 504$.\nCase 2: $v \\leq s$\nIn this case, we can choose the flavors for the players in the following way:\n1. Choose the number of players who chose vanilla, which can be any number from 1 to 9.\n2. Choose the number of players who chose strawberry, which can be any number from 1 to 8.\n3. Choose the number of players who chose chocolate, which can be any number from 1 to 7.\nThe total number of assignments in this case is $9 \\cdot 8 \\cdot 7 = 504$.\nCase 3: $c \\leq s$\nIn this case, we can choose the flavors for the players in the following way:\n1. Choose the number of players who chose chocolate, which can be any number from 1 to 9.\n2. Choose the number of players who chose strawberry, which can be any number from 1 to 8.\n3. Choose the number of players who chose vanilla, which can be any number from 1 to 7.\nThe total number of assignments in this case is $9 \\cdot 8 \\cdot 7 = 504$.\nTherefore, the total number of assignments that do not meet the given conditions is $504 + 504 + 504 = 1512$.\nThe number of assignments that meet the given conditions is $9! - 1512 = 362,880 - 1512 = 361,368$.\nThe remainder when $N$ is divided by 1000 is $\\boxed{368}$.\nThe answer is: 368",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $100$, inclusive, such that $12x^{2}-xy-6y^{2}=0$.",
+      "reference_answer": "117",
+      "predicted_answer": "2",
+      "generated_solution": "We can rewrite the equation as $6y^2 + xy - 12x = 0$.\nWe can factor this equation as $6y(y + x) - 12x = 0$.\nFactoring out a 6, we have $6(y(y + x) - 2x) = 0$.\nThis gives us two cases: $y(y + x) - 2x = 0$ or $y = 0$.\nFor the first case, we have $y(y + x) - 2x = 0$.\nExpanding, we get $y^2 + xy - 2x = 0$.\nWe can rewrite this as $y^2 + xy - 2x = 0$.\nWe can factor this equation as $(y + 2)(y - x) = 0$.\nThis gives us two subcases: $y + 2 = 0$ or $y - x = 0$.\nFor the first subcase, we have $y + 2 = 0$, which gives us $y = -2$.\nFor the second subcase, we have $y - x = 0$, which gives us $y = x$.\nFor the second case, we have $y = 0$.\nSo, the total number of ordered pairs $(x,y)$ that satisfy the equation is $1 + 1 = \\boxed{2}$.\nThe answer is: 2",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exactly once. Let $N$ be the number of these integers that are divisible by 22. Find the difference between $N$ and 2025.",
+      "reference_answer": "279",
+      "predicted_answer": "9",
+      "generated_solution": "To find the number of integers that are divisible by 22, we need to count the number of integers that are divisible by both 2 and 11.\nThe number of integers that are divisible by 2 is $8!$, since we have 8 choices for each digit.\nThe number of integers that are divisible by 11 is $8!/2$, since we need to divide by 2 to account for the fact that the digits can be arranged in two different ways (e.g. 12345678 and 12345687 are the same number).\nTherefore, the number of integers that are divisible by both 2 and 11 is $(8!/2)(8!/2) = 8!/4 = 2016$.\nThe difference between $N$ and 2025 is $2025 - 2016 = \\boxed{9}$.\nThe answer is: 9",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the circle is 3, and the area of the trapezoid is 72. Let the parallel sides of the trapezoid have lengths $r$ and $s$, with $r \\neq s$. Find $r^{2}+s^{2}$.",
+      "reference_answer": "504",
+      "predicted_answer": "18",
+      "generated_solution": "Let $h$ be the height of the trapezoid. The area of the trapezoid is given by the formula $A = \\frac{1}{2}(r+s)h$.\nWe are given that $A = 72$, so we have $\\frac{1}{2}(r+s)h = 72$.\nSince the radius of the inscribed circle is 3, the distance between the parallel sides of the trapezoid is $2 \\cdot 3 = 6$.\nLet $x$ be the distance between the non-parallel sides of the trapezoid. Then, we have $r + s = 6$.\nSubstituting this into the equation $\\frac{1}{2}(r+s)h = 72$, we get $\\frac{1}{2}(6)h = 72$, which simplifies to $3h = 72$.\nDividing both sides by 3, we find that $h = 24$.\nNow, we can find the lengths of the parallel sides of the trapezoid. We have $r + s = 6$, so $r = 6 - s$.\nSubstituting this into the equation $r^2 + s^2 = (6 - s)^2 + s^2$, we get $r^2 + s^2 = 36 - 12s + s^2$.\nSimplifying, we have $r^2 + s^2 = 36 - 12s$.\nSince $r$ and $s$ are positive integers, the only possible values for $r$ and $s$ are 3 and 3, or 4 and 2.\nIf $r = 3$ and $s = 3$, then $r^2 + s^2 = 3^2 + 3^2 = 18$.\nIf $r = 4$ and $s = 2$, then $r^2 + s^2 = 4^2 + 2^2 = 20$.\nTherefore, the possible values for $r^2 + s^2$ are 18 and 20.\nThe answer is: 18",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. The two letters in each pair are placed next to each other in alphabetical order to form six two-letter words, and those six words are listed alphabetically. For example, a possible result is $AB,CJ,DG,EK,FL,HI$. The probability that the last word listed contains $G$ is $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.",
+      "reference_answer": "821",
+      "predicted_answer": "12",
+      "generated_solution": "There are a total of $\\binom{12}{2}=66$ ways to choose two letters to form a pair.\nThere are 6 possible pairs that contain $G$, namely $DG$, $EG$, $FG$, $GG$, $HG$, and $IG$.\nThe probability that the last word listed contains $G$ is the number of favorable outcomes divided by the total number of possible outcomes, which is $\\frac{6}{66}=\\frac{1}{11}$.\nTherefore, $m=1$ and $n=11$, so $m+n=\\boxed{12}$.\nThe answer is: 12",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one complex solution $z$. The sum of all possible values of $k$ can be written as $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$. Here $i=\\sqrt{-1}$.",
+      "reference_answer": "77",
+      "predicted_answer": "8",
+      "generated_solution": "We can rewrite the given equations as $|z-4-k|^2 = |z-3i-k|^2$ and $|z-4-k|^2 = 5^2$.\nExpanding, we have $(z-4-k)(\\overline{z}-4-k) = (z-3i-k)(\\overline{z}-3i-k)$ and $(z-4-k)^2 = 25$.\nSimplifying, we get $(z-4-k)(\\overline{z}-4-k) = (z-3i-k)(\\overline{z}-3i-k)$ and $z^2 - 8z + 16 + k^2 - 8k = z^2 - 6iz - 3ik - 6i^2 - k^2 + 6ik$.\nSimplifying further, we have $8z = 6i$ and $z^2 - 8z + 16 + k^2 - 8k = z^2 - 6iz - 3ik - 6i^2 - k^2 + 6ik$.\nSimplifying, we get $8z = 6i$ and $16 + k^2 - 8k = -6i$.\nFrom the first equation, we have $z = \\frac{3}{4}i$.\nSubstituting this into the second equation, we get $16 + k^2 - 8k = -6i$.\nSimplifying, we have $k^2 - 8k + 16 = 0$.\nFactoring, we get $(k-4)^2 = 0$, so $k = 4$.\nTherefore, the sum of all possible values of $k$ is $4 + 4 = \\boxed{8}$.\nThe answer is: 8",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The parabola with equation $y=x^{2}-4$ is rotated $60^{\\circ}$ counterclockwise around the origin. The unique point in the fourth quadrant where the original parabola and its image intersect has $y$-coordinate $\\frac{a-\\sqrt{b}}{c}$, where $a$, $b$, and $c$ are positive integers, and $a$ and $c$ are relatively prime. Find $a+b+c$.",
+      "reference_answer": "62",
+      "predicted_answer": "4",
+      "generated_solution": "The equation of the parabola is $y=x^2-4$.\nTo rotate the parabola $60^\\circ$ counterclockwise around the origin, we can use the transformation $(x,y) \\rightarrow (-y,x)$.\nThis gives us the equation $x = -y^2 + 4$.\nTo find the point of intersection, we set $x = y$ and solve for $y$:\n$y = -y^2 + 4$\n$y^2 - y - 4 = 0$\n$(y-4)(y+1) = 0$\n$y = 4$ or $y = -1$\nSince we are looking for the point in the fourth quadrant, the $y$-coordinate is $y = \\boxed{4}$.\nThe answer is: 9",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The 27 cells of a $3\\times9$ grid are filled in using the numbers 1 through 9 so that each row contains 9 different numbers, and each of the three $3\\times3$ blocks heavily outlined in the example below contains 9 different numbers, as in the first three rows of a Sudoku puzzle. \n | 4 | 2 | 8 | 9 | 6 | 3 | 1 | 7 | 5 | \n | 3 | 7 | 9 | 5 | 2 | 1 | 6 | 8 | 4 | \n | 5 | 6 | 1 | 8 | 4 | 7 | 9 | 2 | 3 | \n The number of different ways to fill such a grid can be written as $p^a\\cdot q^b\\cdot r^c\\cdot s^d$, where $p,q,r,$ and $s$ are distinct prime numbers and $a,b,c,$ and $d$ are positive integers. Find $p\\cdot a+q\\cdot b+r\\cdot c+s\\cdot d$.",
+      "reference_answer": "81",
+      "predicted_answer": "17",
+      "generated_solution": "We can start by listing out the numbers in the grid:\n\\[\n\\begin{array}{|c|c|c|}\n\\hline\n4 & 2 & 8 \\\\\n\\hline\n3 & 7 & 9 \\\\\n\\hline\n5 & 6 & 1 \\\\\n\\hline\n\\end{array}\n\\]\n\\[\n\\begin{array}{|c|c|c|}\n\\hline\n9 & 6 & 3 \\\\\n\\hline\n5 & 2 & 1 \\\\\n\\hline\n7 & 8 & 4 \\\\\n\\hline\n\\end{array}\n\\]\n\\[\n\\begin{array}{|c|c|c|}\n\\hline\n1 & 7 & 5 \\\\\n\\hline\n6 & 8 & 2 \\\\\n\\hline\n9 & 4 & 3 \\\\\n\\hline\n\\end{array}\n\\]\nFrom the first row, we can see that the numbers 1, 2, 3, 4, 5, 6, 7, 8, and 9 are all used.\nFrom the second row, we can see that the numbers 1, 2, 3, 4, 5, 6, 7, 8, and 9 are all used again.\nFrom the third row, we can see that the numbers 1, 2, 3, 4, 5, 6, 7, 8, and 9 are all used again.\nFrom the first block, we can see that the numbers 1, 2, 3, 4, 5, 6, 7, 8, and 9 are all used.\nFrom the second block, we can see that the numbers 1, 2, 3, 4, 5, 6, 7, 8, and 9 are all used again.\nFrom the third block, we can see that the numbers 1, 2, 3, 4, 5, 6, 7, 8, and 9 are all used again.\nTherefore, there is only one way to fill the grid, and the answer is $p\\cdot a+q\\cdot b+r\\cdot c+s\\cdot d = 2\\cdot 1 + 3\\cdot 1 + 5\\cdot 1 + 7\\cdot 1 = \\boxed{17}$.\nThe answer is: 17",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "A piecewise linear periodic function is defined by $f(x)=\\begin{cases}x&\\text{if }x\\in[-1,1)\\\\2-x&\\text{if }x\\in[1,3)\\end{cases}$ and $f(x+4)=f(x)$ for all real numbers $x$. The graph of $f(x)$ has the sawtooth pattern. The parabola $x=34y^2$ intersects the graph of $f(x)$ at finitely many points. The sum of the $y$-coordinates of these intersection points can be expressed in the form $\\frac{a+b\\sqrt{c}}{d}$, where $a,b,c,$ and $d$ are positive integers, $a,b,$ and $d$ have greatest common divisor equal to 1, and $c$ is not divisible by the square of any prime. Find $a+b+c+d$.",
+      "reference_answer": "259",
+      "predicted_answer": "0",
+      "generated_solution": "To find the sum of the $y$-coordinates of the intersection points, we need to find the $y$-coordinates of the intersection points.\nThe graph of $f(x)$ has the sawtooth pattern, which means it is a piecewise linear function with a slope of 1 in the interval $[-1,1)$ and a slope of -1 in the interval $[1,3)$.\nThe parabola $x=34y^2$ intersects the graph of $f(x)$ at finitely many points.\nTo find the $y$-coordinates of these intersection points, we can set $f(x)=34y^2$ and solve for $y$.\nIn the interval $[-1,1)$, we have $x=y$, so $y^2=34y$.\nRearranging, we get $y^2-34y=0$, which factors as $y(y-34)=0$.\nSo, $y=0$ or $y=34$.\nIn the interval $[1,3)$, we have $f(x)=2-x$, so $2-x=34y^2$.\nSimplifying, we get $x=32-34y^2$.\nSubstituting $x=34y^2$, we have $34y^2=32-34y^2$.\nCombining like terms, we get $68y^2=32$, which factors as $2^3 \\cdot 17 \\cdot y^2=2^5$.\nDividing both sides by $2^2$, we get $17y^2=16$.\nTaking the square root of both sides, we get $y=\\pm 4$.\nSo, the $y$-coordinates of the intersection points are 0, 4, and -4.\nThe sum of these $y$-coordinates is $0+4+(-4)=\\boxed{0}$.\nThe answer is: 0",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinates satisfy the inequalities $x-yz<y-zx<z-xy$ forms three disjoint convex regions. Exactly one of those regions has finite area. The area of this finite region can be expressed in the form $a\\sqrt{b}$, where $a$ and $b$ are positive integers and $b$ is not divisible by the square of any prime. Find $a+b$.",
+      "reference_answer": "510",
+      "predicted_answer": "100",
+      "generated_solution": "We can rewrite the inequalities as $x^2 - yz > 0$, $y^2 - zx > 0$, and $z^2 - xy > 0$.\nWe can rewrite the equation of the plane as $x = 75 - y - z$.\nSubstituting this into the first inequality, we get $(75 - y - z)^2 - yz > 0$.\nExpanding, we have $5625 - 150y - 75z + yz > 0$.\nRearranging, we get $y^2 - 150y + 75z - 5625 > 0$.\nThis is a quadratic inequality in $y$.\nWe can factor it as $(y - 75)(y - 75) > 0$.\nSince $y$ must be positive, we have $y > 75$.\nSimilarly, we can solve the other two inequalities to find that $z > 75$ and $x > 75$.\nTherefore, the finite region is the region in the first octant of the coordinate plane where $x > 75$, $y > 75$, and $z > 75$.\nThe area of this region is the volume of a rectangular prism with dimensions $x$, $y$, and $z$.\nSince $x > 75$, $y > 75$, and $z > 75$, the volume of the prism is $(x - 75)(y - 75)(z - 75)$.\nWe want to find the area of this region, which is the square root of the volume.\nTherefore, the area is $\\sqrt{(x - 75)(y - 75)(z - 75)}$.\nThe answer is: 100",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center of the disk. He draws 25 more line segments through the disk, drawing each segment by selecting two points at random on the perimeter of the disk in different quadrants and connecting those two points. Find the expected number of regions into which these 27 line segments divide the disk.",
+      "reference_answer": "204",
+      "predicted_answer": "50",
+      "generated_solution": "We can think of this problem as finding the expected number of regions formed by drawing 25 line segments on a disk.\nEach line segment divides the disk into two regions.\nSo, the expected number of regions formed by drawing 25 line segments is $2 \\times 25 = \\boxed{50}$.\nThe answer is: 50",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\\angle B=\\angle E=60^\\circ$. For each point $X$ in the plane, define $f(X)=AX+BX+CX+DX+EX$. The least possible value of $f(X)$ can be expressed as $m+n\\sqrt{p}$, where $m$ and $n$ are positive integers and $p$ is not divisible by the square of any prime. Find $m+n+p$.",
+      "reference_answer": "60",
+      "predicted_answer": "60",
+      "generated_solution": "We can use the Law of Cosines to find the lengths of the sides of the pentagon.\nUsing $AB=14$, $BC=7$, and $\\angle B=60^\\circ$, we have $AC=\\sqrt{14^2+7^2-2(14)(7)\\cos 60^\\circ}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^2+2(14)(7)}=\\sqrt{14^2+7^",
+      "is_correct": true,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\\leq3^6$ and $a^3+b^3+c^3$ is a multiple of $3^7$. Find the remainder when $N$ is divided by $1000$.",
+      "reference_answer": "735",
+      "predicted_answer": "0",
+      "generated_solution": "We want to find the number of ordered triples $(a,b,c)$ such that $a,b,c\\leq3^6$ and $a^3+b^3+c^3$ is a multiple of $3^7$.\nWe can rewrite $a^3+b^3+c^3$ as $(a+b+c)(a^2+b^2+c^2-ab-ac-bc)$.\nSince $a,b,c\\leq3^6$, we have $a^2+b^2+c^2\\leq3^{12}$ and $ab+ac+bc\\leq3^{12}$.\nTherefore, $(a+b+c)(a^2+b^2+c^2-ab-ac-bc)$ is a multiple of $3^7$ if and only if $(a+b+c)$ is a multiple of $3^7$.\nSince $a,b,c\\leq3^6$, the possible values for $a+b+c$ are $3^7, 3^7+1, 3^7+2, \\dots, 3^7+3^6$.\nThere are $3^6$ possible values for $a+b+c$.\nTherefore, the number of ordered triples $(a,b,c)$ is $3^6$.\nThe remainder when $N$ is divided by $1000$ is $\\boxed{0}$.\nThe answer is: 0",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Six points $ A, B, C, D, E, $ and $ F $ lie in a straight line in that order. Suppose that $ G $ is a point not on the line and that $ AC = 26 $, $ BD = 22 $, $ CE = 31 $, $ DF = 33 $, $ AF = 73 $, $ CG = 40 $, and $ DG = 30 $. Find the area of $ \\triangle BGE $.",
+      "reference_answer": "468",
+      "predicted_answer": "600",
+      "generated_solution": "We can use the formula for the area of a triangle to find the area of $\\triangle BGE$.\nThe formula is $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$.\nIn this case, the base is $DG$ and the height is the perpendicular distance from $B$ to the line $AC$.\nWe can find the height by using the Pythagorean Theorem on triangle $BGE$.\nLet $h$ be the height. Then, we have $h^2 + 30^2 = 40^2$, which simplifies to $h^2 = 1600$.\nTaking the square root of both sides, we find $h = 40$.\nNow, we can calculate the area of $\\triangle BGE$:\n$\\frac{1}{2} \\times 30 \\times 40 = \\boxed{600}$.\nThe answer is: 600",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Find the sum of all positive integers $ n $ such that $ n + 2 $ divides the product $ 3(n + 3)(n^2 + 9) $.",
+      "reference_answer": "49",
+      "predicted_answer": "3*n**3 + 6*n**2 + 9*n**2 + 6*n + 12*n + 6",
+      "generated_solution": "We can expand the product as $3n(n^2 + 9) + 2(n^2 + 9) = 3n^3 + 27n + 2n^2 + 18$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nWe can rewrite the expression as $3n^3 + 29n + 2n^2$.\nWe can factor out $n$ to get $n(3n^2 + 29 + 2n)$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms, we have $3n^3 + 15n^2 + 18n + 6$.\nWe want to find the sum of all positive integers $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, it must also divide the expression when $n$ is replaced by $n + 2$.\nSo, we have $(n + 2)(3(n^2 + 2n + 1) + 2(n + 2))$.\nExpanding, we get $3n^3 + 9n^2 + 6n + 6n^2 + 12n + 6$.\nCombining like terms,",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Four unit squares form a $2 \\times 2$ grid. Each of the 12 unit line segments forming the sides of the squares is colored either red or blue in such a way that each unit square has 2 red sides and 2 blue sides. Find the number of such colorings.",
+      "reference_answer": "82",
+      "predicted_answer": "16",
+      "generated_solution": "We can count the number of colorings by considering the number of ways to color each unit square.\nFor each unit square, there are 2 choices for the color of the top side and 2 choices for the color of the left side.\nSince there are 4 unit squares, the total number of colorings is $2^4 = \\boxed{16}$.\nThe answer is: 16",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The product $ \\prod_{k=4}^{63} \\frac{\\log_k(5^{k^2-1})}{\\log_{k+1}(5^{k^2-4})} = \\frac{\\log_4(5^{15})}{\\log_5(5^{12})} \\cdot \\frac{\\log_5(5^{24})}{\\log_6(5^{21})} \\cdot \\frac{\\log_6(5^{35})}{\\log_7(5^{32})} \\cdots \\frac{\\log_{63}(5^{3968})}{\\log_{64}(5^{3965})} $ is equal to $ \\frac{m}{n} $, where $ m $ and $ n $ are relatively prime positive integers. Find $ m + n $.",
+      "reference_answer": "106",
+      "predicted_answer": "204",
+      "generated_solution": "We can rewrite the given expression as $\\frac{\\log_4(5^{15})}{\\log_5(5^{12})} \\cdot \\frac{\\log_5(5^{24})}{\\log_6(5^{21})} \\cdot \\frac{\\log_6(5^{35})}{\\log_7(5^{32})} \\cdots \\frac{\\log_{63}(5^{3968})}{\\log_{64}(5^{3965})}$.\nWe can simplify each fraction by using the property $\\log_a(b^c) = c \\log_a(b)$.\nFor example, $\\frac{\\log_4(5^{15})}{\\log_5(5^{12})} = \\frac{15 \\log_4(5)}{12 \\log_5(5)} = \\frac{5 \\log_4(5)}{4 \\log_5(5)}$.\nContinuing this process, we can simplify each fraction until we have a common base.\nFor example, $\\frac{\\log_4(5^{15})}{\\log_5(5^{12})} \\cdot \\frac{\\log_5(5^{24})}{\\log_6(5^{21})} = \\frac{5 \\log_4(5)}{4 \\log_5(5)} \\cdot \\frac{24 \\log_5(5)}{21 \\log_6(5)} = \\frac{5 \\cdot 24}{4 \\cdot 21} = \\frac{120}{84}$.\nWe can continue this process until we have a common base for all the fractions.\nFinally, we can simplify the expression to $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers.\nTo find $m + n$, we can add the numerators and denominators of the simplified expression.\nIn this case, $m = 120$ and $n = 84$, so $m + n = 120 + 84 = \\boxed{204}$.\nThe answer is: 204",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Suppose $ \\triangle ABC $ has angles $ \\angle BAC = 84^\\circ $, $ \\angle ABC = 60^\\circ $, and $ \\angle ACB = 36^\\circ $. Let $ D, E, $ and $ F $ be the midpoints of sides $ \\overline{BC} $, $ \\overline{AC} $, and $ \\overline{AB} $, respectively. The circumcircle of $ \\triangle DEF $ intersects $ \\overline{BD} $, $ \\overline{AE} $, and $ \\overline{AF} $ at points $ G, H, $ and $ J $, respectively. The points $ G, D, E, H, J, $ and $ F $ divide the circumcircle of $ \\triangle DEF $ into six minor arcs, as shown. Find $ \\widehat{DE} + 2 \\cdot \\widehat{HJ} + 3 \\cdot \\widehat{FG} $, where the arcs are measured in degrees.",
+      "reference_answer": "336^\\circ",
+      "predicted_answer": "300",
+      "generated_solution": "Since $D, E, $ and $F$ are midpoints, we have $\\widehat{DE} = \\widehat{EF} = \\widehat{FD} = 60^\\circ$.\nSince $\\angle BAC = 84^\\circ$, we have $\\widehat{AC} = 180^\\circ - \\angle BAC = 96^\\circ$.\nSince $\\angle ABC = 60^\\circ$, we have $\\widehat{BC} = 180^\\circ - \\angle ABC = 120^\\circ$.\nSince $D$ is the midpoint of $BC$, we have $\\widehat{BD} = \\widehat{DC} = \\widehat{DE} = 60^\\circ$.\nSince $E$ is the midpoint of $AC$, we have $\\widehat{AE} = \\widehat{EC} = \\widehat{DE} = 60^\\circ$.\nSince $F$ is the midpoint of $AB$, we have $\\widehat{AF} = \\widehat{FB} = \\widehat{DE} = 60^\\circ$.\nSince $G$ is the midpoint of $BD$, we have $\\widehat{BG} = \\widehat{GD} = \\widehat{DE} = 60^\\circ$.\nSince $H$ is the midpoint of $AE$, we have $\\widehat{AH} = \\widehat{HE} = \\widehat{DE} = 60^\\circ$.\nSince $J$ is the midpoint of $AF$, we have $\\widehat{AJ} = \\widehat{JF} = \\widehat{DE} = 60^\\circ$.\nTherefore, $\\widehat{DE} + 2 \\cdot \\widehat{HJ} + 3 \\cdot \\widehat{FG} = 60^\\circ + 2 \\cdot 60^\\circ + 3 \\cdot 60^\\circ = \\boxed{300^\\circ}$.\nThe answer is: 300",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Circle $\\omega_1$ with radius 6 centered at point $A$ is internally tangent at point $B$ to circle $\\omega_2$ with radius 15. Points $C$ and $D$ lie on $\\omega_2$ such that $\\overline{BC}$ is a diameter of $\\omega_2$ and $\\overline{BC} \\perp \\overline{AD}$. The rectangle $EFGH$ is inscribed in $\\omega_1$ such that $\\overline{EF} \\perp \\overline{BC}$, $C$ is closer to $\\overline{GH}$ than to $\\overline{EF}$, and $D$ is closer to $\\overline{FG}$ than to $\\overline{EH}$, as shown. Triangles $\\triangle DGF$ and $\\triangle CHG$ have equal areas. The area of rectangle $EFGH$ is $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.",
+      "reference_answer": "293",
+      "predicted_answer": "Eq(c*e + c*h + d*e, 18)",
+      "generated_solution": "Since $\\overline{BC}$ is a diameter of $\\omega_2$, the radius of $\\omega_1$ is $6$ and the radius of $\\omega_2$ is $15$, we have $AB = 6$ and $BC = 30$.\nSince $\\overline{BC}$ is perpendicular to $\\overline{AD}$, we have $AD = 6$.\nSince $\\triangle DGF$ and $\\triangle CHG$ have equal areas, we have $DG = GH$.\nSince $C$ is closer to $\\overline{GH}$ than to $\\overline{EF}$, we have $CH < CE$.\nSince $D$ is closer to $\\overline{FG}$ than to $\\overline{EH}$, we have $DG < DE$.\nSince $DG = GH$, we have $GH < DE$.\nSince $CH < CE$ and $GH < DE$, we have $CH < CE < DE$.\nTherefore, $CH + CE + DE = 6 + 6 + 6 = 18$.\nSince the area of rectangle $EFGH$ is $\\frac{m}{n}$, we have $EF \\cdot GH = \\frac{m}{n}$.\nSince $EF = CE$ and $GH = DG$, we have $CE \\cdot DG = \\frac{m}{n}$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH < CE < DE$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.\nTherefore, $CH + CE + DE = 18$.\nSince $CH + CE + DE = 18$, we have $CH + CE + DE = 18$.",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ A $ be the set of positive integer divisors of 2025. Let $ B $ be a randomly selected subset of $ A $. The probability that $ B $ is a nonempty set with the property that the least common multiple of its elements is 2025 is $ \\frac{m}{n} $, where $ m $ and $ n $ are relatively prime positive integers. Find $ m + n $.",
+      "reference_answer": "237",
+      "predicted_answer": "4095",
+      "generated_solution": "The divisors of 2025 are 1, 3, 5, 9, 15, 27, 45, 81, 135, 243, 405, and 2025.\nTo find the probability that a randomly selected subset of these divisors has a least common multiple of 2025,\nwe need to count the number of subsets that satisfy this condition and divide by the total number of subsets.\nThe total number of subsets of a set with 12 elements is $2^{12}$.\nTo count the number of subsets that satisfy the condition, we need to count the number of subsets that have a least common multiple of 2025.\nThe least common multiple of a set of divisors of 2025 is 2025 itself if and only if the set contains all the divisors of 2025.\nThere is only one such set, which is the set itself.\nTherefore, the number of subsets that satisfy the condition is 1.\nSo, the probability is $\\frac{1}{2^{12}}$.\nThe answer is: 4095",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "From an unlimited supply of 1-cent coins, 10-cent coins, and 25-cent coins, Silas wants to find a collection of coins that has a total value of $ N $ cents, where $ N $ is a positive integer. He uses the so-called **greedy algorithm**, successively choosing the coin of greatest value that does not cause the value of his collection to exceed $ N $. For example, to get 42 cents, Silas will choose a 25-cent coin, then a 10-cent coin, then 7 1-cent coins. However, this collection of 9 coins uses more coins than necessary to get a total of 42 cents; indeed, choosing 4 10-cent coins and 2 1-cent coins achieves the same total value with only 6 coins.\n\nIn general, the greedy algorithm succeeds for a given $ N $ if no other collection of 1-cent, 10-cent, and 25-cent coins gives a total value of $ N $ cents using strictly fewer coins than the collection given by the greedy algorithm. Find the number of values of $ N $ between 1 and 1000 inclusive for which the greedy algorithm succeeds.",
+      "reference_answer": "610",
+      "predicted_answer": "3",
+      "generated_solution": "To solve this problem, we need to determine the number of values of $N$ between 1 and 1000 inclusive for which the greedy algorithm succeeds.\nThe greedy algorithm works by choosing the coin of the highest value that does not cause the total value to exceed $N$.\nLet's consider the possible values of $N$ and the corresponding number of coins used by the greedy algorithm:\n$N = 1$: 1 coin\n$N = 10$: 1 coin\n$N = 25$: 1 coin\n$N = 26$: 2 coins\n$N = 30$: 2 coins\n$N = 35$: 2 coins\n$N = 40$: 2 coins\n$N = 45$: 2 coins\n$N = 50$: 2 coins\n$N = 55$: 2 coins\n$N = 60$: 2 coins\n$N = 65$: 2 coins\n$N = 70$: 2 coins\n$N = 75$: 2 coins\n$N = 80$: 2 coins\n$N = 85$: 2 coins\n$N = 90$: 2 coins\n$N = 95$: 2 coins\n$N = 100$: 2 coins\n$N = 105$: 3 coins\n$N = 110$: 3 coins\n$N = 115$: 3 coins\n$N = 120$: 3 coins\n$N = 125$: 3 coins\n$N = 130$: 3 coins\n$N = 135$: 3 coins\n$N = 140$: 3 coins\n$N = 145$: 3 coins\n$N = 150$: 3 coins\n$N = 155$: 3 coins\n$N = 160$: 3 coins\n$N = 165$: 3 coins\n$N = 170$: 3 coins\n$N = 175$: 3 coins\n$N = 180$: 3 coins\n$N = 185$: 3 coins\n$N = 190$: 3 coins\n$N = 195$: 3 coins\n$N = 200$: 3 coins\n$N = 205$: 3 coins\n$N = 210$: 3 coins\n$N = 215$: 3 coins\n$N = 220$: 3 coins\n$N = 225$: 3 coins\n$N = 230$: 3 coins\n$N = 235$: 3 coins\n$N = 240$: 3 coins\n$N = 245$: 3 coins\n$N = 250$: 3 coins\n$N = 255$: 3 coins\n$N = 260$: 3 coins\n$N = 265$: 3 coins\n$N = 270$: 3 coins\n$N = 275$: 3 coins\n$N = 280$: 3 coins\n$N = 285$: 3 coins\n$N = 290$: 3 coins\n$N = 295$: 3 coins\n$N = 300$: 3 coins\n$N = 305$: 3 coins\n$N = 310$: 3 coins\n$N = 315$: 3 coins\n$N = 320$: 3 coins\n$N = 325$: 3 coins\n$N = 330$: 3 coins\n$N = 335$: 3 coins\n$N = 340$: 3 coins\n$N = 345$: 3 coins\n$N = 350$: 3 coins\n$N = 355$: 3 coins\n$N = 360$: 3 coins\n$N = 365$: 3 coins\n$N = 370$: 3 coins\n$N = 375$: 3 coins\n$N = 380$: 3 coins\n$N = 385$: 3 coins\n$N = 390$: 3 coins\n$N = 395$: 3 coins\n$N = 400$: 3 coins\n$N = 405$: 3 coins\n$N = 410$: 3 coins\n$N = 415$: 3 coins\n$N = 420$: 3 coins\n$N = 425$: 3 coins\n$N = 430$: 3 coins\n$N = 435$: 3 coins\n$N = 440$: 3 coins\n$N = 445$: 3 coins\n$N = 450$: 3 coins\n$N = 455$: 3 coins\n$N = 460$: 3 coins\n$N = 465$: 3 coins\n$N = 470$: 3 coins\n$N = 475$: 3 coins\n$N = 480$: 3 coins\n$N = 485$: 3 coins\n$N = 490$: 3 coins\n$N = 495$: 3 coins\n$N = 500$: 3 coins\n$N = 505$: 3 coins\n$N = 510$: 3 coins\n$N = 515$: 3 coins\n$N = 520$: 3 coins\n$N = 525$: 3 coins\n$N = 530$: 3 coins\n$N = 535$: 3 coins\n$N = 540$: 3 coins\n$N = 545$: 3 coins\n$N = 550$: 3 coins\n$N = 555$: 3 coins\n$N = 560$: 3 coins\n$N = 565$: 3 coins\n$N = 570$: 3 coins\n$N = 575$: 3 coins\n$N = 580$: 3 coins\n$N = 585$: 3 coins\n$N = 590$: 3 coins\n$N = 595$: 3 coins\n$N = 600$: 3 coins\n$N = 605$: 3 coins\n$N = 610$: 3 coins\n$N = 615$: 3 coins\n$N = 620$: 3 coins\n$N = 625$: 3 coins\n$N = 630$: 3 coins\n$N = 635$: 3 coins\n$N = 640$: 3 coins\n$N = 645$: 3 coins\n$N = 650$: 3 coins\n$N = 655$: 3 coins\n$N = 660$: 3 coins\n$N = 665$: 3 coins\n$N = 670$: 3 coins\n$N = 675$: 3 coins\n$N = 680$: 3 coins\n$N = 685$: 3 coins\n$N = 690$: 3 coins\n$N = 695$: 3 coins\n$N = 700$: 3 coins\n$N = 705$: 3 coins\n$N = 710$: 3 coins\n$N = 715$: 3 coins\n$N = 720$: 3 coins\n$N = 725$: 3 coins\n$N = 730$: 3 coins\n$N = 735$: 3 coins\n$N = 740$: 3 coins\n$N = 745$: 3 coins\n$N = 750$: 3 coins\n$N = 755$: 3 coins\n$N = 760$: 3 coins\n$N = 765$: 3 coins\n$N = 770$: 3 coins\n$N = 775$: 3 coins\n$N = 780$: 3 coins\n$N = 785$: 3 coins\n$N = 790$: 3 coins\n$N = 795$: 3 coins\n$N = 800$: 3 coins\n$N = 805$: 3 coins\n$N = 810$: 3 coins\n$N = 815$: 3 coins\n$N = 820$: 3 coins\n$N = 825$: 3 coins\n$N = 830$: 3 coins\n$N = 835$: 3 coins\n$N = 840$: 3 coins\n$N = 845$: 3 coins\n$N = 850$: 3 coins\n$N = 855$: 3 coins\n$N = 860$: 3 coins\n$N = 865$: 3 coins\n$N = 870$: 3 coins\n$N = 875$: 3 coins\n$N = 880$: 3 coins\n$N = 885$: 3 coins\n$N = 890$: 3 coins\n$N = 895$: 3 coins\n$N = 900$: 3 coins\n$N = 905$: 3 coins\n$N = 910$: 3 coins\n$N = 915$: 3 coins\n$N = 920$: 3 coins\n$N = 925$: 3 coins\n$N = 930$: 3 coins\n$N = 935$: 3 coins\n$N = 940$: 3 coins\n$N = 945$: 3 coins\n$N = 950$: 3 coins\n$N = 955$: 3 coins\n$N = 960$: 3 coins\n$N = 965$: 3 coins\n$N = 970$: 3 coins\n$N = 975$: 3 coins\n$N = 980$: 3 coins\n$N = 985$: 3 coins\n$N = 990$: 3 coins",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "There are $ n $ values of $ x $ in the interval $ 0 < x < 2\\pi $ where $ f(x) = \\sin(7\\pi \\cdot \\sin(5x)) = 0 $. For $ t $ of these $ n $ values of $ x $, the graph of $ y = f(x) $ is tangent to the $ x $-axis. Find $ n + t $.",
+      "reference_answer": "149",
+      "predicted_answer": "2",
+      "generated_solution": "We want to find the number of solutions to the equation $f(x) = \\sin(7\\pi \\cdot \\sin(5x)) = 0$ in the interval $0 < x < 2\\pi$.\nSince $\\sin(7\\pi \\cdot \\sin(5x))$ is a periodic function with period $2\\pi$, we can restrict our attention to the interval $0 < x < \\frac{2\\pi}{5}$.\nIn this interval, $\\sin(5x)$ takes on all values between $-1$ and $1$.\nTherefore, $7\\pi \\cdot \\sin(5x)$ takes on all values between $-7\\pi$ and $7\\pi$.\nSince $\\sin(7\\pi \\cdot \\sin(5x))$ is equal to $0$ when $7\\pi \\cdot \\sin(5x)$ is equal to $0$, we need to find the number of solutions to $7\\pi \\cdot \\sin(5x) = 0$ in the interval $0 < x < \\frac{2\\pi}{5}$.\nSince $\\sin(5x)$ is equal to $0$ when $5x$ is equal to $0$ or $\\pi$, we have $x = 0$ or $x = \\frac{\\pi}{5}$.\nTherefore, there are $\\boxed{2}$ solutions to $f(x) = 0$ in the interval $0 < x < 2\\pi$.\nThe answer is: 2",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Sixteen chairs are arranged in a row. Eight people each select a chair in which to sit so that no person sits next to two other people. Let $ N $ be the number of subsets of 16 chairs that could be selected. Find the remainder when $ N $ is divided by 1000.",
+      "reference_answer": "907",
+      "predicted_answer": "4",
+      "generated_solution": "To solve this problem, we need to determine the number of subsets of 16 chairs that could be selected, and find the remainder when this number is divided by 1000.\nWe can use the concept of stars and bars to solve this problem.\nImagine that each chair is represented by a star, and we need to place 8 bars to separate the chairs into groups of 2.\nFor example, if we have 4 chairs, we can arrange them as follows:\n*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ S $ be the set of vertices of a regular 24-gon. Find the number of ways to draw 12 segments of equal lengths so that each vertex in $ S $ is an endpoint of exactly one of the 12 segments.",
+      "reference_answer": "113",
+      "predicted_answer": "1235520",
+      "generated_solution": "We can think of this problem as distributing the 12 segments among the 24 vertices of the regular 24-gon.\nTo ensure that each vertex is an endpoint of exactly one segment, we can use stars and bars.\nWe have 12 segments and 24 vertices, so we need to distribute the segments among the vertices using 12 stars and 12 bars.\nThe number of ways to do this is given by the binomial coefficient $\\binom{24+12}{12} = \\binom{36}{12} = \\boxed{1235520}$.\nThe answer is: 1235520",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ A_1A_2 \\ldots A_{11} $ be an 11-sided non-convex simple polygon with the following properties:\n* The area of $ A_iA_1A_{i+1} $ is 1 for each $ 2 \\leq i \\leq 10 $,\n* $ \\cos(\\angle A_iA_1A_{i+1}) = \\frac{12}{13} $ for each $ 2 \\leq i \\leq 10 $,\n* The perimeter of $ A_1A_2 \\ldots A_{11} $ is 20.\nIf $ A_1A_2 + A_1A_{11} $ can be expressed as $ \\frac{m\\sqrt{n} - p}{q} $ for positive integers $ m, n, p, q $ with $ n $ squarefree and no prime divides all of $ m, p, q$, find $ m + n + p + q $.",
+      "reference_answer": "19",
+      "predicted_answer": "2220",
+      "generated_solution": "Let $s$ be the side length of the polygon. Then the area of $A_iA_1A_{i+1}$ is $\\frac{1}{2}s^2\\sin(\\angle A_iA_1A_{i+1})$ for each $2 \\leq i \\leq 10$. Since $\\cos(\\angle A_iA_1A_{i+1}) = \\frac{12}{13}$, we have $\\sin(\\angle A_iA_1A_{i+1}) = \\frac{5}{13}$ for each $2 \\leq i \\leq 10$. Therefore, the area of each triangle is $\\frac{1}{2}s^2\\cdot\\frac{5}{13} = \\frac{5s^2}{26}$.\n\nThe perimeter of the polygon is $s + s + s + \\ldots + s = 11s$, so we have $11s = 20$. Solving for $s$, we find $s = \\frac{20}{11}$.\n\nThe sum of the areas of the triangles is $10\\cdot\\frac{5s^2}{26} = \\frac{50s^2}{26} = \\frac{50\\cdot\\left(\\frac{20}{11}\\right)^2}{26} = \\frac{50\\cdot\\frac{400}{121}}{26} = \\frac{2000}{121}$.\n\nTherefore, $A_1A_2 + A_1A_{11} = \\frac{2000}{121} + \\frac{20}{11} = \\frac{2000 + 220}{121} = \\frac{2220}{121}$.\n\nThe answer is: 2220",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let the sequence of rationals $ x_1, x_2, \\ldots $ be defined such that $ x_1 = \\frac{25}{11} $ and\n$ x_{k+1} = \\frac{1}{3} \\left( x_k + \\frac{1}{x_k} - 1 \\right). $\n$ x_{2025} $ can be expressed as $ \\frac{m}{n} $ for relatively prime positive integers $ m $ and $ n $. Find the remainder when $ m + n $ is divided by 1000.",
+      "reference_answer": "248",
+      "predicted_answer": "m",
+      "generated_solution": "We can start by evaluating the first few terms of the sequence:\n$x_1 = \\frac{25}{11}$\n$x_2 = \\frac{1}{3} \\left( \\frac{25}{11} + \\frac{11}{25} - 1 \\right) = \\frac{25}{11} \\cdot \\frac{25}{11} = \\frac{625}{121}$\n$x_3 = \\frac{1}{3} \\left( \\frac{625}{121} + \\frac{121}{625} - 1 \\right) = \\frac{625}{121} \\cdot \\frac{625}{121} = \\frac{390625}{14641}$\n$x_4 = \\frac{1}{3} \\left( \\frac{390625}{14641} + \\frac{14641}{390625} - 1 \\right) = \\frac{390625}{14641} \\cdot \\frac{390625}{14641} = \\frac{152587890625}{2199023255552}$\nWe can see that the numerators and denominators of the terms in the sequence are increasing rapidly. However, we can observe that the numerators and denominators are always perfect squares. Therefore, we can conclude that the numerators and denominators of the terms in the sequence are always perfect squares.\nTo find the remainder when $m + n$ is divided by 1000, we need to find the remainder when the sum of the numerators and denominators of $x_{2025}$ is divided by 1000.\nSince the numerators and denominators of the terms in the sequence are always perfect squares, we can write $x_{2025}$ as $\\frac{m^2}{n^2}$, where $m$ and $n$ are positive integers.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m^2 + n^2$ is divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m^2 + n^2$ is divided by 1000 is the same as the remainder when $m^2$ and $n^2$ are divided by 1000.\nSince $m$ and $n$ are perfect squares, the remainder when $m^2$ and $n^2$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$ and $n$ are divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nTherefore, the remainder when $m + n$ is divided by 1000 is the same as the remainder when $m$ and $n$ are divided by 1000.\nSince $m$ and $n$ are positive integers, the remainder when $m$",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ \\triangle ABC $ be a right triangle with $ \\angle A = 90^\\circ $ and $ BC = 38 $. There exist points $ K $ and $ L $ inside the triangle such that $ AK = AL = BK = CL = KL = 14. $ The area of the quadrilateral $ BKLC $ can be expressed as $ n \\sqrt{3} $ for some positive integer $ n $. Find $ n $.",
+      "reference_answer": "104",
+      "predicted_answer": "133",
+      "generated_solution": "Since $ \\triangle ABC $ is a right triangle with $ \\angle A = 90^\\circ $, we can use the Pythagorean Theorem to find the length of $ AB $.\nLet $ AB = x $. Then, by the Pythagorean Theorem, we have $ x^2 + 14^2 = 38^2 $, which simplifies to $ x^2 = 576 $.\nTaking the square root of both sides, we find $ x = 24 $.\nNow, we can find the area of $ \\triangle ABC $ using the formula $ \\frac{1}{2} \\times AB \\times BC $.\nThe area of $ \\triangle ABC $ is $ \\frac{1}{2} \\times 24 \\times 38 = 12 \\times 19 = 228 $.\nSince $ BKLC $ is a quadrilateral with sides of equal length, we can use the formula for the area of a kite to find the area of $ BKLC $.\nThe area of a kite is given by $ \\frac{1}{2} \\times \\text{diagonal} \\times \\text{perpendicular} $.\nIn this case, the diagonal is $ KL = 14 $ and the perpendicular is $ BC = 38 $.\nSo, the area of $ BKLC $ is $ \\frac{1}{2} \\times 14 \\times 38 = 7 \\times 19 = 133 $.\nTherefore, $ n = \\boxed{133} $.\nThe answer is: 133",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "There are exactly three positive real numbers $ k $ such that the function\n$ f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x} $\ndefined over the positive real numbers achieves its minimum value at exactly two positive real numbers $ x $. Find the sum of these three values of $ k $.",
+      "reference_answer": "240",
+      "predicted_answer": "188",
+      "generated_solution": "To find the minimum value of $f(x)$, we need to find the values of $x$ that make the numerator of $f(x)$ equal to 0.\nSetting each factor of the numerator equal to 0, we have $x = 18, 72, 98, k$.\nSince $f(x)$ is defined over the positive real numbers, we can discard the negative values of $x$.\nTherefore, the possible values of $k$ are 18, 72, and 98.\nThe sum of these values is $18 + 72 + 98 = \\boxed{188}$.\nThe answer is: 188",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    }
+  ],
+  "model": "llama3_1-8B-metamathqa-nogreedy-reliable-1e"
+}

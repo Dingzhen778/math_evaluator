@@ -1,0 +1,339 @@
+{
+  "dataset": "aime2025",
+  "accuracy": 3.33,
+  "correct": 1,
+  "total": 30,
+  "results": [
+    {
+      "question": "Find the sum of all integer bases $b>9$ for which $17_{b}$ is a divisor of $97_{b}$.",
+      "reference_answer": "70",
+      "predicted_answer": "10",
+      "generated_solution": "We want to find the bases $b$ such that $17_b$ is a divisor of $97_b$.\nIn base $b$, the number $17_b$ is equal to $1b + 7$ and the number $97_b$ is equal to $9b + 7$.\nWe want to find the bases $b$ such that $1b + 7$ divides $9b + 7$.\nThis is equivalent to finding the bases $b$ such that $8b$ is divisible by $8$.\nSince $b$ must be greater than 9, the only possible value for $b$ is $\\boxed{10}$.\nThe answer is: 10",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "On $\\triangle ABC$ points $A,D,E$, and $B$ lie that order on side $\\overline{AB}$ with $AD=4, DE=16$, and $EB=8$. Points $A,F,G$, and $C$ lie in that order on side $\\overline{AC}$ with $AF=13, FG=52$, and $GC=26$. Let $M$ be the reflection of $D$ through $F$, and let $N$ be the reflection of $G$ through $E$. Quadrilateral $DEGF$ has area 288. Find the area of heptagon $AFNBCEM$.",
+      "reference_answer": "588",
+      "predicted_answer": "48",
+      "generated_solution": "We can start by finding the areas of triangles $DEF$ and $GFE$.\nThe area of triangle $DEF$ is $\\frac{1}{2} \\cdot 4 \\cdot 16 = 32$.\nThe area of triangle $GFE$ is $\\frac{1}{2} \\cdot 8 \\cdot 52 = 208$.\nThe area of quadrilateral $DEGF$ is the sum of the areas of triangles $DEF$ and $GFE$, which is $32 + 208 = 240$.\nSince quadrilateral $DEGF$ has an area of 288, the area of heptagon $AFNBCEM$ is $288 - 240 = \\boxed{48}$.\nThe answer is: 48",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The 9 members of a baseball team went to an ice cream parlor after their game. Each player had a singlescoop cone of chocolate, vanilla, or strawberry ice cream. At least one player chose each flavor, and the number of players who chose chocolate was greater than the number of players who chose vanilla, which was greater than the number of players who chose strawberry. Let $N$ be the number of different assignments of flavors to players that meet these conditions. Find the remainder when $N$ is divided by 1000.",
+      "reference_answer": "16",
+      "predicted_answer": "40",
+      "generated_solution": "We can solve this problem using casework.\nCase 1: All players choose chocolate ice cream.\nIn this case, there is only 1 possible assignment of flavors.\nCase 2: All players choose vanilla ice cream.\nIn this case, there is only 1 possible assignment of flavors.\nCase 3: All players choose strawberry ice cream.\nIn this case, there is only 1 possible assignment of flavors.\nCase 4: 8 players choose chocolate ice cream, 1 player chooses vanilla ice cream, and 0 players choose strawberry ice cream.\nIn this case, there are 8 choices for the player who chooses vanilla ice cream and 1 choice for the player who chooses strawberry ice cream. So there are a total of 8 × 1 = 8 possible assignments of flavors.\nCase 5: 7 players choose chocolate ice cream, 1 player chooses vanilla ice cream, and 1 player chooses strawberry ice cream.\nIn this case, there are 7 choices for the player who chooses vanilla ice cream and 1 choice for the player who chooses strawberry ice cream. So there are a total of 7 × 1 = 7 possible assignments of flavors.\nCase 6: 6 players choose chocolate ice cream, 2 players choose vanilla ice cream, and 1 player chooses strawberry ice cream.\nIn this case, there are 6 choices for the player who chooses vanilla ice cream and 1 choice for the player who chooses strawberry ice cream. So there are a total of 6 × 1 = 6 possible assignments of flavors.\nCase 7: 5 players choose chocolate ice cream, 3 players choose vanilla ice cream, and 1 player chooses strawberry ice cream.\nIn this case, there are 5 choices for the player who chooses vanilla ice cream and 1 choice for the player who chooses strawberry ice cream. So there are a total of 5 × 1 = 5 possible assignments of flavors.\nCase 8: 4 players choose chocolate ice cream, 4 players choose vanilla ice cream, and 1 player chooses strawberry ice cream.\nIn this case, there are 4 choices for the player who chooses vanilla ice cream and 1 choice for the player who chooses strawberry ice cream. So there are a total of 4 × 1 = 4 possible assignments of flavors.\nCase 9: 3 players choose chocolate ice cream, 5 players choose vanilla ice cream, and 1 player chooses strawberry ice cream.\nIn this case, there are 3 choices for the player who chooses vanilla ice cream and 1 choice for the player who chooses strawberry ice cream. So there are a total of 3 × 1 = 3 possible assignments of flavors.\nCase 10: 2 players choose chocolate ice cream, 6 players choose vanilla ice cream, and 1 player chooses strawberry ice cream.\nIn this case, there are 2 choices for the player who chooses vanilla ice cream and 1 choice for the player who chooses strawberry ice cream. So there are a total of 2 × 1 = 2 possible assignments of flavors.\nCase 11: 1 player chooses chocolate ice cream, 7 players choose vanilla ice cream, and 1 player chooses strawberry ice cream.\nIn this case, there is 1 choice for the player who chooses vanilla ice cream and 1 choice for the player who chooses strawberry ice cream. So there is a total of 1 × 1 = 1 possible assignment of flavors.\nCase 12: 0 players choose chocolate ice cream, 8 players choose vanilla ice cream, and 1 player chooses strawberry ice cream.\nIn this case, there is 1 choice for the player who chooses strawberry ice cream. So there is a total of 1 possible assignment of flavors.\nAdding up the number of possible assignments of flavors from each case, we get a total of 1 + 1 + 1 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 1 = 40 possible assignments of flavors.\nTherefore, the remainder when $N$ is divided by 1000 is $\\boxed{40}$.The answer is: 40",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Find the number of ordered pairs $(x,y)$, where both $x$ and $y$ are integers between $-100$ and $100$, inclusive, such that $12x^{2}-xy-6y^{2}=0$.",
+      "reference_answer": "117",
+      "predicted_answer": "202",
+      "generated_solution": "We can rewrite the equation as $6y^2 + 12x^2 - xy = 0$.\nFactoring out a 6, we have $6(y^2 + 2x^2 - xy) = 0$.\nWe can then factor the quadratic as $6y(y + 2x) - 6x(y + 2x) = 0$.\nThis gives us two cases: $y(y + 2x) = 0$ and $x(y + 2x) = 0$.\nFor the first case, we have $y = 0$ or $y + 2x = 0$.\nIf $y = 0$, then $x$ can be any integer between $-100$ and $100$.\nIf $y + 2x = 0$, then $y = -2x$. Since $y$ is an integer, $x$ must be an integer as well.\nFor the second case, we have $x = 0$ or $y + 2x = 0$.\nIf $x = 0$, then $y$ can be any integer between $-100$ and $100$.\nIf $y + 2x = 0$, then $y = -2x$. Since $y$ is an integer, $x$ must be an integer as well.\nTherefore, the number of ordered pairs $(x,y)$ is $2 \\times 101 = \\boxed{202}$.\nThe answer is: 202",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "There are $8!=40320$ eight-digit positive integers that use each of the digits $1,2,3,4,5,6,7,8$ exactly once. Let $N$ be the number of these integers that are divisible by 22. Find the difference between $N$ and 2025.",
+      "reference_answer": "279",
+      "predicted_answer": "-2025",
+      "generated_solution": "To find the number of integers that are divisible by 22, we need to count the number of integers that are divisible by both 2 and 11.\nAn integer is divisible by 2 if its units digit is even, and it is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11.\nSince the digits 1, 2, 3, 4, 5, 6, 7, 8 are all odd, the sum of the digits in the odd positions is always odd, and the sum of the digits in the even positions is always even.\nTherefore, the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is always odd, so there are no integers that are divisible by both 2 and 11.\nTherefore, $N = 0$.\nThe difference between $N$ and 2025 is $0 - 2025 = \\boxed{-2025}$.\nThe answer is: -2025",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the circle is 3, and the area of the trapezoid is 72. Let the parallel sides of the trapezoid have lengths $r$ and $s$, with $r \\neq s$. Find $r^{2}+s^{2}$.",
+      "reference_answer": "504",
+      "predicted_answer": "720",
+      "generated_solution": "Let $h$ be the height of the trapezoid. The area of the trapezoid is given by the formula $A = \\frac{1}{2}(r+s)h$. We are given that $A = 72$, so we have $\\frac{1}{2}(r+s)h = 72$. Since the radius of the inscribed circle is 3, the distance between the parallel sides is $2 \\times 3 = 6$. Therefore, $h = 6$. Substituting this into the equation, we have $\\frac{1}{2}(r+s)(6) = 72$, which simplifies to $3(r+s) = 72$. Dividing both sides by 3, we get $r+s = 24$. Squaring both sides, we have $(r+s)^2 = 24^2 = 576$. Therefore, $r^2 + s^2 = 576 - 2rs$. Since $r \\neq s$, we can assume without loss of generality that $r > s$. Let $r = s + k$, where $k$ is a positive integer. Substituting this into the equation, we have $(s + k)^2 + s^2 = 576 - 2(s + k)s$. Expanding and simplifying, we get $s^2 + 2sk + k^2 + s^2 = 576 - 2s^2 - 2sk$. Combining like terms, we have $2s^2 + 2sk + k^2 = 576$. Since $s$ and $k$ are positive integers, we can try different values of $s$ and $k$ to find a solution. We find that $s = 12$ and $k = 12$ satisfy the equation. Therefore, $r = s + k = 12 + 12 = 24$. Finally, $r^2 + s^2 = 24^2 + 12^2 = 576 + 144 = \\boxed{720}$. The answer is: 720",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The twelve letters $A,B,C,D,E,F,G,H,I,J,K$, and $L$ are randomly grouped into six pairs of letters. The two letters in each pair are placed next to each other in alphabetical order to form six two-letter words, and those six words are listed alphabetically. For example, a possible result is $AB,CJ,DG,EK,FL,HI$. The probability that the last word listed contains $G$ is $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.",
+      "reference_answer": "821",
+      "predicted_answer": "12",
+      "generated_solution": "There are a total of $\\binom{12}{2}=66$ ways to choose two letters to form a pair.\nThere are 6 ways to arrange the pairs in alphabetical order.\nThere are 6 ways to arrange the pairs if the last word contains $G$.\nTherefore, the probability is $\\frac{6}{66}=\\frac{1}{11}$.\nThe answer is: 12",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $k$ be real numbers such that the system $|25+20i-z|=5$ and $|z-4-k|=|z-3i-k|$ has exactly one complex solution $z$. The sum of all possible values of $k$ can be written as $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$. Here $i=\\sqrt{-1}$.",
+      "reference_answer": "77",
+      "predicted_answer": "4",
+      "generated_solution": "We can rewrite the given equations as $|z-4-k|^2 = |z-3i-k|^2$ and $|z-4-k|^2 = 25+20i$.\nExpanding, we have $(z-4-k)(\\overline{z}-\\overline{4}-\\overline{k}) = (z-3i-k)(\\overline{z}+3i+\\overline{k})$ and $(z-4-k)(\\overline{z}-\\overline{4}-\\overline{k}) = 25+20i$.\nExpanding further, we have $z\\overline{z} - (4+\\overline{4}+\\overline{k}+k)z - (4+\\overline{4}+\\overline{k}+k)\\overline{z} + (4+\\overline{4}+\\overline{k}+k)(\\overline{4}+\\overline{k}) = z\\overline{z} - (3i+\\overline{3i}+\\overline{k}+k)z - (3i+\\overline{3i}+\\overline{k}+k)\\overline{z} + (3i+\\overline{3i}+\\overline{k}+k)(\\overline{3i}+\\overline{k})$ and $z\\overline{z} - (4+\\overline{4}+\\overline{k}+k)z - (4+\\overline{4}+\\overline{k}+k)\\overline{z} + (4+\\overline{4}+\\overline{k}+k)(\\overline{4}+\\overline{k}) = 25+20i$.\nSimplifying, we have $-8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = -6z - 6\\overline{z} + 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying further, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying again, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying once more, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying again, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying once more, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying again, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying once more, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying again, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying once more, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying again, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying once more, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\overline{k} = 25+20i$.\nSimplifying again, we have $-2z - 2\\overline{z} + 4k + 4\\overline{k} + 2k\\overline{k} = 6i + 6\\overline{i} + 6k + 6\\overline{k} + 6i\\overline{k}$ and $z\\overline{z} - 8z - 8\\overline{z} + 16 + 8k + 8\\overline{k} + 4k\\",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The parabola with equation $y=x^{2}-4$ is rotated $60^{\\circ}$ counterclockwise around the origin. The unique point in the fourth quadrant where the original parabola and its image intersect has $y$-coordinate $\\frac{a-\\sqrt{b}}{c}$, where $a$, $b$, and $c$ are positive integers, and $a$ and $c$ are relatively prime. Find $a+b+c$.",
+      "reference_answer": "62",
+      "predicted_answer": "10",
+      "generated_solution": "The equation of the parabola is $y=x^2-4$.\nTo rotate the parabola $60^\\circ$ counterclockwise around the origin, we can use the transformation $x' = x\\cos 60^\\circ - y\\sin 60^\\circ$ and $y' = x\\sin 60^\\circ + y\\cos 60^\\circ$.\nSubstituting the values, we have $x' = \\frac{x}{2} - \\frac{\\sqrt{3}y}{2}$ and $y' = \\frac{\\sqrt{3}x}{2} + \\frac{y}{2}$.\nSetting $x' = y'$, we have $\\frac{x}{2} - \\frac{\\sqrt{3}y}{2} = \\frac{\\sqrt{3}x}{2} + \\frac{y}{2}$.\nSimplifying, we get $x = \\sqrt{3}y$.\nSubstituting this into the equation of the parabola, we have $y = (\\sqrt{3}y)^2 - 4$.\nSimplifying, we get $y = 3y^2 - 4$.\nRearranging, we have $3y^2 - y - 4 = 0$.\nFactoring, we get $(3y+1)(y-4) = 0$.\nSo $y = -\\frac{1}{3}$ or $y = 4$.\nSince we are looking for the point in the fourth quadrant, we take $y = 4$.\nSubstituting this back into $x = \\sqrt{3}y$, we have $x = \\sqrt{3} \\cdot 4 = 4\\sqrt{3}$.\nTherefore, the $y$-coordinate of the point of intersection is $\\frac{a-\\sqrt{b}}{c} = \\frac{4-\\sqrt{3}}{1}$.\nThe answer is: 10",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The 27 cells of a $3\\times9$ grid are filled in using the numbers 1 through 9 so that each row contains 9 different numbers, and each of the three $3\\times3$ blocks heavily outlined in the example below contains 9 different numbers, as in the first three rows of a Sudoku puzzle. \n | 4 | 2 | 8 | 9 | 6 | 3 | 1 | 7 | 5 | \n | 3 | 7 | 9 | 5 | 2 | 1 | 6 | 8 | 4 | \n | 5 | 6 | 1 | 8 | 4 | 7 | 9 | 2 | 3 | \n The number of different ways to fill such a grid can be written as $p^a\\cdot q^b\\cdot r^c\\cdot s^d$, where $p,q,r,$ and $s$ are distinct prime numbers and $a,b,c,$ and $d$ are positive integers. Find $p\\cdot a+q\\cdot b+r\\cdot c+s\\cdot d$.",
+      "reference_answer": "81",
+      "predicted_answer": "36",
+      "generated_solution": "We can start by considering the first row. Since each row must contain all the numbers 1 through 9, we have 9 choices for the first cell, 8 choices for the second cell, and so on, until 1 choice for the last cell. Therefore, there are $9!$ ways to fill the first row.\n\nNext, we consider the three $3\\times3$ blocks. Since each block must contain all the numbers 1 through 9, we have 9 choices for the first cell in each block, 8 choices for the second cell, and so on, until 1 choice for the last cell. Therefore, there are $9!$ ways to fill each block.\n\nSince there are three blocks, the total number of ways to fill the grid is $(9!)^3$.\n\nTherefore, $p=9$, $a=1$, $q=9$, $b=1$, $r=9$, $c=1$, $s=9$, and $d=1$. The answer is $p\\cdot a+q\\cdot b+r\\cdot c+s\\cdot d=9\\cdot 1+9\\cdot 1+9\\cdot 1+9\\cdot 1=\\boxed{36}$.The answer is: 36",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "A piecewise linear periodic function is defined by $f(x)=\\begin{cases}x&\\text{if }x\\in[-1,1)\\\\2-x&\\text{if }x\\in[1,3)\\end{cases}$ and $f(x+4)=f(x)$ for all real numbers $x$. The graph of $f(x)$ has the sawtooth pattern. The parabola $x=34y^2$ intersects the graph of $f(x)$ at finitely many points. The sum of the $y$-coordinates of these intersection points can be expressed in the form $\\frac{a+b\\sqrt{c}}{d}$, where $a,b,c,$ and $d$ are positive integers, $a,b,$ and $d$ have greatest common divisor equal to 1, and $c$ is not divisible by the square of any prime. Find $a+b+c+d$.",
+      "reference_answer": "259",
+      "predicted_answer": "1",
+      "generated_solution": "To find the intersection points of the parabola $x=34y^2$ and the graph of $f(x)$, we substitute $f(x)$ into the equation $x=34y^2$ and solve for $y$.\nFor $x\\in[-1,1)$, we have $f(x)=x$, so $x=34y^2$ becomes $x=34y^2$.\nFor $x\\in[1,3)$, we have $f(x)=2-x$, so $x=34y^2$ becomes $2-x=34y^2$.\nSolving the first equation, we get $y=\\pm\\sqrt{\\frac{x}{34}}$.\nSolving the second equation, we get $y=\\pm\\sqrt{\\frac{2-x}{34}}$.\nSince $x$ is an integer, $y$ must also be an integer.\nFor $x\\in[-1,1)$, the only integer solutions are $y=0$ and $y=\\pm1$.\nFor $x\\in[1,3)$, the only integer solutions are $y=0$ and $y=\\pm1$.\nTherefore, the intersection points are $(0,0)$, $(1,1)$, $(-1,-1)$, $(2,1)$, and $(-2,-1)$.\nThe sum of the $y$-coordinates of these intersection points is $0+1+(-1)+1+(-1)=0$.\nTherefore, $a=0$, $b=0$, $c=0$, and $d=1$, so $a+b+c+d=0+0+0+1=\\boxed{1}$.\nThe answer is: 1",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The set of points in 3-dimensional coordinate space that lie in the plane $x+y+z=75$ whose coordinates satisfy the inequalities $x-yz<y-zx<z-xy$ forms three disjoint convex regions. Exactly one of those regions has finite area. The area of this finite region can be expressed in the form $a\\sqrt{b}$, where $a$ and $b$ are positive integers and $b$ is not divisible by the square of any prime. Find $a+b$.",
+      "reference_answer": "510",
+      "predicted_answer": "0",
+      "generated_solution": "We can rewrite the inequality as $x-yz < y-zx < z-xy$.\nAdding all three inequalities, we get $2x + 2y + 2z < 3(x+y+z)$, which simplifies to $x+y+z > 0$.\nSince $x+y+z=75$, we have $75 > 0$, which is true.\nTherefore, the set of points that satisfy the inequalities is the entire plane $x+y+z=75$.\nSince the plane is a two-dimensional surface, the area of the finite region is infinite.\nTherefore, the answer is $\\boxed{0+0=\\boxed{0}}$.The answer is: 0",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Alex divides a disk into four quadrants with two perpendicular diameters intersecting at the center of the disk. He draws 25 more line segments through the disk, drawing each segment by selecting two points at random on the perimeter of the disk in different quadrants and connecting those two points. Find the expected number of regions into which these 27 line segments divide the disk.",
+      "reference_answer": "204",
+      "predicted_answer": "48",
+      "generated_solution": "We can start by drawing a diagram to visualize the problem.\nThe disk can be divided into four quadrants by the two perpendicular diameters.\nWe can think of each quadrant as a quarter of the disk.\nWhen we draw a line segment connecting two points in different quadrants, it will divide the disk into two regions.\nSince there are 25 line segments, we can expect that each line segment will divide the disk into 2 regions.\nTherefore, the total number of regions created by the 25 line segments is 25 * 2 = 50.\nHowever, we need to consider the two diameters that divide the disk into four quadrants.\nThese diameters also divide the disk into two regions each, so we need to subtract 2 from the total number of regions.\nTherefore, the expected number of regions into which the 27 line segments divide the disk is 50 - 2 = 48.\nThe answer is: 48",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ABCDE$ be a convex pentagon with $AB=14, BC=7, CD=24, DE=13, EA=26,$ and $\\angle B=\\angle E=60^\\circ$. For each point $X$ in the plane, define $f(X)=AX+BX+CX+DX+EX$. The least possible value of $f(X)$ can be expressed as $m+n\\sqrt{p}$, where $m$ and $n$ are positive integers and $p$ is not divisible by the square of any prime. Find $m+n+p$.",
+      "reference_answer": "60",
+      "predicted_answer": "13",
+      "generated_solution": "We can start by finding the lengths of the sides of the pentagon using the Law of Cosines.\nFor example, we have $AC^2 = AB^2 + BC^2 - 2 \\cdot AB \\cdot BC \\cdot \\cos \\angle B$.\nUsing the given information, we can calculate the lengths of the sides of the pentagon:\n$AC^2 = 14^2 + 7^2 - 2 \\cdot 14 \\cdot 7 \\cdot \\cos 60^\\circ = 49 + 49 - 98 = 0$,\n$AD^2 = 14^2 + 24^2 - 2 \\cdot 14 \\cdot 24 \\cdot \\cos 60^\\circ = 196 + 576 - 336 = 436$,\n$AE^2 = 14^2 + 26^2 - 2 \\cdot 14 \\cdot 26 \\cdot \\cos 60^\\circ = 196 + 676 - 364 = 508$,\n$BD^2 = 7^2 + 24^2 - 2 \\cdot 7 \\cdot 24 \\cdot \\cos 60^\\circ = 49 + 576 - 168 = 457$,\n$BE^2 = 7^2 + 26^2 - 2 \\cdot 7 \\cdot 26 \\cdot \\cos 60^\\circ = 49 + 676 - 364 = 361$.\n\nSince $AC^2 = 0$, we know that $AC = 0$. This means that $A$ and $C$ are the same point.\n\nNow, let's consider the function $f(X) = AX + BX + CX + DX + EX$. Since $AC = 0$, we can simplify $f(X)$ to $f(X) = BX + DX + EX$.\n\nTo find the minimum value of $f(X)$, we want to minimize the sum of the lengths of the sides of the pentagon. Since $AC = 0$, we can remove $A$ and $C$ from the pentagon and consider the triangle $BDE$.\n\nIn triangle $BDE$, we have $BD = 7$, $DE = 13$, and $\\angle B = 60^\\circ$. Using the Law of Cosines, we can find the length of $BE$:\n$BE^2 = BD^2 + DE^2 - 2 \\cdot BD \\cdot DE \\cdot \\cos \\angle B = 49 + 169 - 2 \\cdot 7 \\cdot 13 \\cdot \\cos 60^\\circ = 218 - 182 = 36$.\n\nSince $BE^2 = 36$, we know that $BE = 6$. This means that $B$ and $E$ are the same point.\n\nNow, let's consider the function $f(X) = BX + DX + EX$. Since $B$ and $E$ are the same point, we can simplify $f(X)$ to $f(X) = DX$.\n\nTo find the minimum value of $f(X)$, we want to minimize the length of the side $DE$. Since $DE = 13$, the minimum value of $f(X)$ is $f(X) = 13$.\n\nTherefore, the least possible value of $f(X)$ is $13$. The answer is 13.The answer is: 13",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $N$ denote the number of ordered triples of positive integers $(a,b,c)$ such that $a,b,c\\leq3^6$ and $a^3+b^3+c^3$ is a multiple of $3^7$. Find the remainder when $N$ is divided by $1000$.",
+      "reference_answer": "735",
+      "predicted_answer": "729",
+      "generated_solution": "We want to find the number of ordered triples $(a,b,c)$ such that $a,b,c\\leq3^6$ and $a^3+b^3+c^3$ is a multiple of $3^7$.\nNote that $a^3+b^3+c^3$ is a multiple of $3^7$ if and only if $a^3+b^3+c^3$ is a multiple of $3^6$.\nWe can rewrite $a^3+b^3+c^3$ as $(a+b+c)(a^2+b^2+c^2-ab-ac-bc)$.\nSince $a,b,c\\leq3^6$, we have $a^2+b^2+c^2\\leq3^{12}$ and $ab+ac+bc\\leq3^{12}$.\nTherefore, $a^3+b^3+c^3$ is a multiple of $3^6$ if and only if $a+b+c$ is a multiple of $3^6$.\nWe can count the number of ordered triples $(a,b,c)$ such that $a,b,c\\leq3^6$ and $a+b+c$ is a multiple of $3^6$.\nSince $a,b,c\\leq3^6$, there are $3^6+1$ choices for each of $a,b,c$.\nTherefore, there are $(3^6+1)^3$ ordered triples $(a,b,c)$.\nHowever, we have overcounted the cases where $a=b=c=3^6$.\nThere is only one such case, so we subtract 1 from our count.\nTherefore, the number of ordered triples $(a,b,c)$ is $(3^6+1)^3-1$.\nTaking this number modulo 1000, we get $(3^6+1)^3-1\\equiv 3^6+1-1\\equiv 3^6\\equiv 729\\equiv \\boxed{729}\\pmod{1000}$.\nThe answer is: 729",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Six points $ A, B, C, D, E, $ and $ F $ lie in a straight line in that order. Suppose that $ G $ is a point not on the line and that $ AC = 26 $, $ BD = 22 $, $ CE = 31 $, $ DF = 33 $, $ AF = 73 $, $ CG = 40 $, and $ DG = 30 $. Find the area of $ \\triangle BGE $.",
+      "reference_answer": "468",
+      "predicted_answer": "765",
+      "generated_solution": "We can start by finding the lengths of the other sides of the triangle.\nSince $AC = 26$, $CG = 40$, and $AF = 73$, we can use the triangle inequality to find that $AG > 26 + 40 = 66$ and $AG < 73 - 26 = 47$.\nSimilarly, since $BD = 22$, $DG = 30$, and $AF = 73$, we can use the triangle inequality to find that $BG > 22 + 30 = 52$ and $BG < 73 - 22 = 51$.\nSince $AG > 66$ and $BG < 51$, we can conclude that $AG$ and $BG$ are not collinear.\nTherefore, $\\triangle BGE$ is a valid triangle.\nTo find the area of $\\triangle BGE$, we can use the formula for the area of a triangle: $A = \\frac{1}{2} \\times \\text{base} \\times \\text{height}$.\nThe base of $\\triangle BGE$ is $BG$, and the height is $DG$.\nSince $DG = 30$, we can substitute this value into the formula to find the area:\n$A = \\frac{1}{2} \\times BG \\times 30$.\nWe know that $BG$ is between 52 and 51, so the area of $\\triangle BGE$ is between $\\frac{1}{2} \\times 52 \\times 30$ and $\\frac{1}{2} \\times 51 \\times 30$.\nSimplifying, we find that the area is between 780 and 765.\nTherefore, the area of $\\triangle BGE$ is $\\boxed{765}$.\nThe answer is: 765",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Find the sum of all positive integers $ n $ such that $ n + 2 $ divides the product $ 3(n + 3)(n^2 + 9) $.",
+      "reference_answer": "49",
+      "predicted_answer": "999",
+      "generated_solution": "We can expand the expression as $3n(n^2 + 9) + 6(n^2 + 9) = 3n^3 + 27n + 6n^2 + 54 = 3n^3 + 6n^2 + 27n + 54$.\nWe want to find the values of $n$ such that $n + 2$ divides this expression.\nSince $n + 2$ divides the expression, we know that $n + 2$ must be a factor of $3n^3 + 6n^2 + 27n + 54$.\nWe can use the Euclidean algorithm to find the greatest common divisor (GCD) of $3n^3 + 6n^2 + 27n + 54$ and $n + 2$.\nThe GCD is the remainder when $3n^3 + 6n^2 + 27n + 54$ is divided by $n + 2$.\nWe can use long division to find the remainder:\n\\[\n\\begin{array}{c|cc cc}\n\\multicolumn{2}{r}{n^2} & -2n & +1} \\\\\n\\cline{2-5}\nn+2 & 3n^3 & +6n^2 & +27n & +54 \\\\\n\\multicolumn{2}{r}{-3n^3} & -3n^2} \\\\\n\\cline{2-3}\n\\multicolumn{2}{r}{0} & 3n^2 & +27n} \\\\\n\\multicolumn{2}{r}{} & -3n^2} & -6n} \\\\\n\\cline{3-4}\n\\multicolumn{2}{r}{} & 0 & 21n} \\\\\n\\multicolumn{2}{r}{} & & -21n} \\\\\n\\cline{4-4}\n\\multicolumn{2}{r}{} & & 0 \\\\\n\\end{array}\n\\]\nThe remainder is 0, so $n + 2$ is a factor of $3n^3 + 6n^2 + 27n + 54$.\nTherefore, $n + 2$ divides $3n^3 + 6n^2 + 27n + 54$ for all values of $n$.\nThe sum of all positive integers $n$ that satisfy this condition is $\\boxed{999}$.\nThe answer is: 999",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Four unit squares form a $2 \\times 2$ grid. Each of the 12 unit line segments forming the sides of the squares is colored either red or blue in such a way that each unit square has 2 red sides and 2 blue sides. Find the number of such colorings.",
+      "reference_answer": "82",
+      "predicted_answer": "16",
+      "generated_solution": "We can count the number of colorings by considering the number of ways to color each unit square.\nFor each unit square, there are 2 choices for the color of the top side and 2 choices for the color of the left side.\nSince there are 4 unit squares, the total number of colorings is $2^4 = 16$.\nTherefore, the answer is $\\boxed{16}$.The answer is: 16",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "The product $ \\prod_{k=4}^{63} \\frac{\\log_k(5^{k^2-1})}{\\log_{k+1}(5^{k^2-4})} = \\frac{\\log_4(5^{15})}{\\log_5(5^{12})} \\cdot \\frac{\\log_5(5^{24})}{\\log_6(5^{21})} \\cdot \\frac{\\log_6(5^{35})}{\\log_7(5^{32})} \\cdots \\frac{\\log_{63}(5^{3968})}{\\log_{64}(5^{3965})} $ is equal to $ \\frac{m}{n} $, where $ m $ and $ n $ are relatively prime positive integers. Find $ m + n $.",
+      "reference_answer": "106",
+      "predicted_answer": "Eq((431*log(5, 42))/((428*log(5, 43))), 431/428) & Eq(log(5**431, 42)/log(5**428, 43), (431*log(5, 42))/((428*log(5, 43))))",
+      "generated_solution": "We can simplify each fraction in the product as follows:\n$\\frac{\\log_4(5^{15})}{\\log_5(5^{12})} = \\frac{15 \\log_4(5)}{12 \\log_5(5)} = \\frac{15}{12} = \\frac{5}{4}$\n$\\frac{\\log_5(5^{24})}{\\log_6(5^{21})} = \\frac{24 \\log_5(5)}{21 \\log_6(5)} = \\frac{8}{7}$\n$\\frac{\\log_6(5^{35})}{\\log_7(5^{32})} = \\frac{35 \\log_6(5)}{32 \\log_7(5)} = \\frac{35}{32}$\n$\\frac{\\log_7(5^{46})}{\\log_8(5^{43})} = \\frac{46 \\log_7(5)}{43 \\log_8(5)} = \\frac{46}{43}$\n$\\frac{\\log_8(5^{57})}{\\log_9(5^{54})} = \\frac{57 \\log_8(5)}{54 \\log_9(5)} = \\frac{19}{18}$\n$\\frac{\\log_9(5^{68})}{\\log_{10}(5^{65})} = \\frac{68 \\log_9(5)}{65 \\log_{10}(5)} = \\frac{68}{65}$\n$\\frac{\\log_{10}(5^{79})}{\\log_{11}(5^{76})} = \\frac{79 \\log_{10}(5)}{76 \\log_{11}(5)} = \\frac{79}{76}$\n$\\frac{\\log_{11}(5^{90})}{\\log_{12}(5^{87})} = \\frac{90 \\log_{11}(5)}{87 \\log_{12}(5)} = \\frac{10}{9}$\n$\\frac{\\log_{12}(5^{101})}{\\log_{13}(5^{98})} = \\frac{101 \\log_{12}(5)}{98 \\log_{13}(5)} = \\frac{101}{98}$\n$\\frac{\\log_{13}(5^{112})}{\\log_{14}(5^{109})} = \\frac{112 \\log_{13}(5)}{109 \\log_{14}(5)} = \\frac{112}{109}$\n$\\frac{\\log_{14}(5^{123})}{\\log_{15}(5^{120})} = \\frac{123 \\log_{14}(5)}{120 \\log_{15}(5)} = \\frac{41}{40}$\n$\\frac{\\log_{15}(5^{134})}{\\log_{16}(5^{131})} = \\frac{134 \\log_{15}(5)}{131 \\log_{16}(5)} = \\frac{134}{131}$\n$\\frac{\\log_{16}(5^{145})}{\\log_{17}(5^{142})} = \\frac{145 \\log_{16}(5)}{142 \\log_{17}(5)} = \\frac{145}{142}$\n$\\frac{\\log_{17}(5^{156})}{\\log_{18}(5^{153})} = \\frac{156 \\log_{17}(5)}{153 \\log_{18}(5)} = \\frac{52}{51}$\n$\\frac{\\log_{18}(5^{167})}{\\log_{19}(5^{164})} = \\frac{167 \\log_{18}(5)}{164 \\log_{19}(5)} = \\frac{167}{164}$\n$\\frac{\\log_{19}(5^{178})}{\\log_{20}(5^{175})} = \\frac{178 \\log_{19}(5)}{175 \\log_{20}(5)} = \\frac{178}{175}$\n$\\frac{\\log_{20}(5^{189})}{\\log_{21}(5^{186})} = \\frac{189 \\log_{20}(5)}{186 \\log_{21}(5)} = \\frac{63}{62}$\n$\\frac{\\log_{21}(5^{200})}{\\log_{22}(5^{197})} = \\frac{200 \\log_{21}(5)}{197 \\log_{22}(5)} = \\frac{200}{197}$\n$\\frac{\\log_{22}(5^{211})}{\\log_{23}(5^{208})} = \\frac{211 \\log_{22}(5)}{208 \\log_{23}(5)} = \\frac{211}{208}$\n$\\frac{\\log_{23}(5^{222})}{\\log_{24}(5^{219})} = \\frac{222 \\log_{23}(5)}{219 \\log_{24}(5)} = \\frac{222}{219}$\n$\\frac{\\log_{24}(5^{233})}{\\log_{25}(5^{230})} = \\frac{233 \\log_{24}(5)}{230 \\log_{25}(5)} = \\frac{233}{230}$\n$\\frac{\\log_{25}(5^{244})}{\\log_{26}(5^{241})} = \\frac{244 \\log_{25}(5)}{241 \\log_{26}(5)} = \\frac{244}{241}$\n$\\frac{\\log_{26}(5^{255})}{\\log_{27}(5^{252})} = \\frac{255 \\log_{26}(5)}{252 \\log_{27}(5)} = \\frac{85}{84}$\n$\\frac{\\log_{27}(5^{266})}{\\log_{28}(5^{263})} = \\frac{266 \\log_{27}(5)}{263 \\log_{28}(5)} = \\frac{266}{263}$\n$\\frac{\\log_{28}(5^{277})}{\\log_{29}(5^{274})} = \\frac{277 \\log_{28}(5)}{274 \\log_{29}(5)} = \\frac{277}{274}$\n$\\frac{\\log_{29}(5^{288})}{\\log_{30}(5^{285})} = \\frac{288 \\log_{29}(5)}{285 \\log_{30}(5)} = \\frac{96}{95}$\n$\\frac{\\log_{30}(5^{299})}{\\log_{31}(5^{296})} = \\frac{299 \\log_{30}(5)}{296 \\log_{31}(5)} = \\frac{299}{296}$\n$\\frac{\\log_{31}(5^{310})}{\\log_{32}(5^{307})} = \\frac{310 \\log_{31}(5)}{307 \\log_{32}(5)} = \\frac{310}{307}$\n$\\frac{\\log_{32}(5^{321})}{\\log_{33}(5^{318})} = \\frac{321 \\log_{32}(5)}{318 \\log_{33}(5)} = \\frac{321}{318}$\n$\\frac{\\log_{33}(5^{332})}{\\log_{34}(5^{329})} = \\frac{332 \\log_{33}(5)}{329 \\log_{34}(5)} = \\frac{332}{329}$\n$\\frac{\\log_{34}(5^{343})}{\\log_{35}(5^{340})} = \\frac{343 \\log_{34}(5)}{340 \\log_{35}(5)} = \\frac{343}{340}$\n$\\frac{\\log_{35}(5^{354})}{\\log_{36}(5^{351})} = \\frac{354 \\log_{35}(5)}{351 \\log_{36}(5)} = \\frac{118}{117}$\n$\\frac{\\log_{36}(5^{365})}{\\log_{37}(5^{362})} = \\frac{365 \\log_{36}(5)}{362 \\log_{37}(5)} = \\frac{365}{362}$\n$\\frac{\\log_{37}(5^{376})}{\\log_{38}(5^{373})} = \\frac{376 \\log_{37}(5)}{373 \\log_{38}(5)} = \\frac{376}{373}$\n$\\frac{\\log_{38}(5^{387})}{\\log_{39}(5^{384})} = \\frac{387 \\log_{38}(5)}{384 \\log_{39}(5)} = \\frac{387}{384}$\n$\\frac{\\log_{39}(5^{398})}{\\log_{40}(5^{395})} = \\frac{398 \\log_{39}(5)}{395 \\log_{40}(5)} = \\frac{398}{395}$\n$\\frac{\\log_{40}(5^{409})}{\\log_{41}(5^{406})} = \\frac{409 \\log_{40}(5)}{406 \\log_{41}(5)} = \\frac{409}{406}$\n$\\frac{\\log_{41}(5^{420})}{\\log_{42}(5^{417})} = \\frac{420 \\log_{41}(5)}{417 \\log_{42}(5)} = \\frac{140}{139}$\n$\\frac{\\log_{42}(5^{431})}{\\log_{43}(5^{428})} = \\frac{431 \\log_{42}(5)}{428 \\log_{43}(5)} = \\frac{431}{428}$\n$\\",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Suppose $ \\triangle ABC $ has angles $ \\angle BAC = 84^\\circ $, $ \\angle ABC = 60^\\circ $, and $ \\angle ACB = 36^\\circ $. Let $ D, E, $ and $ F $ be the midpoints of sides $ \\overline{BC} $, $ \\overline{AC} $, and $ \\overline{AB} $, respectively. The circumcircle of $ \\triangle DEF $ intersects $ \\overline{BD} $, $ \\overline{AE} $, and $ \\overline{AF} $ at points $ G, H, $ and $ J $, respectively. The points $ G, D, E, H, J, $ and $ F $ divide the circumcircle of $ \\triangle DEF $ into six minor arcs, as shown. Find $ \\widehat{DE} + 2 \\cdot \\widehat{HJ} + 3 \\cdot \\widehat{FG} $, where the arcs are measured in degrees.",
+      "reference_answer": "336^\\circ",
+      "predicted_answer": "336",
+      "generated_solution": "Since $ \\triangle ABC $ is isosceles with $ \\angle BAC = 84^\\circ $ and $ \\angle ABC = 60^\\circ $, we have $ \\angle BAC = \\angle ABC $, so $ \\angle BCA = 180^\\circ - \\angle BAC - \\angle ABC = 180^\\circ - 84^\\circ - 60^\\circ = 36^\\circ $.\nSince $ D, E, $ and $ F $ are midpoints, we have $ \\angle DEF = 60^\\circ $, $ \\angle DFE = 36^\\circ $, and $ \\angle DFE = 180^\\circ - \\angle DEF - \\angle DFE = 180^\\circ - 60^\\circ - 36^\\circ = 84^\\circ $.\nSince $ \\angle DEF = 60^\\circ $, we have $ \\widehat{DE} = 60^\\circ $.\nSince $ \\angle DFE = 84^\\circ $, we have $ \\widehat{HJ} = 84^\\circ $.\nSince $ \\angle DFE = 36^\\circ $, we have $ \\widehat{FG} = 36^\\circ $.\nTherefore, $ \\widehat{DE} + 2 \\cdot \\widehat{HJ} + 3 \\cdot \\widehat{FG} = 60^\\circ + 2 \\cdot 84^\\circ + 3 \\cdot 36^\\circ = 60^\\circ + 168^\\circ + 108^\\circ = \\boxed{336^\\circ} $.\nThe answer is: 336",
+      "is_correct": true,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Circle $\\omega_1$ with radius 6 centered at point $A$ is internally tangent at point $B$ to circle $\\omega_2$ with radius 15. Points $C$ and $D$ lie on $\\omega_2$ such that $\\overline{BC}$ is a diameter of $\\omega_2$ and $\\overline{BC} \\perp \\overline{AD}$. The rectangle $EFGH$ is inscribed in $\\omega_1$ such that $\\overline{EF} \\perp \\overline{BC}$, $C$ is closer to $\\overline{GH}$ than to $\\overline{EF}$, and $D$ is closer to $\\overline{FG}$ than to $\\overline{EH}$, as shown. Triangles $\\triangle DGF$ and $\\triangle CHG$ have equal areas. The area of rectangle $EFGH$ is $\\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.",
+      "reference_answer": "293",
+      "predicted_answer": "6",
+      "generated_solution": "Let $O$ be the center of $\\omega_1$ and $O'$ be the center of $\\omega_2$. Since $\\overline{BC}$ is a diameter of $\\omega_2$, we have $O'B = 15$ and $O'C = 6$. Since $\\overline{BC} \\perp \\overline{AD}$, we have $O'D = 15$ and $O'A = 6$. Since $\\overline{EF} \\perp \\overline{BC}$, we have $O'E = 6$ and $O'F = 15$. Since $C$ is closer to $\\overline{GH}$ than to $\\overline{EF}$, we have $O'C < O'G$. Since $D$ is closer to $\\overline{FG}$ than to $\\overline{EH}$, we have $O'D < O'H$. Since triangles $\\triangle DGF$ and $\\triangle CHG$ have equal areas, we have $O'D \\cdot O'G = O'C \\cdot O'H$. Substituting the given values, we have $15 \\cdot O'G = 6 \\cdot O'H$. Since $O'G = 6$ and $O'H = 15$, we have $15 \\cdot 6 = 6 \\cdot O'H$. Therefore, $O'H = 10$. Since $O'H = 10$, we have $O'F = 15 - O'H = 5$. Since $O'F = 5$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = -2$. Since $O'E = -2$, we have $O'F = 15 - O'E = 17$. Since $O'F = 17$, we have $O'E = 6 - O'F = -1$. Since $O'E = -1$, we have $O'F = 15 - O'E = 16$. Since $O'F = 16$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6 - O'F = 1$. Since $O'E = 1$, we have $O'F = 15 - O'E = 14$. Since $O'F = 14$, we have $O'E = 6",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ A $ be the set of positive integer divisors of 2025. Let $ B $ be a randomly selected subset of $ A $. The probability that $ B $ is a nonempty set with the property that the least common multiple of its elements is 2025 is $ \\frac{m}{n} $, where $ m $ and $ n $ are relatively prime positive integers. Find $ m + n $.",
+      "reference_answer": "237",
+      "predicted_answer": "4096",
+      "generated_solution": "The prime factorization of 2025 is $3^3 \\cdot 5^3$.\nTo find the set $A$, we list all the divisors of 2025: 1, 3, 5, 9, 15, 25, 45, 75, 125, 225, 375, and 2025.\nTo find the set $B$, we need to find a nonempty subset of $A$ such that the least common multiple of its elements is 2025.\nThe only way for the least common multiple to be 2025 is if the subset contains all the divisors of 2025.\nTherefore, the only possible set $B$ is $A$ itself.\nThe probability of selecting this set $B$ is $\\frac{1}{2^{|A|}} = \\frac{1}{2^{12}} = \\frac{1}{4096}$.\nThe answer is: 4096",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "From an unlimited supply of 1-cent coins, 10-cent coins, and 25-cent coins, Silas wants to find a collection of coins that has a total value of $ N $ cents, where $ N $ is a positive integer. He uses the so-called **greedy algorithm**, successively choosing the coin of greatest value that does not cause the value of his collection to exceed $ N $. For example, to get 42 cents, Silas will choose a 25-cent coin, then a 10-cent coin, then 7 1-cent coins. However, this collection of 9 coins uses more coins than necessary to get a total of 42 cents; indeed, choosing 4 10-cent coins and 2 1-cent coins achieves the same total value with only 6 coins.\n\nIn general, the greedy algorithm succeeds for a given $ N $ if no other collection of 1-cent, 10-cent, and 25-cent coins gives a total value of $ N $ cents using strictly fewer coins than the collection given by the greedy algorithm. Find the number of values of $ N $ between 1 and 1000 inclusive for which the greedy algorithm succeeds.",
+      "reference_answer": "610",
+      "predicted_answer": "195",
+      "generated_solution": "To solve this problem, we need to determine the number of values of $N$ between 1 and 1000 inclusive for which the greedy algorithm succeeds.\n\nThe greedy algorithm works by choosing the largest coin possible at each step until the total value is reached. We can use this algorithm to find the number of coins needed to reach each value of $N$.\n\nLet's consider the possible values of $N$ and the number of coins needed to reach each value using the greedy algorithm:\n\n$N = 1$: 1 coin\n$N = 2$: 2 coins\n$N = 3$: 3 coins\n$N = 4$: 4 coins\n$N = 5$: 5 coins\n$N = 6$: 6 coins\n$N = 7$: 7 coins\n$N = 8$: 8 coins\n$N = 9$: 9 coins\n$N = 10$: 10 coins\n$N = 11$: 11 coins\n$N = 12$: 12 coins\n$N = 13$: 13 coins\n$N = 14$: 14 coins\n$N = 15$: 15 coins\n$N = 16$: 16 coins\n$N = 17$: 17 coins\n$N = 18$: 18 coins\n$N = 19$: 19 coins\n$N = 20$: 20 coins\n$N = 21$: 21 coins\n$N = 22$: 22 coins\n$N = 23$: 23 coins\n$N = 24$: 24 coins\n$N = 25$: 25 coins\n$N = 26$: 26 coins\n$N = 27$: 27 coins\n$N = 28$: 28 coins\n$N = 29$: 29 coins\n$N = 30$: 30 coins\n$N = 31$: 31 coins\n$N = 32$: 32 coins\n$N = 33$: 33 coins\n$N = 34$: 34 coins\n$N = 35$: 35 coins\n$N = 36$: 36 coins\n$N = 37$: 37 coins\n$N = 38$: 38 coins\n$N = 39$: 39 coins\n$N = 40$: 40 coins\n$N = 41$: 41 coins\n$N = 42$: 42 coins\n$N = 43$: 43 coins\n$N = 44$: 44 coins\n$N = 45$: 45 coins\n$N = 46$: 46 coins\n$N = 47$: 47 coins\n$N = 48$: 48 coins\n$N = 49$: 49 coins\n$N = 50$: 50 coins\n$N = 51$: 51 coins\n$N = 52$: 52 coins\n$N = 53$: 53 coins\n$N = 54$: 54 coins\n$N = 55$: 55 coins\n$N = 56$: 56 coins\n$N = 57$: 57 coins\n$N = 58$: 58 coins\n$N = 59$: 59 coins\n$N = 60$: 60 coins\n$N = 61$: 61 coins\n$N = 62$: 62 coins\n$N = 63$: 63 coins\n$N = 64$: 64 coins\n$N = 65$: 65 coins\n$N = 66$: 66 coins\n$N = 67$: 67 coins\n$N = 68$: 68 coins\n$N = 69$: 69 coins\n$N = 70$: 70 coins\n$N = 71$: 71 coins\n$N = 72$: 72 coins\n$N = 73$: 73 coins\n$N = 74$: 74 coins\n$N = 75$: 75 coins\n$N = 76$: 76 coins\n$N = 77$: 77 coins\n$N = 78$: 78 coins\n$N = 79$: 79 coins\n$N = 80$: 80 coins\n$N = 81$: 81 coins\n$N = 82$: 82 coins\n$N = 83$: 83 coins\n$N = 84$: 84 coins\n$N = 85$: 85 coins\n$N = 86$: 86 coins\n$N = 87$: 87 coins\n$N = 88$: 88 coins\n$N = 89$: 89 coins\n$N = 90$: 90 coins\n$N = 91$: 91 coins\n$N = 92$: 92 coins\n$N = 93$: 93 coins\n$N = 94$: 94 coins\n$N = 95$: 95 coins\n$N = 96$: 96 coins\n$N = 97$: 97 coins\n$N = 98$: 98 coins\n$N = 99$: 99 coins\n$N = 100$: 100 coins\n$N = 101$: 101 coins\n$N = 102$: 102 coins\n$N = 103$: 103 coins\n$N = 104$: 104 coins\n$N = 105$: 105 coins\n$N = 106$: 106 coins\n$N = 107$: 107 coins\n$N = 108$: 108 coins\n$N = 109$: 109 coins\n$N = 110$: 110 coins\n$N = 111$: 111 coins\n$N = 112$: 112 coins\n$N = 113$: 113 coins\n$N = 114$: 114 coins\n$N = 115$: 115 coins\n$N = 116$: 116 coins\n$N = 117$: 117 coins\n$N = 118$: 118 coins\n$N = 119$: 119 coins\n$N = 120$: 120 coins\n$N = 121$: 121 coins\n$N = 122$: 122 coins\n$N = 123$: 123 coins\n$N = 124$: 124 coins\n$N = 125$: 125 coins\n$N = 126$: 126 coins\n$N = 127$: 127 coins\n$N = 128$: 128 coins\n$N = 129$: 129 coins\n$N = 130$: 130 coins\n$N = 131$: 131 coins\n$N = 132$: 132 coins\n$N = 133$: 133 coins\n$N = 134$: 134 coins\n$N = 135$: 135 coins\n$N = 136$: 136 coins\n$N = 137$: 137 coins\n$N = 138$: 138 coins\n$N = 139$: 139 coins\n$N = 140$: 140 coins\n$N = 141$: 141 coins\n$N = 142$: 142 coins\n$N = 143$: 143 coins\n$N = 144$: 144 coins\n$N = 145$: 145 coins\n$N = 146$: 146 coins\n$N = 147$: 147 coins\n$N = 148$: 148 coins\n$N = 149$: 149 coins\n$N = 150$: 150 coins\n$N = 151$: 151 coins\n$N = 152$: 152 coins\n$N = 153$: 153 coins\n$N = 154$: 154 coins\n$N = 155$: 155 coins\n$N = 156$: 156 coins\n$N = 157$: 157 coins\n$N = 158$: 158 coins\n$N = 159$: 159 coins\n$N = 160$: 160 coins\n$N = 161$: 161 coins\n$N = 162$: 162 coins\n$N = 163$: 163 coins\n$N = 164$: 164 coins\n$N = 165$: 165 coins\n$N = 166$: 166 coins\n$N = 167$: 167 coins\n$N = 168$: 168 coins\n$N = 169$: 169 coins\n$N = 170$: 170 coins\n$N = 171$: 171 coins\n$N = 172$: 172 coins\n$N = 173$: 173 coins\n$N = 174$: 174 coins\n$N = 175$: 175 coins\n$N = 176$: 176 coins\n$N = 177$: 177 coins\n$N = 178$: 178 coins\n$N = 179$: 179 coins\n$N = 180$: 180 coins\n$N = 181$: 181 coins\n$N = 182$: 182 coins\n$N = 183$: 183 coins\n$N = 184$: 184 coins\n$N = 185$: 185 coins\n$N = 186$: 186 coins\n$N = 187$: 187 coins\n$N = 188$: 188 coins\n$N = 189$: 189 coins\n$N = 190$: 190 coins\n$N = 191$: 191 coins\n$N = 192$: 192 coins\n$N = 193$: 193 coins\n$N = 194$: 194 coins\n$N = 195$: 195 coins",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "There are $ n $ values of $ x $ in the interval $ 0 < x < 2\\pi $ where $ f(x) = \\sin(7\\pi \\cdot \\sin(5x)) = 0 $. For $ t $ of these $ n $ values of $ x $, the graph of $ y = f(x) $ is tangent to the $ x $-axis. Find $ n + t $.",
+      "reference_answer": "149",
+      "predicted_answer": "14",
+      "generated_solution": "To find the values of $x$ where $f(x) = 0$, we need to find the values of $x$ where $\\sin(7\\pi \\cdot \\sin(5x)) = 0$.\nSince $\\sin(7\\pi \\cdot \\sin(5x)) = 0$ if and only if $\\sin(5x) = 0$, we need to find the values of $x$ where $\\sin(5x) = 0$.\nThe solutions to $\\sin(5x) = 0$ are $x = \\frac{\\pi}{5}, \\frac{2\\pi}{5}, \\frac{3\\pi}{5}, \\frac{4\\pi}{5}$.\nHowever, we need to consider the interval $0 < x < 2\\pi$, so we only consider the solutions in this interval.\nTherefore, there are $n = 4$ values of $x$ where $f(x) = 0$.\nTo find the values of $x$ where $f(x)$ is tangent to the $x$-axis, we need to find the values of $x$ where $\\sin(7\\pi \\cdot \\sin(5x)) = 1$.\nSince $\\sin(7\\pi \\cdot \\sin(5x)) = 1$ if and only if $\\sin(5x) = \\frac{1}{7}$, we need to find the values of $x$ where $\\sin(5x) = \\frac{1}{7}$.\nThe solutions to $\\sin(5x) = \\frac{1}{7}$ are $x = \\frac{\\pi}{35}, \\frac{2\\pi}{35}, \\frac{3\\pi}{35}, \\frac{4\\pi}{35}, \\frac{5\\pi}{35}, \\frac{6\\pi}{35}, \\frac{7\\pi}{35}, \\frac{8\\pi}{35}, \\frac{9\\pi}{35}, \\frac{10\\pi}{35}$.\nHowever, we need to consider the interval $0 < x < 2\\pi$, so we only consider the solutions in this interval.\nTherefore, there are $t = 10$ values of $x$ where $f(x)$ is tangent to the $x$-axis.\nFinally, $n + t = 4 + 10 = \\boxed{14}$.\nThe answer is: 14",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Sixteen chairs are arranged in a row. Eight people each select a chair in which to sit so that no person sits next to two other people. Let $ N $ be the number of subsets of 16 chairs that could be selected. Find the remainder when $ N $ is divided by 1000.",
+      "reference_answer": "907",
+      "predicted_answer": "610",
+      "generated_solution": "We can solve this problem using complementary counting.\nFirst, we count the total number of ways to choose 8 chairs out of 16, which is $\\binom{16}{8} = 1820$.\nNext, we count the number of ways to choose 8 chairs such that no two people sit next to each other.\nTo do this, we can consider the first person's chair. There are 15 choices for the first person's chair.\nFor the second person, there are 13 choices for their chair, since they cannot sit next to the first person.\nSimilarly, there are 11 choices for the third person's chair, 9 choices for the fourth person's chair, and so on.\nTherefore, the total number of ways to choose 8 chairs such that no two people sit next to each other is $15 \\times 13 \\times 11 \\times 9 \\times 7 \\times 5 \\times 3 \\times 1 = 15!/(8! \\times 7!) = 15 \\times 14 = 210$.\nFinally, we subtract the number of ways with no restrictions from the total number of ways to choose 8 chairs to get the number of ways with no restrictions: $1820 - 210 = 1610$.\nThe remainder when $N$ is divided by 1000 is $\\boxed{610}$.\nThe answer is: 610",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ S $ be the set of vertices of a regular 24-gon. Find the number of ways to draw 12 segments of equal lengths so that each vertex in $ S $ is an endpoint of exactly one of the 12 segments.",
+      "reference_answer": "113",
+      "predicted_answer": "1771440",
+      "generated_solution": "We can think of each segment as a line connecting two vertices of the 24-gon.\nSince each vertex is an endpoint of exactly one segment, we can think of this problem as distributing the 12 segments among the 24 vertices.\nThis is equivalent to finding the number of ways to distribute 12 identical objects among 24 distinct boxes, with each box receiving at least one object.\nUsing stars and bars, we can represent this as placing 12 stars in 24 boxes, with each box containing at least one star.\nThe number of ways to do this is $\\binom{12+24-1}{24-1} = \\binom{35}{23} = \\boxed{1,771,440}$.\nThe answer is: 1,771,440",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ A_1A_2 \\ldots A_{11} $ be an 11-sided non-convex simple polygon with the following properties:\n* The area of $ A_iA_1A_{i+1} $ is 1 for each $ 2 \\leq i \\leq 10 $,\n* $ \\cos(\\angle A_iA_1A_{i+1}) = \\frac{12}{13} $ for each $ 2 \\leq i \\leq 10 $,\n* The perimeter of $ A_1A_2 \\ldots A_{11} $ is 20.\nIf $ A_1A_2 + A_1A_{11} $ can be expressed as $ \\frac{m\\sqrt{n} - p}{q} $ for positive integers $ m, n, p, q $ with $ n $ squarefree and no prime divides all of $ m, p, q$, find $ m + n + p + q $.",
+      "reference_answer": "19",
+      "predicted_answer": "0",
+      "generated_solution": "Let $A_1A_2$ have length $a$ and $A_1A_{11}$ have length $b$.\nBy the Law of Cosines, we have\n\\[a^2 = b^2 + 1 - 2b\\cdot 1 \\cdot \\cos \\theta,\\]\nwhere $\\theta$ is the angle between $A_1A_2$ and $A_1A_{11}$.\nSince $\\cos \\theta = \\frac{12}{13}$, we have\n\\[a^2 = b^2 + 1 - 2b \\cdot \\frac{12}{13}.\\]\nSimplifying, we get\n\\[a^2 = b^2 + 1 - \\frac{24}{13}b.\\]\nSince the perimeter of the polygon is 20, we have\n\\[a + b + 10 = 20,\\]\nwhich simplifies to\n\\[a + b = 10.\\]\nSubstituting this into the equation for $a^2$, we get\n\\[a^2 = b^2 + 1 - \\frac{24}{13}b + 10.\\]\nRearranging, we have\n\\[a^2 - b^2 - \\frac{24}{13}b + 9 = 0.\\]\nThis is a quadratic equation in $b$, so we can use the quadratic formula to solve for $b$.\nThe discriminant is\n\\[D = \\left(\\frac{24}{13}\\right)^2 - 4(1)(9) = \\frac{576}{169} - 36 = \\frac{576 - 169 \\cdot 36}{169} = \\frac{-576}{169}.\\]\nSince $D < 0$, the quadratic equation has no real solutions.\nTherefore, there is no value of $b$ that satisfies the given conditions.\nThe answer is: 0",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let the sequence of rationals $ x_1, x_2, \\ldots $ be defined such that $ x_1 = \\frac{25}{11} $ and\n$ x_{k+1} = \\frac{1}{3} \\left( x_k + \\frac{1}{x_k} - 1 \\right). $\n$ x_{2025} $ can be expressed as $ \\frac{m}{n} $ for relatively prime positive integers $ m $ and $ n $. Find the remainder when $ m + n $ is divided by 1000.",
+      "reference_answer": "248",
+      "predicted_answer": "506",
+      "generated_solution": "We can start by calculating the first few terms of the sequence:\n$x_1 = \\frac{25}{11}$\n$x_2 = \\frac{1}{3} \\left( \\frac{25}{11} + \\frac{11}{25} - 1 \\right) = \\frac{25}{11} \\cdot \\frac{25}{11} = \\frac{625}{121}$\n$x_3 = \\frac{1}{3} \\left( \\frac{625}{121} + \\frac{121}{625} - 1 \\right) = \\frac{625}{121} \\cdot \\frac{625}{121} = \\frac{390625}{14641}$\n$x_4 = \\frac{1}{3} \\left( \\frac{390625}{14641} + \\frac{14641}{390625} - 1 \\right) = \\frac{390625}{14641} \\cdot \\frac{390625}{14641} = \\frac{152587890625}{214358881}$\nWe can see that the numerators and denominators of the terms in the sequence are increasing rapidly. To find $x_{2025}$, we can use the pattern and calculate the numerator and denominator separately.\nThe numerator is $152587890625$ and the denominator is $214358881$.\nTo find the remainder when $m + n$ is divided by 1000, we add the numerator and denominator and find the remainder:\n$152587890625 + 214358881 = 366246806506$\nThe remainder when $366246806506$ is divided by 1000 is $\\boxed{506}$.\nThe answer is: 506",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "Let $ \\triangle ABC $ be a right triangle with $ \\angle A = 90^\\circ $ and $ BC = 38 $. There exist points $ K $ and $ L $ inside the triangle such that $ AK = AL = BK = CL = KL = 14. $ The area of the quadrilateral $ BKLC $ can be expressed as $ n \\sqrt{3} $ for some positive integer $ n $. Find $ n $.",
+      "reference_answer": "104",
+      "predicted_answer": "196",
+      "generated_solution": "We can draw a diagram to visualize the problem.\n[asy]\npair A, B, C, K, L;\nA = (0,0);\nB = (38,0);\nC = (38,38);\nK = (14,0);\nL = (0,14);\ndraw(A--B--C--cycle);\ndraw(A--K);\ndraw(B--L);\ndraw(C--L);\ndraw(A--L);\ndraw(B--K);\ndraw(C--K);\nlabel(\"$A$\", A, SW);\nlabel(\"$B$\", B, SE);\nlabel(\"$C$\", C, NE);\nlabel(\"$K$\", K, S);\nlabel(\"$L$\", L, W);\nlabel(\"$14$\", (A+K)/2, S);\nlabel(\"$14$\", (B+L)/2, W);\nlabel(\"$14$\", (C+L)/2, W);\nlabel(\"$14$\", (C+K)/2, S);\n[/asy]\nWe can see that $BKLC$ is a square with side length 14.\nThe area of a square is given by $s^2$, where $s$ is the length of a side.\nIn this case, the area of $BKLC$ is $14^2 = 196$.\nTherefore, $n = \\boxed{196}$.\nThe answer is: 196",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    },
+    {
+      "question": "There are exactly three positive real numbers $ k $ such that the function\n$ f(x) = \\frac{(x - 18)(x - 72)(x - 98)(x - k)}{x} $\ndefined over the positive real numbers achieves its minimum value at exactly two positive real numbers $ x $. Find the sum of these three values of $ k $.",
+      "reference_answer": "240",
+      "predicted_answer": "1",
+      "generated_solution": "To find the minimum value of $f(x)$, we need to find the values of $x$ where $f'(x) = 0$.\nTaking the derivative of $f(x)$, we have\n\\[f'(x) = \\frac{(x - 18)(x - 72)(x - 98)(-k) - (x - 18)(x - 72)(x - 98)}{x^2}.\\]\nSetting $f'(x) = 0$, we have\n\\[(x - 18)(x - 72)(x - 98)(-k) - (x - 18)(x - 72)(x - 98) = 0.\\]\nExpanding, we get\n\\[-k(x - 18)(x - 72)(x - 98) = (x - 18)(x - 72)(x - 98).\\]\nDividing both sides by $(x - 18)(x - 72)(x - 98)$, we have\n\\[-k = 1.\\]\nTherefore, $k = -1$.\nSince $k$ must be positive, we have $k = \\boxed{1}$.\nThe answer is: 1",
+      "is_correct": false,
+      "metadata": {
+        "year": 2025,
+        "source": "AIME2025"
+      }
+    }
+  ],
+  "model": "llama3_1-8B-MetaMathQA-all-2e"
+}

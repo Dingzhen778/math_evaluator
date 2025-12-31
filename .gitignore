@@ -12,6 +12,14 @@ build/
 
 # 评测结果和日志（不上传）
 results/
+results-1219/
+results-1222/
+results-1222-new/
+results-1222-mathverify/
+results-1223/
+results-1224/
+results-1225/
+results-1226/
 logs/
 *.log
 

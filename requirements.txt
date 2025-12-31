@@ -1,4 +1,13 @@
-tqdm>=4.65.0          
-requests>=2.31.0       
-math-verify>=0.1.0     
-datasets>=2.14.0       
+tqdm>=4.65.0
+requests>=2.31.0
+math-verify>=0.8.0
+datasets>=2.14.0
+# vllm==0.11.0  # 需要单独安装：pip install vllm==0.11.0 --no-deps (避免 torch 版本冲突)
+transformers>=4.57.0       
+
+# 安装说明：
+# 由于容器环境使用系统 Python（已包含 torch 2.8.0a0），直接运行：
+#   bash install_deps.sh
+# 或者手动安装：
+#   pip install tqdm requests math-verify datasets transformers
+#   pip install vllm==0.11.0 --no-deps
